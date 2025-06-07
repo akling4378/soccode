@@ -10,7 +10,7 @@ export default function SeminarPage() {
   const [currentBreakpoint, setCurrentBreakpoint] = useState(0);
   const [showCallOnMe, setShowCallOnMe] = useState(false);
   const [userInput, setUserInput] = useState('');
-  const [apiResponse, setApiResponse] = useState('');
+  const [breakpointResponses, setBreakpointResponses] = useState({}); // Store responses per breakpoint
   const [showBanter, setShowBanter] = useState(false);
   const [currentBanter, setCurrentBanter] = useState(null);
   const [userSubmittedText, setUserSubmittedText] = useState(''); // Store the submitted text
@@ -89,7 +89,7 @@ export default function SeminarPage() {
     setCurrentChapter(chapterId);
     setCurrentBreakpoint(0);
     setShowCallOnMe(false);
-    setApiResponse('');
+    setBreakpointResponses({}); // Clear all stored responses when changing chapters
   };
 
   const handleCallOnMe = () => {
@@ -161,15 +161,20 @@ ${globalInstructions.responseFormat}`;
       const data = await response.json();
       const formattedResponse = parseDialogue(data.response);
       
-      // Stop banter and show real response
-      // setShowBanter(false);  // Keep banter visible
-      setApiResponse(formattedResponse);
+      // Store the response for this specific breakpoint
+      setBreakpointResponses(prev => ({
+        ...prev,
+        [currentBreakpoint]: formattedResponse
+      }));
       setShowCallOnMe(false);
       setUserInput('');
     } catch (error) {
       console.error('API Error:', error);
-      // setShowBanter(false);  // Keep banter visible even on error
-      setApiResponse('Sorry, there was an error processing your comment. Please try again.');
+      // Store error message for this specific breakpoint
+      setBreakpointResponses(prev => ({
+        ...prev,
+        [currentBreakpoint]: 'Sorry, there was an error processing your comment. Please try again.'
+      }));
       setShowCallOnMe(false);
       setUserInput('');
     }
@@ -358,12 +363,12 @@ ${globalInstructions.responseFormat}`;
               </div>
             )}
 
-            {/* API Response Display */}
-            {apiResponse && (
+            {/* API Response Display - Show response for current breakpoint */}
+            {breakpointResponses[currentBreakpoint] && (
               <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded">
                 <span className="font-semibold text-green-800">Discussion continues:</span>
                 <div className="mt-2">
-                  {apiResponse}
+                  {breakpointResponses[currentBreakpoint]}
                 </div>
               </div>
             )}
@@ -410,7 +415,7 @@ ${globalInstructions.responseFormat}`;
             </span>
             
             <div className="flex gap-3">
-              {currentBreakpointData.hasCallOnMe && !showCallOnMe && !apiResponse && (
+              {currentBreakpointData.hasCallOnMe && !showCallOnMe && !breakpointResponses[currentBreakpoint] && (
                 <button
                   onClick={handleCallOnMe}
                   className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors"
