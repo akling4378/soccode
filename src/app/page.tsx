@@ -166,6 +166,7 @@ ${globalInstructions.responseFormat}`;
         ...prev,
         [currentBreakpoint]: formattedResponse
       }));
+      setShowBanter(false); // Hide banter when API response arrives
       setShowCallOnMe(false);
       setUserInput('');
     } catch (error) {
@@ -175,6 +176,7 @@ ${globalInstructions.responseFormat}`;
         ...prev,
         [currentBreakpoint]: 'Sorry, there was an error processing your comment. Please try again.'
       }));
+      setShowBanter(false); // Hide banter on error too
       setShowCallOnMe(false);
       setUserInput('');
     }
