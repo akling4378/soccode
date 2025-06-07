@@ -2,6 +2,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
+import { availableChapters, isPlaceholderChapter, getPlaceholderMessage } from '../data/chapters-config';
+import DialogueRenderer from '@/components/DialogueRenderer';
 
 export default function SeminarPage() {
   const [readerName, setReaderName] = useState('');
@@ -10,16 +12,11 @@ export default function SeminarPage() {
   const [currentBreakpoint, setCurrentBreakpoint] = useState(0);
   const [showCallOnMe, setShowCallOnMe] = useState(false);
   const [userInput, setUserInput] = useState('');
-  const [breakpointResponses, setBreakpointResponses] = useState({}); // Store responses per breakpoint
+  const [apiResponse, setApiResponse] = useState('');
   const [showBanter, setShowBanter] = useState(false);
   const [currentBanter, setCurrentBanter] = useState(null);
-  const [userSubmittedText, setUserSubmittedText] = useState(''); // Store the submitted text
+  const [userSubmittedText, setUserSubmittedText] = useState('');
   
-  const availableChapters = [
-    { id: 'correlation', title: 'Understanding Correlation' },
-    { id: 'other', title: 'Other chapters (coming soon)' }
-  ];
-
   const [chapterData, setChapterData] = useState(null);
   const [banterData, setBanterData] = useState(null);
 
@@ -67,7 +64,6 @@ export default function SeminarPage() {
   const startBanter = () => {
     if (!banterData || !banterData.banterDialogues) return;
     
-    // Select random banter dialogue
     const randomIndex = Math.floor(Math.random() * banterData.banterDialogues.length);
     const selectedBanter = banterData.banterDialogues[randomIndex];
     
@@ -82,14 +78,15 @@ export default function SeminarPage() {
   };
 
   const handleChapterChange = (chapterId) => {
-    if (chapterId === 'other') {
-      alert('Other chapters coming soon!');
+    if (isPlaceholderChapter(chapterId)) {
+      const message = getPlaceholderMessage(chapterId);
+      if (message) alert(message);
       return;
     }
     setCurrentChapter(chapterId);
     setCurrentBreakpoint(0);
     setShowCallOnMe(false);
-    setBreakpointResponses({}); // Clear all stored responses when changing chapters
+    setApiResponse('');
   };
 
   const handleCallOnMe = () => {
@@ -98,11 +95,9 @@ export default function SeminarPage() {
 
   const handleSubmitResponse = async () => {
     try {
-      // Capture the user input before clearing it
       const submittedText = userInput;
       setUserSubmittedText(submittedText);
       
-      // Start banter immediately
       startBanter();
       
       const currentBreakpointData = chapterData.breakpoints[currentBreakpoint];
@@ -161,22 +156,12 @@ ${globalInstructions.responseFormat}`;
       const data = await response.json();
       const formattedResponse = parseDialogue(data.response);
       
-      // Store the response for this specific breakpoint
-      setBreakpointResponses(prev => ({
-        ...prev,
-        [currentBreakpoint]: formattedResponse
-      }));
-      setShowBanter(false); // Hide banter when API response arrives
+      setApiResponse(formattedResponse);
       setShowCallOnMe(false);
       setUserInput('');
     } catch (error) {
       console.error('API Error:', error);
-      // Store error message for this specific breakpoint
-      setBreakpointResponses(prev => ({
-        ...prev,
-        [currentBreakpoint]: 'Sorry, there was an error processing your comment. Please try again.'
-      }));
-      setShowBanter(false); // Hide banter on error too
+      setApiResponse('Sorry, there was an error processing your comment. Please try again.');
       setShowCallOnMe(false);
       setUserInput('');
     }
@@ -256,7 +241,7 @@ ${globalInstructions.responseFormat}`;
     if (currentBreakpoint < chapterData.breakpoints.length - 1) {
       setCurrentBreakpoint(currentBreakpoint + 1);
       setShowCallOnMe(false);
-      // Removed: setApiResponse(''); - Now preserves API responses when navigating
+      setApiResponse('');
     }
   };
 
@@ -265,7 +250,7 @@ ${globalInstructions.responseFormat}`;
     if (currentBreakpoint > 0) {
       setCurrentBreakpoint(currentBreakpoint - 1);
       setShowCallOnMe(false);
-      // Removed: setApiResponse(''); - Now preserves API responses when navigating
+      setApiResponse('');
     }
   };
 
@@ -336,26 +321,10 @@ ${globalInstructions.responseFormat}`;
         
         <div className="p-6">
           <div className="bg-gray-50 rounded-lg p-4 mb-6 min-h-[400px]">
-            <div className="space-y-4 mb-4">
-              {currentBreakpointData.dialogue.map((dialogueItem, index) => (
-                <div key={index}>
-                  <span className={`font-semibold ${
-                    dialogueItem.speaker === 'Professor Hartwell' ? 'text-blue-600' :
-                    dialogueItem.speaker === 'Blake' ? 'text-red-600' :
-                    dialogueItem.speaker === 'Drew' ? 'text-green-600' :
-                    dialogueItem.speaker === 'Casey' ? 'text-purple-600' :
-                    dialogueItem.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
-                  }`}>
-                    {dialogueItem.speaker}:
-                  </span>
-                  <div className="text-gray-800 leading-relaxed mt-1">
-                    {dialogueItem.text}
-                  </div>
-                </div>
-              ))}
-            </div>
+            
+            {/* REPLACED: Old dialogue rendering with DialogueRenderer component */}
+            <DialogueRenderer dialogue={currentBreakpointData.dialogue} />
 
-            {/* Show banter during API wait */}
             {showBanter && (
               <div className="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
                 <span className="font-semibold text-yellow-800">Class discussion:</span>
@@ -365,17 +334,15 @@ ${globalInstructions.responseFormat}`;
               </div>
             )}
 
-            {/* API Response Display - Show response for current breakpoint */}
-            {breakpointResponses[currentBreakpoint] && (
+            {apiResponse && (
               <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded">
                 <span className="font-semibold text-green-800">Discussion continues:</span>
                 <div className="mt-2">
-                  {breakpointResponses[currentBreakpoint]}
+                  {apiResponse}
                 </div>
               </div>
             )}
 
-            {/* Call on Me Input */}
             {showCallOnMe && (
               <div className="mt-4 space-y-3">
                 <textarea
@@ -417,7 +384,7 @@ ${globalInstructions.responseFormat}`;
             </span>
             
             <div className="flex gap-3">
-              {currentBreakpointData.hasCallOnMe && !showCallOnMe && !breakpointResponses[currentBreakpoint] && (
+              {currentBreakpointData.hasCallOnMe && !showCallOnMe && !apiResponse && (
                 <button
                   onClick={handleCallOnMe}
                   className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors"
