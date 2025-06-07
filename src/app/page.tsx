@@ -13,7 +13,7 @@ export default function SeminarPage() {
   const [apiResponse, setApiResponse] = useState('');
   const [showBanter, setShowBanter] = useState(false);
   const [currentBanter, setCurrentBanter] = useState(null);
-  const [userSubmittedText, setUserSubmittedText] = useState(''); // Store the submitted text
+  const [userSubmittedText, setUserSubmittedText] = useState('');
   
   const availableChapters = [
     { id: 'correlation', title: 'Understanding Correlation' },
@@ -30,7 +30,7 @@ export default function SeminarPage() {
 
   const loadChapterData = async (chapterId) => {
     try {
-      const response = await fetch(`/data/chapters/${chapterId}.JSON`);
+      const response = await fetch(`/data/chapters/${chapterId}.json`);
       if (!response.ok) throw new Error('Chapter not found');
       const data = await response.json();
       setChapterData(data);
@@ -55,7 +55,7 @@ export default function SeminarPage() {
 
   const loadBanterData = async () => {
     try {
-      const response = await fetch('/data/seminar-banter.JSON');
+      const response = await fetch('/data/seminar-banter.json');
       if (!response.ok) throw new Error('Banter data not found');
       const data = await response.json();
       setBanterData(data);
@@ -67,7 +67,6 @@ export default function SeminarPage() {
   const startBanter = () => {
     if (!banterData || !banterData.banterDialogues) return;
     
-    // Select random banter dialogue
     const randomIndex = Math.floor(Math.random() * banterData.banterDialogues.length);
     const selectedBanter = banterData.banterDialogues[randomIndex];
     
@@ -98,11 +97,9 @@ export default function SeminarPage() {
 
   const handleSubmitResponse = async () => {
     try {
-      // Capture the user input before clearing it
       const submittedText = userInput;
       setUserSubmittedText(submittedText);
       
-      // Start banter immediately
       startBanter();
       
       const currentBreakpointData = chapterData.breakpoints[currentBreakpoint];
@@ -161,14 +158,11 @@ ${globalInstructions.responseFormat}`;
       const data = await response.json();
       const formattedResponse = parseDialogue(data.response);
       
-      // Stop banter and show real response
-      // setShowBanter(false);  // Keep banter visible
       setApiResponse(formattedResponse);
       setShowCallOnMe(false);
       setUserInput('');
     } catch (error) {
       console.error('API Error:', error);
-      // setShowBanter(false);  // Keep banter visible even on error
       setApiResponse('Sorry, there was an error processing your comment. Please try again.');
       setShowCallOnMe(false);
       setUserInput('');
@@ -176,7 +170,7 @@ ${globalInstructions.responseFormat}`;
   };
 
   const parseDialogue = (text) => {
-    let cleanText = text.replace(/This sets up.*?$/gm, '').replace(/The discussion.*?$/gm, '').trim();
+    const cleanText = text.replace(/This sets up.*?$/gm, '').replace(/The discussion.*?$/gm, '').trim();
     const speakerPattern = /^(Professor Hartwell|Blake|Drew|Casey|Avery):\s*/gm;
     const parts = cleanText.split(speakerPattern);
     const dialogueElements = [];
@@ -274,7 +268,7 @@ ${globalInstructions.responseFormat}`;
           </p>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              What's your name?
+              What&apos;s your name?
             </label>
             <input
               type="text"
@@ -321,7 +315,7 @@ ${globalInstructions.responseFormat}`;
               ))}
             </select>
           </div>
-          <p className="text-blue-100">Professor Hartwell's Seminar • Welcome, {readerName}!</p>
+          <p className="text-blue-100">Professor Hartwell&apos;s Seminar • Welcome, {readerName}!</p>
           <p className="text-blue-200 text-sm mt-2">
             {currentBreakpointData.subheading}
           </p>
@@ -348,7 +342,6 @@ ${globalInstructions.responseFormat}`;
               ))}
             </div>
 
-            {/* Show banter during API wait */}
             {showBanter && (
               <div className="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
                 <span className="font-semibold text-yellow-800">Class discussion:</span>
@@ -358,7 +351,6 @@ ${globalInstructions.responseFormat}`;
               </div>
             )}
 
-            {/* API Response Display */}
             {apiResponse && (
               <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded">
                 <span className="font-semibold text-green-800">Discussion continues:</span>
@@ -368,7 +360,6 @@ ${globalInstructions.responseFormat}`;
               </div>
             )}
 
-            {/* Call on Me Input */}
             {showCallOnMe && (
               <div className="mt-4 space-y-3">
                 <textarea
