@@ -4,13 +4,19 @@ import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
 import { availableChapters, isPlaceholderChapter, getPlaceholderMessage } from '../data/chapters-config';
 
-// DialogueRenderer function moved inside page.tsx to avoid file creation issues
+// Beautiful DialogueRenderer with styling like the converter
 function DialogueRenderer({ dialogue }) {
   return (
     <div className="space-y-4 mb-4">
       {dialogue.map((dialogueItem, index) => (
-        <div key={index}>
-          <span className={`font-semibold ${
+        <div key={index} className={`p-3 rounded-lg border-l-4 ${
+          dialogueItem.speaker === 'Professor Hartwell' ? 'bg-blue-50 border-blue-400' :
+          dialogueItem.speaker === 'Blake' ? 'bg-red-50 border-red-400' :
+          dialogueItem.speaker === 'Drew' ? 'bg-green-50 border-green-400' :
+          dialogueItem.speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
+          dialogueItem.speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
+        }`}>
+          <div className={`font-semibold mb-2 ${
             dialogueItem.speaker === 'Professor Hartwell' ? 'text-blue-600' :
             dialogueItem.speaker === 'Blake' ? 'text-red-600' :
             dialogueItem.speaker === 'Drew' ? 'text-green-600' :
@@ -18,8 +24,8 @@ function DialogueRenderer({ dialogue }) {
             dialogueItem.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
           }`}>
             {dialogueItem.speaker}:
-          </span>
-          <div className="text-gray-800 leading-relaxed mt-1">
+          </div>
+          <div className="text-gray-800 leading-relaxed">
             {dialogueItem.text}
           </div>
         </div>
@@ -202,8 +208,14 @@ ${globalInstructions.responseFormat}`;
       
       if (speaker && text) {
         dialogueElements.push(
-          <div key={i} className="mb-3">
-            <span className={`font-semibold ${
+          <div key={i} className={`p-3 rounded-lg border-l-4 mb-3 ${
+            speaker === 'Professor Hartwell' ? 'bg-blue-50 border-blue-400' :
+            speaker === 'Blake' ? 'bg-red-50 border-red-400' :
+            speaker === 'Drew' ? 'bg-green-50 border-green-400' :
+            speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
+            speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
+          }`}>
+            <div className={`font-semibold mb-2 ${
               speaker === 'Professor Hartwell' ? 'text-blue-600' :
               speaker === 'Blake' ? 'text-red-600' :
               speaker === 'Drew' ? 'text-green-600' :
@@ -211,8 +223,8 @@ ${globalInstructions.responseFormat}`;
               speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
             }`}>
               {speaker}:
-            </span>
-            <div className="text-gray-800 leading-relaxed mt-1">
+            </div>
+            <div className="text-gray-800 leading-relaxed">
               {text}
             </div>
           </div>
@@ -228,30 +240,35 @@ ${globalInstructions.responseFormat}`;
 
     return (
       <div>
-        <div className="mb-3">
-          <span className="font-semibold text-blue-600">Professor Hartwell:</span>
-          <div className="text-gray-800 leading-relaxed mt-1 italic">
+        <div className="p-3 rounded-lg border-l-4 bg-blue-50 border-blue-400 mb-3">
+          <div className="font-semibold mb-2 text-blue-600">Professor Hartwell:</div>
+          <div className="text-gray-800 leading-relaxed italic">
             {currentBanter.professorPause}
           </div>
         </div>
         {currentBanter.studentBanter.map((line, i) => (
-          <div key={i} className="mb-3">
-            <span className={`font-semibold ${
+          <div key={i} className={`p-3 rounded-lg border-l-4 mb-3 ${
+            line.speaker === 'Blake' ? 'bg-red-50 border-red-400' :
+            line.speaker === 'Drew' ? 'bg-green-50 border-green-400' :
+            line.speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
+            line.speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
+          }`}>
+            <div className={`font-semibold mb-2 ${
               line.speaker === 'Blake' ? 'text-red-600' :
               line.speaker === 'Drew' ? 'text-green-600' :
               line.speaker === 'Casey' ? 'text-purple-600' :
               line.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
             }`}>
               {line.speaker}:
-            </span>
-            <div className="text-gray-800 leading-relaxed mt-1 italic">
+            </div>
+            <div className="text-gray-800 leading-relaxed italic">
               {line.text}
             </div>
           </div>
         ))}
-        <div className="mb-3">
-          <span className="font-semibold text-blue-600">Professor Hartwell:</span>
-          <div className="text-gray-800 leading-relaxed mt-1 italic">
+        <div className="p-3 rounded-lg border-l-4 bg-blue-50 border-blue-400 mb-3">
+          <div className="font-semibold mb-2 text-blue-600">Professor Hartwell:</div>
+          <div className="text-gray-800 leading-relaxed italic">
             {currentBanter.professorReturnPre} {readerName} {currentBanter.professorReturnPost} {userSubmittedText}
           </div>
         </div>
@@ -345,7 +362,7 @@ ${globalInstructions.responseFormat}`;
         <div className="p-6">
           <div className="bg-gray-50 rounded-lg p-4 mb-6 min-h-[400px]">
             
-            {/* Using DialogueRenderer component function */}
+            {/* Beautiful DialogueRenderer with speech bubble styling */}
             <DialogueRenderer dialogue={currentBreakpointData.dialogue} />
 
             {showBanter && (
@@ -418,7 +435,7 @@ ${globalInstructions.responseFormat}`;
               <button
                 onClick={nextBreakpoint}
                 disabled={isLastBreakpoint}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:colors"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {isLastBreakpoint ? 'Chapter Complete' : 'Next Section'}
               </button>
