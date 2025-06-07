@@ -3,36 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
 import { availableChapters, isPlaceholderChapter, getPlaceholderMessage } from '../data/chapters-config';
-
-// Beautiful DialogueRenderer with styling like the converter
-function DialogueRenderer({ dialogue }) {
-  return (
-    <div className="space-y-4 mb-4">
-      {dialogue.map((dialogueItem, index) => (
-        <div key={index} className={`p-3 rounded-lg border-l-4 ${
-          dialogueItem.speaker === 'Professor Hartwell' ? 'bg-blue-50 border-blue-400' :
-          dialogueItem.speaker === 'Blake' ? 'bg-red-50 border-red-400' :
-          dialogueItem.speaker === 'Drew' ? 'bg-green-50 border-green-400' :
-          dialogueItem.speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
-          dialogueItem.speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
-        }`}>
-          <div className={`font-semibold mb-2 ${
-            dialogueItem.speaker === 'Professor Hartwell' ? 'text-blue-600' :
-            dialogueItem.speaker === 'Blake' ? 'text-red-600' :
-            dialogueItem.speaker === 'Drew' ? 'text-green-600' :
-            dialogueItem.speaker === 'Casey' ? 'text-purple-600' :
-            dialogueItem.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
-          }`}>
-            {dialogueItem.speaker}:
-          </div>
-          <div className="text-gray-800 leading-relaxed">
-            {dialogueItem.text}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
+import DialogueRenderer from '../components/DialogueRenderer.js';
 
 export default function SeminarPage() {
   const [readerName, setReaderName] = useState('');
@@ -362,7 +333,7 @@ ${globalInstructions.responseFormat}`;
         <div className="p-6">
           <div className="bg-gray-50 rounded-lg p-4 mb-6 min-h-[400px]">
             
-            {/* Beautiful DialogueRenderer with speech bubble styling */}
+            {/* Using imported DialogueRenderer component */}
             <DialogueRenderer dialogue={currentBreakpointData.dialogue} />
 
             {showBanter && (
