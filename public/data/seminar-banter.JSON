@@ -1,0 +1,72 @@
+{
+  "banterDialogues": [
+    {
+      "id": "avery-blake-tension",
+      "professorPause": "I'll give you folks a moment to think. Then I'll ask for your reactions.",
+      "studentBanter": [
+        {
+          "speaker": "Blake",
+          "text": "Why can't we just start now?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Some of us need time to think. Not everybody shoots their mouth off instantly--Blake!"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Yeah, Avery, you're probably going to tell us how everything in this seminar fits together, and your genius brain has it all figured out."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Settle down, people."
+        }
+      ],
+      "professorReturnPre": "Let's remember what",
+      "professorReturnPost": "was saying."
+    },
+    {
+      "id": "casey-ancient-greeks",
+      "professorPause": "Remember. Don't react right away. Give it some thought.",
+      "studentBanter": [
+        {
+          "speaker": "Blake",
+          "text": "Why don't you ever give your reaction first?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is traditional pedagogical practice. It goes all the way back to Socrates. The ancient Greeks--"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Oh, for heaven's sake, Casey. Get over yourself. We know you love the ancient Greeks. You love everything, as long as it's ancient and esoteric."
+        }
+      ],
+      "professorReturnPre": "OK, let's simmer down. Focus on what",
+      "professorReturnPost": "was saying."
+    },
+    {
+      "id": "thinking-out-loud",
+      "professorPause": "OK, take a minute to think about that. How would you respond?",
+      "studentBanter": [
+        {
+          "speaker": "Blake",
+          "text": "How would *you* respond, Professor?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Hartwell's thinking before he says anything. Unlike some people."
+        },
+        {
+          "speaker": "Blake",
+          "text": "What's the point of a seminar if we're just going to sit here in silence? I like to think out loud."
+        },
+        {
+          "speaker": "Drew",
+          "text": "No one's stopping you from thinking any way you want. But let's let Professor Hartwell conduct the seminar."
+        }
+      ],
+      "professorReturnPre": "Getting back to what",
+      "professorReturnPost": "was saying."
+    }
+  ]
+}

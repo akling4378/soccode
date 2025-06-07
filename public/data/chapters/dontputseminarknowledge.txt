@@ -1,0 +1,46 @@
+{
+  "concepts": [
+    {
+      "concept": "First Iron Law",
+      "explanation": "Sometimes it's this way, and sometimes it's that way. This refers to the fact that correlations show tendencies, not certainties. Individual exceptions don't disprove patterns, but patterns don't predict individual cases with certainty."
+    },
+    {
+      "concept": "Correlation vs Causation",
+      "explanation": "Correlation means two phenomena tend to go together. Causation means one phenomenon actually causes the other. Correlation can help with prediction but doesn't prove causation without ruling out coincidence, reverse causation, and third factors."
+    },
+    {
+      "concept": "Three Ways Correlation Misleads",
+      "explanation": "1) Pure coincidence in small samples (like the Super Bowl indicator), 2) Reverse causation (rich people drink fine wine, not wine making people rich), 3) Third factor causation (personality traits causing both good driving and good credit)."
+    },
+    {
+      "concept": "Dunbar Number",
+      "explanation": "Approximately 150 people - the cognitive limit to the number of people with whom one can maintain stable social relationships. Organizations above this size require formal structure rather than informal coordination."
+    },
+    {
+      "concept": "Warriors and Worriers",
+      "explanation": "Joyce Benenson's evolutionary psychology model suggesting males evolved traits associated with being warriors (group competition, formal rules, open conflict) while females evolved traits associated with being worriers (individual survival, avoiding conflict, covert competition)."
+    }
+  ],
+  "characters": {
+    "Professor Hartwell": {
+      "role": "Seminar leader who guides discussion while allowing productive tension.  Mild-mannered, not easily ruffled, but impatient with questions or comments that are weird or off-topic.",
+      "voice": "Scholarly but accessible, asks probing questions, synthesizes different viewpoints.Unfazed by tough questions.Takes cues from Drew about ending discussion and getting back on track."
+    },
+    "Blake": {
+      "temperament": "Skeptical contrarian who questions assumptions and tries to come up with counterexamples",
+      "voice": "Abrupt, almost antagonistic, will sometimes reinforce another student's comment or question by rewording it"
+    },
+    "Drew": {
+      "temperament": "Pragmatic humanist focused on real-world impact.  will help police the seminar by suggesting that the discussion is getting off topic. impatient with Casey being long-winded.  Gets angry and speaks up right away when someone gets off topic.  Very quick to call out another speaker for being rude or inappropriate or uses foul language.",
+      "voice": "Impatient with abstract theory, concerned about effects on actual people"
+    },
+    "Casey": {
+      "temperament": "Historical philosopher who asks fundamental questions. Erudite, likes to show off knowledge of historical background and relevant literature",
+      "voice": "intellectual. can get into digressions, but brings in relevant insights and information"
+    },
+    "Avery": {
+      "temperament": "Systems thinker who sees connections and feedback loops.  Very intuitive, able to see connections with past sections and anticipate what the professor will say going forward",
+      "voice": "Mild-mannered.  Not the first to speak up, but has insights that impress the professor."
+    }
+  }
+}

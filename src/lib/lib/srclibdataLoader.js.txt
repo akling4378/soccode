@@ -1,0 +1,99 @@
+// src/lib/dataLoader.js
+
+// Helper function to try both .json and .JSON extensions
+async function fetchWithFallback(basePath) {
+  console.log(`Attempting to load: ${basePath}`);
+  
+  // Try lowercase first
+  const lowercaseUrl = `${basePath}.json`;
+  console.log(`Trying lowercase: ${lowercaseUrl}`);
+  try {
+    const response = await fetch(lowercaseUrl);
+    console.log(`Lowercase response status: ${response.status}`);
+    if (response.ok) {
+      console.log(`✅ Successfully loaded: ${lowercaseUrl}`);
+      return response;
+    }
+  } catch (error) {
+    console.log(`❌ Lowercase failed: ${error.message}`);
+  }
+  
+  // Try uppercase
+  const uppercaseUrl = `${basePath}.JSON`;
+  console.log(`Trying uppercase: ${uppercaseUrl}`);
+  try {
+    const response = await fetch(uppercaseUrl);
+    console.log(`Uppercase response status: ${response.status}`);
+    if (response.ok) {
+      console.log(`✅ Successfully loaded: ${uppercaseUrl}`);
+      return response;
+    } else {
+      console.log(`❌ Uppercase failed with status: ${response.status}`);
+    }
+  } catch (error) {
+    console.log(`❌ Uppercase failed: ${error.message}`);
+  }
+  
+  throw new Error(`Failed to load file at ${basePath} (tried both .json and .JSON). Check browser console for details.`);
+}
+
+export async function loadChapterData(chapterId) {
+  console.log(`🔄 Loading chapter data for: ${chapterId}`);
+  try {
+    const response = await fetchWithFallback(`/data/chapters/${chapterId}`);
+    const data = await response.json();
+    console.log(`✅ Chapter data loaded successfully:`, data.title);
+    return data;
+  } catch (error) {
+    console.error(`❌ Error loading chapter ${chapterId}:`, error);
+    return {
+      id: chapterId,
+      title: `${chapterId.replace('-', ' ')} (Coming Soon)`,
+      description: "Chapter under development", 
+      breakpoints: [{
+        id: 'placeholder',
+        subheading: 'Chapter Under Development',
+        dialogue: [{
+          speaker: 'Professor Hartwell',
+          text: `The ${chapterId.replace('-', ' ')} chapter is being developed. Please check back soon!`
+        }],
+        hasCallOnMe: false
+      }]
+    };
+  }
+}
+
+export async function loadKnowledgeBase() {
+  console.log(`🔄 Loading knowledge base`);
+  try {
+    const response = await fetchWithFallback('/data/seminar-knowledge-base');
+    const data = await response.json();
+    console.log(`✅ Knowledge base loaded successfully. Characters:`, Object.keys(data.characters || {}));
+    return data;
+  } catch (error) {
+    console.error(`❌ Error loading knowledge base:`, error);
+    return {
+      "concepts": [],
+      "characters": {
+        "Professor Hartwell": { "role": "Seminar leader", "voice": "Scholarly" },
+        "Blake": { "temperament": "Skeptical", "voice": "Direct" },
+        "Drew": { "temperament": "Pragmatic", "voice": "Impatient with theory" },
+        "Casey": { "temperament": "Philosophical", "voice": "Erudite" },
+        "Avery": { "temperament": "Systems thinker", "voice": "Mild-mannered" }
+      }
+    };
+  }
+}
+
+export async function loadCharacterData(characterName) {
+  const knowledgeBase = await loadKnowledgeBase();
+  return knowledgeBase.characters[characterName] || null;
+}
+
+export function getAvailableChapters() {
+  return [
+    { id: 'correlation', title: 'Understanding Correlation' },
+    { id: 'cultural-learning', title: 'Cultural Learning' },
+    { id: 'evolutionary-psychology', title: 'Evolutionary Psychology' }
+  ];
+}
