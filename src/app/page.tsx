@@ -1,4 +1,4 @@
-// src/app/page.tsx - DEBUG VERSION
+// src/app/page.tsx
 "use client"
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
@@ -14,7 +14,6 @@ export default function SeminarPage() {
   const [showBanter, setShowBanter] = useState(false);
   const [currentBanter, setCurrentBanter] = useState(null);
   const [userSubmittedText, setUserSubmittedText] = useState('');
-  const [debugInfo, setDebugInfo] = useState(''); // DEBUG: Add debug state
   
   const availableChapters = [
     { id: 'correlation', title: 'Understanding Correlation' },
@@ -31,53 +30,22 @@ export default function SeminarPage() {
 
   const loadChapterData = async (chapterId) => {
     try {
-      // DEBUG: Try both .json and .JSON
-      setDebugInfo('Trying to load chapter data...');
-      
-      let response;
-      let debugMessages = [];
-      
-      // First try lowercase .json
-      try {
-        debugMessages.push('Attempting: /data/chapters/' + chapterId + '.json');
-        response = await fetch(`/data/chapters/${chapterId}.json`);
-        debugMessages.push('Response status: ' + response.status);
-        if (!response.ok) throw new Error('lowercase failed');
-        debugMessages.push('SUCCESS with lowercase .json!');
-      } catch (error) {
-        debugMessages.push('Lowercase failed: ' + error.message);
-        
-        // Try uppercase .JSON
-        try {
-          debugMessages.push('Attempting: /data/chapters/' + chapterId + '.JSON');
-          response = await fetch(`/data/chapters/${chapterId}.JSON`);
-          debugMessages.push('Response status: ' + response.status);
-          if (!response.ok) throw new Error('uppercase failed');
-          debugMessages.push('SUCCESS with uppercase .JSON!');
-        } catch (error2) {
-          debugMessages.push('Uppercase also failed: ' + error2.message);
-          throw new Error('Both attempts failed');
-        }
-      }
-      
+      const response = await fetch(`/data/chapters/${chapterId}.JSON`);
+      if (!response.ok) throw new Error('Chapter not found');
       const data = await response.json();
-      debugMessages.push('JSON parsing successful');
-      setDebugInfo(debugMessages.join(' | '));
       setChapterData(data);
-      
     } catch (error) {
       console.error('Error loading chapter:', error);
-      setDebugInfo('FAILED to load chapter: ' + error.message + ' | Tried both .json and .JSON');
       setChapterData({
         id: chapterId,
         title: `${chapterId.replace('-', ' ')} (Coming Soon)`,
-        description: "Chapter under development - DEBUG: " + error.message,
+        description: "Chapter under development",
         breakpoints: [{
           id: 'placeholder',
           subheading: 'Chapter Under Development',
           dialogue: [{
             speaker: 'Professor Hartwell',
-            text: `DEBUG INFO: ${error.message}. The ${chapterId.replace('-', ' ')} chapter is being developed. Please check back soon!`
+            text: `The ${chapterId.replace('-', ' ')} chapter is being developed. Please check back soon!`
           }],
           hasCallOnMe: false
         }]
@@ -87,7 +55,7 @@ export default function SeminarPage() {
 
   const loadBanterData = async () => {
     try {
-      const response = await fetch('/data/seminar-banter.json');
+      const response = await fetch('/data/seminar-banter.JSON');
       if (!response.ok) throw new Error('Banter data not found');
       const data = await response.json();
       setBanterData(data);
@@ -351,12 +319,6 @@ ${globalInstructions.responseFormat}`;
           <p className="text-blue-200 text-sm mt-2">
             {currentBreakpointData.subheading}
           </p>
-          {/* DEBUG: Show debug info */}
-          {debugInfo && (
-            <p className="text-yellow-200 text-xs mt-2 bg-blue-800 p-2 rounded">
-              DEBUG: {debugInfo}
-            </p>
-          )}
         </div>
         
         <div className="p-6">
