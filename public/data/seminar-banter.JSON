@@ -45,6 +45,66 @@
       "professorReturnPost": "was saying."
     },
     {
+      "id": "casey-joke",
+      "professorPause": "Hmmm.  Let's Consider that for a bit.",
+      "studentBanter": [
+        {
+          "speaker": "Casey",
+          "text": "Kind of reminds me of an old joke."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Oh, no.  Not one of your long history lessons, Casey."
+        },
+       
+      ],
+      "professorReturnPre": "Yes, maybe save it for later.  Meanwhile, I believe that",
+      "professorReturnPost": "was saying."
+    },
+{
+      "id": "Avery-teacher-pet",
+      "professorPause": "Well, now that's something to consider.",
+      "studentBanter": [
+        {
+          "speaker": "Avery",
+          "text": "I think it ties in with what I said before."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Watch out.  More clever connections coming from Hartwell's favorite student."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Avery going to be teacher's pet again?"
+        },{
+          "speaker": "Drew",
+          "text": "Let's all try to get along here."
+        }
+      ],
+      "professorReturnPre": "Maybe later, Avery.  I thought it was interesting what",
+      "professorReturnPost": "was saying."
+    },
+{
+      "id": "casey-ancient-greeks",
+      "professorPause": "Does anyone care to respond?",
+      "studentBanter": [
+        {
+          "speaker": "Avery",
+          "text": "Casey, aren't you the one dressed up today?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Ive got a date after class"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Whoa, Casey.  Steppin out."
+        }
+      ],
+      "professorReturnPre": "We're not here to talk about Casey's outfit.  Now, as",
+      "professorReturnPost": "was saying."
+    },
+{
       "id": "thinking-out-loud",
       "professorPause": "OK, take a minute to think about that. How would you respond?",
       "studentBanter": [
