@@ -3,7 +3,30 @@
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
 import { availableChapters, isPlaceholderChapter, getPlaceholderMessage } from '../data/chapters-config';
-import DialogueRenderer from '@/components/DialogueRenderer';
+
+// DialogueRenderer function moved inside page.tsx to avoid file creation issues
+function DialogueRenderer({ dialogue }) {
+  return (
+    <div className="space-y-4 mb-4">
+      {dialogue.map((dialogueItem, index) => (
+        <div key={index}>
+          <span className={`font-semibold ${
+            dialogueItem.speaker === 'Professor Hartwell' ? 'text-blue-600' :
+            dialogueItem.speaker === 'Blake' ? 'text-red-600' :
+            dialogueItem.speaker === 'Drew' ? 'text-green-600' :
+            dialogueItem.speaker === 'Casey' ? 'text-purple-600' :
+            dialogueItem.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
+          }`}>
+            {dialogueItem.speaker}:
+          </span>
+          <div className="text-gray-800 leading-relaxed mt-1">
+            {dialogueItem.text}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function SeminarPage() {
   const [readerName, setReaderName] = useState('');
@@ -322,7 +345,7 @@ ${globalInstructions.responseFormat}`;
         <div className="p-6">
           <div className="bg-gray-50 rounded-lg p-4 mb-6 min-h-[400px]">
             
-            {/* REPLACED: Old dialogue rendering with DialogueRenderer component */}
+            {/* Using DialogueRenderer component function */}
             <DialogueRenderer dialogue={currentBreakpointData.dialogue} />
 
             {showBanter && (
@@ -395,7 +418,7 @@ ${globalInstructions.responseFormat}`;
               <button
                 onClick={nextBreakpoint}
                 disabled={isLastBreakpoint}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:colors"
               >
                 {isLastBreakpoint ? 'Chapter Complete' : 'Next Section'}
               </button>
