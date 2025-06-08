@@ -1,0 +1,306 @@
+{
+  "id": "cultural-learning",
+  "title": "Cultural Evolution and Social Learning",
+  "description": "Exploring how humans transmit knowledge across generations and the role of trust in learning",
+  "promptInstructions": {
+    "focus": "Follow the specific student focus areas: Blake questions copying vs. thinking for yourself, Drew emphasizes trusted people/teachers, Casey values traditional wisdom and caution about innovation, Avery focuses on institutions and social norms."
+  },
+  "breakpoints": [
+    {
+      "id": "deciding-who-to-believe",
+      "subheading": "We Decide What to Believe by Deciding Who to Believe",
+      "characters": [
+        "Professor Hartwell",
+        "Blake",
+        "Drew",
+        "Casey",
+        "Avery"
+      ],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand the fundamental challenge of knowledge acquisition in social beings",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Arnold Kling has an aphorism that we decide what to believe by deciding who to believe. Blake, what do you think he means by that?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Sounds like he's saying we're all just sheep following whoever's popular. But isn't that the opposite of what we're supposed to learn in college? Think for yourself, question authority, all that?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's not what he means, Blake. Think about it practically - we rely on trusted people all the time. My high school chemistry teacher, my professors here, doctors when I'm sick. These are people who've earned credibility through their knowledge and track record."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This goes back to ancient epistemological questions. There's accumulated wisdom in the past that we'd be foolish to ignore. Aristotle distinguished between different types of knowledge, and much of what we call wisdom comes from generations of careful thought..."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But it's more systemic than just individual trust relationships. We're embedded in networks of information flow. The question is how social norms and institutions filter and validate knowledge across entire societies."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right, but if we're just copying from other people, how do we know we're not all copying the same mistakes? What if my trusted teacher is wrong? What if everyone's wrong?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's why having multiple trusted sources matters. Good teachers don't just tell you what to think - they teach you how to evaluate evidence and check claims against other reliable sources."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That raises the deeper question of what we mean by knowledge itself. And before we can understand how we transmit it, we need to define what \"culture\" actually means."
+        }
+      ]
+    },
+    {
+      "id": "defining-culture",
+      "subheading": "Defining Culture - Harder Than It Looks",
+      "characters": [
+        "Professor Hartwell",
+        "Casey",
+        "Avery",
+        "Drew",
+        "Blake"
+      ],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand different definitions of culture and their implications",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "What do we mean by \"culture\"? Casey, how would you define it?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Culture encompasses our shared traditions, values, practices - the accumulated wisdom that societies have developed over centuries. It's what distinguishes human civilization from mere animal behavior."
+        },
+        {
+          "speaker": "Avery",
+          "text": "I'd include the institutional frameworks too, Casey. Culture includes all the social norms and systems we use to organize knowledge - everything from scientific methods to legal systems to educational institutions."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But doesn't it come down to people? Culture gets transmitted through relationships - parents teaching children, mentors guiding students, experts sharing knowledge with the public."
+        },
+        {
+          "speaker": "Blake",
+          "text": "See, this is why these big concepts are useless. Everyone defines \"culture\" differently, so we're not even talking about the same thing."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake raises an important point about definition. Joseph Henrich defines culture as \"the large body of practices, techniques, heuristics, tools, motivations, values, and beliefs that we all acquire while growing up, mostly by learning from other people.\""
+        },
+        {
+          "speaker": "Casey",
+          "text": "\"While growing up\" seems limiting. We inherit wisdom from the past throughout our lives, not just as children."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And Kevin Laland emphasizes the cumulative aspect - culture as \"extensive accumulation of shared, learned knowledge, and iterative improvements in technology over time.\""
+        },
+        {
+          "speaker": "Drew",
+          "text": "So the key is that it gets passed from person to person, right? Through teaching and learning relationships?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "But how do you separate what's \"cultural\" from what's just... normal human behavior? Maybe we're overcomplicating this."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The key insight, Blake, is that humans are unique in having cumulative culture. Other animals learn from their parents, but that knowledge doesn't build up over generations the way human knowledge does."
+        }
+      ]
+    },
+    {
+      "id": "copying-vs-innovation",
+      "subheading": "Why Copying Beats Innovation",
+      "characters": [
+        "Professor Hartwell",
+        "Blake",
+        "Drew",
+        "Casey",
+        "Avery"
+      ],
+      "tensionLevel": "high",
+      "learningObjective": "Understand why social learning often outperforms individual innovation",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Here's something that might surprise you, Blake. Research suggests that copying from others is usually more effective than trying to figure things out yourself. What's your reaction to that?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's exactly backwards from everything we're taught about creativity and innovation. How can copying be better than thinking for yourself? Isn't that just intellectual laziness?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Think about it practically, Blake. When I want to learn something new, I look for the best teachers I can find. Why would I try to reinvent calculus when Newton and Leibniz already figured it out? Good teachers save us enormous amounts of time and effort."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Exactly! The medieval concept of standing on the shoulders of giants. Innovation is risky and often fails. Most of the time, the wisdom of the past is more reliable than whatever new idea someone dreams up."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The social learning strategies tournament that Laland ran proves this mathematically. They simulated environments where agents could choose to innovate, observe others, or exploit what they'd learned. Social learning dominated individual learning unless the environment was changing incredibly rapidly."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And let me guess - the copycats won? But that just proves my point about intellectual conformity."
+        },
+        {
+          "speaker": "Drew",
+          "text": "It's not conformity, Blake. It's efficiency. When you find someone who really knows what they're doing - a great teacher, a skilled craftsman, an experienced mentor - learning from them is much smarter than stumbling around on your own."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And historically, societies that valued traditional knowledge and were cautious about rapid innovation often outlasted those that didn't. Change for its own sake can be destructive."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But there's a systematic balance. Most people should copy most of the time, but you need some innovation when environments change. The social norms around when to copy versus when to innovate are crucial."
+        },
+        {
+          "speaker": "Blake",
+          "text": "This still makes me uncomfortable. Are we just saying people shouldn't think for themselves?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not at all, Blake. We're saying that effective thinking usually builds on what others have already discovered. Even Einstein didn't reinvent mathematics from scratch. Which brings us to the practical question of how we actually decide who deserves our trust."
+        }
+      ]
+    },
+    {
+      "id": "institutions-and-trust",
+      "subheading": "Institutions and Trust Networks",
+      "characters": [
+        "Professor Hartwell",
+        "Avery",
+        "Drew",
+        "Blake",
+        "Casey"
+      ],
+      "tensionLevel": "high",
+      "learningObjective": "Examine how institutions and personal relationships enable knowledge transmission",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery, you mentioned social norms earlier. How do we actually decide who to trust in practice?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "We've evolved institutional systems for filtering knowledge - universities, scientific journals, professional licensing. These social norms and institutions create quality control mechanisms that work at large scales."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But ultimately it comes down to individual relationships, doesn't it? I trust my professors because I've seen their expertise in action. I trust certain authors because their explanations consistently make sense and help me understand difficult concepts."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But those institutions can be corrupted or biased. Look at how many \"scientific\" findings don't replicate. What if your trusted professors are teaching you nonsense?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, societies have used different approaches to validate knowledge. Medieval guilds, ancient scholarly traditions, religious authorities - many of these systems lasted for centuries because they worked."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Casey, just because something's historical doesn't make it relevant. We're not living in medieval times."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Blake, you can't just wave away centuries of institutional development because you think it's outdated. There's often wisdom in traditional practices that modern people don't fully appreciate."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The key insight is that cultural intelligence emerges from social processes, not from individual brilliance. The norms and institutions create collective intelligence that's smarter than any individual."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Right, but good institutions depend on having trustworthy people running them. You need teachers and experts who take their responsibilities seriously and actually know what they're talking about."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So we're back to the fundamental problem - how do we know who to trust when we can't verify everything ourselves?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly the puzzle that connects to our broader theme of human interdependence."
+        }
+      ]
+    },
+    {
+      "id": "cultural-learning-cooperation",
+      "subheading": "Cultural Learning and Human Cooperation",
+      "characters": [
+        "Professor Hartwell",
+        "Drew",
+        "Avery",
+        "Blake",
+        "Casey"
+      ],
+      "tensionLevel": "medium",
+      "learningObjective": "Connect cultural learning to broader themes of human interdependence",
+      "hasCallOnMe": false,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "How does all this cultural learning relate to human interdependence? Drew, why should we care about this for understanding cooperation and competition?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Well, everything depends on having reliable people to learn from. Without good teachers, mentors, and experts who can be trusted to pass on accurate knowledge, society would collapse. We cooperate because we can rely on each other's expertise."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's fundamental. Our entire capacity for large-scale cooperation depends on cultural transmission through institutional systems. We can coordinate with strangers because we share learned norms and expectations that social institutions maintain."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But cultural learning can also spread bad ideas. Look at conspiracy theories or mass hysteria. Sometimes copying is dangerous, especially when people trust the wrong sources."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That's why respecting traditional wisdom is so important. Time-tested practices and beliefs have survived because they work. Rapid innovation and constant change often lead societies astray."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Casey's right about testing over time, but we also need living relationships with people we can trust. Abstract traditions aren't enough - you need actual teachers who can explain why things work and help you adapt knowledge to new situations."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The institutional frameworks create the conditions where those trust relationships can develop. Without social norms that reward expertise and punish deception, you can't maintain reliable knowledge transmission."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So we're back to the problem of deciding who to believe. And apparently our evolved instincts aren't very good guides in the modern world."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Maybe that's because we've abandoned too much traditional wisdom. Societies that change too rapidly often lose important knowledge that took generations to accumulate."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's one way to look at it, Casey. But cultural evolution is ongoing. We're not stuck with Stone Age instincts - we can design better institutions for truth-seeking and knowledge transmission."
+        },
+        {
+          "speaker": "Drew",
+          "text": "If we can find the right people to do the designing. That's the real challenge - identifying trustworthy experts who understand both the old wisdom and new circumstances."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The feedback loops between individual learning, institutional design, and cultural evolution create the foundation for all the cooperation and competition we'll discuss in this course."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "So cultural learning isn't just about how we acquire knowledge - it's about how we build the shared frameworks that make human society possible."
+        }
+      ]
+    }
+  ]
+}

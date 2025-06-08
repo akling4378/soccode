@@ -2,6 +2,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
+import { chaptersConfig } from '../data/chapters-config';
 import SeminarEntry from '../components/SeminarEntry';
 import SeminarHeader from '../components/SeminarHeader';
 import SeminarContent from '../components/SeminarContent';
@@ -27,11 +28,8 @@ export default function SeminarPage() {
   const [chapterData, setChapterData] = useState(null);
   const [banterData, setBanterData] = useState(null);
   
-  const availableChapters = [
-    { id: 'correlation', title: 'Understanding Correlation' },
-    { id: 'evo', title: 'Evolutionary Psychology - Warriors and Worriers' },
-    { id: 'other', title: 'Other chapters (coming soon)' }
-  ];
+  // Use chapters config as single source of truth
+  const availableChapters = chaptersConfig;
 
   // Load data on mount and chapter change
   useEffect(() => {
@@ -42,7 +40,13 @@ export default function SeminarPage() {
   // Data loading functions
   const loadChapterData = async (chapterId) => {
     try {
-      const response = await fetch(`/data/chapters/${chapterId}.JSON`);
+      // Find the chapter config to get the filename
+      const chapterConfig = chaptersConfig.find(ch => ch.id === chapterId);
+      if (!chapterConfig) {
+        throw new Error('Chapter config not found');
+      }
+      
+      const response = await fetch(`/data/chapters/${chapterConfig.filename}`);
       if (!response.ok) throw new Error('Chapter not found');
       const data = await response.json();
       setChapterData(data);
@@ -91,10 +95,13 @@ export default function SeminarPage() {
   const handleNameSubmit = () => setShowSeminar(true);
 
   const handleChapterChange = (chapterId) => {
-    if (chapterId === 'other') {
-      alert('Other chapters coming soon!');
+    // Check if chapter exists in config
+    const chapterExists = chaptersConfig.some(ch => ch.id === chapterId);
+    if (!chapterExists) {
+      alert('Chapter coming soon!');
       return;
     }
+    
     setCurrentChapter(chapterId);
     setCurrentBreakpoint(0);
     setShowCallOnMe(false);
