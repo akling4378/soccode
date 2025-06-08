@@ -2,29 +2,43 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { loadKnowledgeBase } from '../lib/dataLoader';
-import { availableChapters, isPlaceholderChapter, getPlaceholderMessage } from '../data/chapters-config';
-import DialogueRenderer from '../components/DialogueRenderer.js';
+import SeminarEntry from '../components/SeminarEntry';
+import SeminarHeader from '../components/SeminarHeader';
+import SeminarContent from '../components/SeminarContent';
 
 export default function SeminarPage() {
+  // Core state
   const [readerName, setReaderName] = useState('');
   const [showSeminar, setShowSeminar] = useState(false);
   const [currentChapter, setCurrentChapter] = useState('correlation');
   const [currentBreakpoint, setCurrentBreakpoint] = useState(0);
+  
+  // Interaction state
   const [showCallOnMe, setShowCallOnMe] = useState(false);
   const [userInput, setUserInput] = useState('');
   const [apiResponse, setApiResponse] = useState('');
+  
+  // Banter state
   const [showBanter, setShowBanter] = useState(false);
   const [currentBanter, setCurrentBanter] = useState(null);
   const [userSubmittedText, setUserSubmittedText] = useState('');
   
+  // Data state
   const [chapterData, setChapterData] = useState(null);
   const [banterData, setBanterData] = useState(null);
+  
+  const availableChapters = [
+    { id: 'correlation', title: 'Understanding Correlation' },
+    { id: 'other', title: 'Other chapters (coming soon)' }
+  ];
 
+  // Load data on mount and chapter change
   useEffect(() => {
     loadChapterData(currentChapter);
     loadBanterData();
   }, [currentChapter]);
 
+  // Data loading functions
   const loadChapterData = async (chapterId) => {
     try {
       const response = await fetch(`/data/chapters/${chapterId}.JSON`);
@@ -61,8 +75,9 @@ export default function SeminarPage() {
     }
   };
 
+  // Banter management
   const startBanter = () => {
-    if (!banterData || !banterData.banterDialogues) return;
+    if (!banterData?.banterDialogues) return;
     
     const randomIndex = Math.floor(Math.random() * banterData.banterDialogues.length);
     const selectedBanter = banterData.banterDialogues[randomIndex];
@@ -71,16 +86,12 @@ export default function SeminarPage() {
     setShowBanter(true);
   };
 
-  const handleNameSubmit = () => {
-    if (readerName.trim()) {
-      setShowSeminar(true);
-    }
-  };
+  // Event handlers
+  const handleNameSubmit = () => setShowSeminar(true);
 
   const handleChapterChange = (chapterId) => {
-    if (isPlaceholderChapter(chapterId)) {
-      const message = getPlaceholderMessage(chapterId);
-      if (message) alert(message);
+    if (chapterId === 'other') {
+      alert('Other chapters coming soon!');
       return;
     }
     setCurrentChapter(chapterId);
@@ -89,15 +100,14 @@ export default function SeminarPage() {
     setApiResponse('');
   };
 
-  const handleCallOnMe = () => {
-    setShowCallOnMe(true);
-  };
+  const handleCallOnMe = () => setShowCallOnMe(true);
+
+  const handleCancelInput = () => setShowCallOnMe(false);
 
   const handleSubmitResponse = async () => {
     try {
       const submittedText = userInput;
       setUserSubmittedText(submittedText);
-      
       startBanter();
       
       const currentBreakpointData = chapterData.breakpoints[currentBreakpoint];
@@ -131,7 +141,7 @@ ${Object.entries(knowledgeBase.characters).map(([name, info]) =>
   `- ${name}: ${info.temperament || info.role} - ${info.voice}`
 ).join('\n')}
 
-      A student named ${readerName} just said: "${submittedText}"
+A student named ${readerName} just said: "${submittedText}"
 
 RULES:
 ${globalInstructions.behaviorRules.join('\n')}
@@ -141,12 +151,8 @@ ${globalInstructions.responseFormat}`;
 
       const response = await fetch('/api/claude', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message: promptText,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: promptText }),
       });
 
       if (!response.ok) {
@@ -167,6 +173,7 @@ ${globalInstructions.responseFormat}`;
     }
   };
 
+  // Dialogue parsing
   const parseDialogue = (text) => {
     let cleanText = text.replace(/This sets up.*?$/gm, '').replace(/The discussion.*?$/gm, '').trim();
     const speakerPattern = /^(Professor Hartwell|Blake|Drew|Casey|Avery):\s*/gm;
@@ -179,14 +186,8 @@ ${globalInstructions.responseFormat}`;
       
       if (speaker && text) {
         dialogueElements.push(
-          <div key={i} className={`p-3 rounded-lg border-l-4 mb-3 ${
-            speaker === 'Professor Hartwell' ? 'bg-blue-50 border-blue-400' :
-            speaker === 'Blake' ? 'bg-red-50 border-red-400' :
-            speaker === 'Drew' ? 'bg-green-50 border-green-400' :
-            speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
-            speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
-          }`}>
-            <div className={`font-semibold mb-2 ${
+          <div key={i} className="mb-3">
+            <span className={`font-semibold ${
               speaker === 'Professor Hartwell' ? 'text-blue-600' :
               speaker === 'Blake' ? 'text-red-600' :
               speaker === 'Drew' ? 'text-green-600' :
@@ -194,8 +195,8 @@ ${globalInstructions.responseFormat}`;
               speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
             }`}>
               {speaker}:
-            </div>
-            <div className="text-gray-800 leading-relaxed">
+            </span>
+            <div className="text-gray-800 leading-relaxed mt-1">
               {text}
             </div>
           </div>
@@ -206,213 +207,69 @@ ${globalInstructions.responseFormat}`;
     return dialogueElements.length > 0 ? dialogueElements : <div className="text-gray-800">{cleanText}</div>;
   };
 
-  const renderBanter = () => {
-    if (!showBanter || !currentBanter) return null;
-
-    return (
-      <div>
-        <div className="p-3 rounded-lg border-l-4 bg-blue-50 border-blue-400 mb-3">
-          <div className="font-semibold mb-2 text-blue-600">Professor Hartwell:</div>
-          <div className="text-gray-800 leading-relaxed italic">
-            {currentBanter.professorPause}
-          </div>
-        </div>
-        {currentBanter.studentBanter.map((line, i) => (
-          <div key={i} className={`p-3 rounded-lg border-l-4 mb-3 ${
-            line.speaker === 'Blake' ? 'bg-red-50 border-red-400' :
-            line.speaker === 'Drew' ? 'bg-green-50 border-green-400' :
-            line.speaker === 'Casey' ? 'bg-purple-50 border-purple-400' :
-            line.speaker === 'Avery' ? 'bg-orange-50 border-orange-400' : 'bg-gray-50 border-gray-400'
-          }`}>
-            <div className={`font-semibold mb-2 ${
-              line.speaker === 'Blake' ? 'text-red-600' :
-              line.speaker === 'Drew' ? 'text-green-600' :
-              line.speaker === 'Casey' ? 'text-purple-600' :
-              line.speaker === 'Avery' ? 'text-orange-600' : 'text-gray-600'
-            }`}>
-              {line.speaker}:
-            </div>
-            <div className="text-gray-800 leading-relaxed italic">
-              {line.text}
-            </div>
-          </div>
-        ))}
-        <div className="p-3 rounded-lg border-l-4 bg-blue-50 border-blue-400 mb-3">
-          <div className="font-semibold mb-2 text-blue-600">Professor Hartwell:</div>
-          <div className="text-gray-800 leading-relaxed italic">
-            {currentBanter.professorReturnPre} {readerName} {currentBanter.professorReturnPost} {userSubmittedText}
-          </div>
-        </div>
-      </div>
-    );
-  };
-
+  // Navigation handlers
   const nextBreakpoint = () => {
-    if (!chapterData) return;
-    if (currentBreakpoint < chapterData.breakpoints.length - 1) {
-      setCurrentBreakpoint(currentBreakpoint + 1);
-      setShowCallOnMe(false);
-      setApiResponse('');
-    }
+    if (!chapterData || currentBreakpoint >= chapterData.breakpoints.length - 1) return;
+    setCurrentBreakpoint(currentBreakpoint + 1);
+    setShowCallOnMe(false);
+    setApiResponse('');
   };
 
   const prevBreakpoint = () => {
-    if (!chapterData) return;
-    if (currentBreakpoint > 0) {
-      setCurrentBreakpoint(currentBreakpoint - 1);
-      setShowCallOnMe(false);
-      setApiResponse('');
-    }
+    if (!chapterData || currentBreakpoint <= 0) return;
+    setCurrentBreakpoint(currentBreakpoint - 1);
+    setShowCallOnMe(false);
+    setApiResponse('');
   };
 
+  // Render entry screen
   if (!showSeminar) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-            The Social Code
-          </h1>
-          <p className="text-gray-600 mb-6 text-center">
-            Interactive Seminar on Human Interdependence
-          </p>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              What's your name?
-            </label>
-            <input
-              type="text"
-              value={readerName}
-              onChange={(e) => setReaderName(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your name"
-              onKeyPress={(e) => e.key === 'Enter' && handleNameSubmit()}
-            />
-            <button
-              onClick={handleNameSubmit}
-              className="w-full mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Join the Seminar
-            </button>
-          </div>
-        </div>
-      </div>
+      <SeminarEntry 
+        readerName={readerName}
+        setReaderName={setReaderName}
+        onSubmit={handleNameSubmit}
+      />
     );
   }
 
+  // Render loading screen
   if (!chapterData) {
     return <div className="min-h-screen flex items-center justify-center">Loading chapter...</div>;
   }
 
   const currentBreakpointData = chapterData.breakpoints[currentBreakpoint];
-  const isLastBreakpoint = currentBreakpoint === chapterData.breakpoints.length - 1;
 
+  // Render main seminar interface
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
-        <div className="bg-blue-600 text-white p-6">
-          <div className="flex justify-between items-center mb-4">
-            <h1 className="text-2xl font-bold">The Social Code</h1>
-            <select
-              value={currentChapter}
-              onChange={(e) => handleChapterChange(e.target.value)}
-              className="bg-blue-700 text-white px-3 py-1 rounded border-none focus:outline-none focus:ring-2 focus:ring-blue-300"
-            >
-              {availableChapters.map(chapter => (
-                <option key={chapter.id} value={chapter.id}>
-                  {chapter.title}
-                </option>
-              ))}
-            </select>
-          </div>
-          <p className="text-blue-100">Professor Hartwell's Seminar • Welcome, {readerName}!</p>
-          <p className="text-blue-200 text-sm mt-2">
-            {currentBreakpointData.subheading}
-          </p>
-        </div>
+        <SeminarHeader 
+          currentChapter={currentChapter}
+          onChapterChange={handleChapterChange}
+          readerName={readerName}
+          currentBreakpointData={currentBreakpointData}
+          availableChapters={availableChapters}
+        />
         
-        <div className="p-6">
-          <div className="bg-gray-50 rounded-lg p-4 mb-6 min-h-[400px]">
-            
-            {/* Using imported DialogueRenderer component */}
-            <DialogueRenderer dialogue={currentBreakpointData.dialogue} />
-
-            {showBanter && (
-              <div className="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-                <span className="font-semibold text-yellow-800">Class discussion:</span>
-                <div className="mt-2">
-                  {renderBanter()}
-                </div>
-              </div>
-            )}
-
-            {apiResponse && (
-              <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded">
-                <span className="font-semibold text-green-800">Discussion continues:</span>
-                <div className="mt-2">
-                  {apiResponse}
-                </div>
-              </div>
-            )}
-
-            {showCallOnMe && (
-              <div className="mt-4 space-y-3">
-                <textarea
-                  value={userInput}
-                  onChange={(e) => setUserInput(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="3"
-                  placeholder="Type your comment or question here..."
-                />
-                <div className="flex gap-3">
-                  <button
-                    onClick={() => setShowCallOnMe(false)}
-                    className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 transition-colors"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    onClick={handleSubmitResponse}
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-          
-          <div className="flex justify-between items-center">
-            <button
-              onClick={prevBreakpoint}
-              disabled={currentBreakpoint === 0}
-              className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            >
-              Previous Section
-            </button>
-            
-            <span className="text-sm text-gray-500">
-              Section {currentBreakpoint + 1} of {chapterData.breakpoints.length}
-            </span>
-            
-            <div className="flex gap-3">
-              {currentBreakpointData.hasCallOnMe && !showCallOnMe && !apiResponse && (
-                <button
-                  onClick={handleCallOnMe}
-                  className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors"
-                >
-                  Call on me!
-                </button>
-              )}
-              <button
-                onClick={nextBreakpoint}
-                disabled={isLastBreakpoint}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              >
-                {isLastBreakpoint ? 'Chapter Complete' : 'Next Section'}
-              </button>
-            </div>
-          </div>
-        </div>
+        <SeminarContent 
+          currentBreakpointData={currentBreakpointData}
+          showBanter={showBanter}
+          currentBanter={currentBanter}
+          readerName={readerName}
+          userSubmittedText={userSubmittedText}
+          apiResponse={apiResponse}
+          showCallOnMe={showCallOnMe}
+          userInput={userInput}
+          setUserInput={setUserInput}
+          onSubmitResponse={handleSubmitResponse}
+          onCancelInput={handleCancelInput}
+          currentBreakpoint={currentBreakpoint}
+          totalBreakpoints={chapterData.breakpoints.length}
+          onPrevBreakpoint={prevBreakpoint}
+          onNextBreakpoint={nextBreakpoint}
+          onCallOnMe={handleCallOnMe}
+        />
       </div>
     </div>
   );
