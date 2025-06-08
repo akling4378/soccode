@@ -7,51 +7,51 @@
   },
   "breakpoints": [
     {
-      "id": "introducing-model",
-      "subheading": "Introducing the Warriors and Worriers Model",
+      "id": "aea-vs-modern",
+      "subheading": "The Environment of Evolutionary Adaptation vs. Modern Culture",
       "characters": [
         "Professor Hartwell",
         "Blake",
-        "Drew",
-        "Casey"
+        "Casey",
+        "Avery"
       ],
       "tensionLevel": "medium",
-      "learningObjective": "Understand the basic claims of evolutionary psychology while maintaining critical perspective",
+      "learningObjective": "Understanding the difference between biological and cultural evolution timescales",
       "hasCallOnMe": true,
       "dialogue": [
         {
           "speaker": "Professor Hartwell",
-          "text": "Blake, you mentioned last week that you keep hearing about evolutionary psychology but wondered whether it's just 'storytelling.' That's exactly the right question to ask. Let's explore evolutionary psychology, but I want to emphasize two important caveats. First, the First Iron Law applies here too - not every man and woman has the same traits. Second, cultural evolution is enormously important in humans and makes our evolution quite different from other animals."
+          "text": "Blake, you mentioned last week that evolutionary psychology sounds like 'storytelling about cavemen.' That's exactly the right skeptical stance. Let's start with what evolutionary psychologists call the Environment of Evolutionary Adaptation - the EEA."
         },
         {
           "speaker": "Blake",
-          "text": "Right, so what does evolutionary psychology actually claim? Because most of what I hear sounds like just-so stories about cavemen."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Good skepticism, Blake. Let's look at one prominent model called 'Warriors and Worriers,' developed by psychologist Joyce Benenson. Her basic idea is that males evolved traits associated with being warriors, while females evolved traits associated with being worriers."
-        },
-        {
-          "speaker": "Drew",
-          "text": "That sounds like it could justify all kinds of stereotypes. What does she actually mean by that?"
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Good concern, Drew. Benenson argues that evolutionary pressures shaped different survival strategies. For females, individual survival was crucial because pregnancy, childbirth, and child-rearing require staying alive and healthy. Until recently in human history, 40 percent of children died before age two."
+          "text": "Right, so this is the idea that we're basically Stone Age brains in a digital world? Our psychology is stuck in the past while our technology races ahead?"
         },
         {
           "speaker": "Casey",
-          "text": "This reminds me of Victorian-era theories about women's supposed biological limitations. How do we know this isn't just the same old gender essentialism dressed up in modern scientific language?"
+          "text": "This connects to fundamental questions in intellectual history. Rousseau thought we could peel back civilization to discover natural man, though that seems naive now."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good connection, Casey. The crucial insight is about timescales. The EEA lasted hundreds of thousands of years with minimal cultural evolution relative to biological evolution. But modern environments have existed only a few thousand years, with explosive cultural evolution and relatively static biology."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So there's this fundamental mismatch - biological evolution operates on geological timescales, but cultural evolution is exponential. We're running ancient software on modern hardware."
         },
         {
           "speaker": "Blake",
-          "text": "Exactly, Casey. And what's the actual evidence for this? Are we just making up stories about what cavemen and cavewomen supposedly did?"
+          "text": "But how can we possibly test these claims? We can't run controlled experiments on hunter-gatherer societies across millennia."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly why this field is controversial, Blake. The evidence has to be indirect - cross-cultural studies, developmental psychology, primate research."
         }
       ]
     },
     {
-      "id": "evidence-vs-storytelling",
-      "subheading": "Evidence vs. Evolutionary Storytelling",
+      "id": "benenson-research",
+      "subheading": "Benenson's Research on Gender Differences",
       "characters": [
         "Professor Hartwell",
         "Blake",
@@ -60,75 +60,148 @@
         "Avery"
       ],
       "tensionLevel": "high",
-      "learningObjective": "Practice critical evaluation of scientific claims and evidence",
+      "learningObjective": "Understanding reproductive strategies and their behavioral implications",
       "hasCallOnMe": true,
       "dialogue": [
         {
           "speaker": "Professor Hartwell",
-          "text": "Fair questions, both of you. Benenson studied children because they allow us to observe behavior before culture has much influence. The earlier a behavior appears, the more likely it has some biological basis."
-        },
-        {
-          "speaker": "Avery",
-          "text": "I see the logic here - if you can show consistent patterns across different cultures and even in young children, that suggests something more than just social conditioning."
-        },
-        {
-          "speaker": "Blake",
-          "text": "But how do we know what's 'biological' versus what's cultural? Kids absorb gender messages from birth. This whole approach seems like confirmation bias disguised as science."
+          "text": "Joyce Benenson studied children across cultures to identify patterns that emerge before cultural conditioning. Her basic insight is that males and females face different survival challenges based on reproductive biology."
         },
         {
           "speaker": "Drew",
-          "text": "And what about all the individual variation? I know plenty of women who love competition and men who avoid conflict. Are we just going to ignore everyone who doesn't fit the pattern?"
+          "text": "Wait, here we go. Are we really going to reduce human behavior to biology? This sounds like a direct path to justifying every gender stereotype."
         },
         {
-          "speaker": "Casey",
-          "text": "Drew raises the crucial point about individual differences. Historically, biological determinism has been used to justify excluding women from education, politics, and professional life. Even if there are statistical tendencies, what are the implications for how we treat individuals?"
+          "speaker": "Blake",
+          "text": "Drew's right to be suspicious. Even if biological differences exist, why should they determine how we organize society?"
         },
         {
           "speaker": "Professor Hartwell",
-          "text": "You've all raised the key tensions. This is exactly why we need to be careful about how we interpret and apply evolutionary psychology research. The evidence needs to be strong, and we need to consider both individual variation and cultural factors."
+          "text": "I'm willing to be wrong. But Benenson's approach was to study very young children precisely to avoid adult cultural influences. I could be making this up, but I believe her research showed that boys are drawn to physical competition and fighting games, while girls focus more on caring for distressed individuals."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, biological arguments have been weaponized. Victorian scientists argued women's brains were too small for higher education - we know how that turned out."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Even if these patterns exist, they're statistical distributions with enormous overlap. You can't predict any individual's behavior from group averages."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, ri-ri-ri-right. But the question isn't about individuals - it's about understanding the evolutionary pressures that shaped our species' behavioral repertoire."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And what exactly are we supposed to do with this understanding? Use it to design different schools for boys and girls?"
         }
       ]
     },
     {
-      "id": "biology-culture-flexibility",
-      "subheading": "Biology, Culture, and Human Flexibility",
+      "id": "competition-strategies",
+      "subheading": "Reproductive Strategies and Competition Patterns",
       "characters": [
         "Professor Hartwell",
         "Blake",
         "Drew",
+        "Casey",
         "Avery"
       ],
-      "tensionLevel": "medium",
-      "learningObjective": "Connect evolutionary psychology to cultural evolution and institutional design",
+      "tensionLevel": "high",
+      "learningObjective": "Analyzing how environmental factors affect reproductive strategies",
       "hasCallOnMe": false,
       "dialogue": [
         {
           "speaker": "Professor Hartwell",
-          "text": "You've all raised the key tensions. This connects directly to our earlier discussion about cultural evolution. Even if humans have inherited tendencies from our evolutionary past, we're not prisoners of those tendencies."
-        },
-        {
-          "speaker": "Avery",
-          "text": "Right - cultural evolution operates much faster than biological evolution. We can develop new social norms and institutions that work with or against our inherited psychology."
-        },
-        {
-          "speaker": "Blake",
-          "text": "So why study evolutionary psychology at all if culture can override it? Seems like we should just focus on changing social structures instead of speculating about stone-age behavior."
+          "text": "The underlying biological reality is that reproduction works differently for males and females. Males can potentially have many offspring with different partners, while females invest heavily in each child."
         },
         {
           "speaker": "Drew",
-          "text": "Actually Blake, understanding these patterns might help us design better institutions. If we know where biases come from, we can build systems that account for them rather than pretending they don't exist."
+          "text": "This is exactly what I was worried about. Now we're talking about humans like we're studying breeding patterns in animals."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And it sounds like you're setting up men as naturally promiscuous and women as naturally nurturing. That's pretty convenient for traditional gender roles."
         },
         {
           "speaker": "Professor Hartwell",
-          "text": "Excellent point, Drew. The key insight is that understanding evolutionary psychology helps us be more intentional about cultural evolution. We can create institutions that channel human nature toward better outcomes rather than just hoping individual goodwill will solve everything."
+          "text": "I'm not trying to be difficult. But Benenson argues for something counterintuitive - that women are actually more competitive than men, not less."
+        },
+        {
+          "speaker": "Casey",
+          "text": "More competitive? That seems to contradict conventional wisdom about women being more cooperative."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Her argument is that men compete overtly with explicit rules - think sports or formal hierarchies. Women compete covertly through social exclusion and alliance-building."
         },
         {
           "speaker": "Avery",
-          "text": "So it's about designing systems that work with human psychology rather than against it, while still allowing for individual flexibility and cultural change."
+          "text": "That's interesting. So different competitive strategies, not more or less competition. Like different software running on the same hardware."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But doesn't this just confirm stereotypes about women being manipulative and men being straightforward?"
         },
         {
           "speaker": "Professor Hartwell",
-          "text": "Exactly, Avery. And that brings us back to the broader theme of human interdependence - how we cooperate and compete in ways that benefit both individuals and society."
+          "text": "Benenson frames these as survival strategies, not moral judgments. The environment affects which strategies prove effective - that's where culture comes in."
+        },
+        {
+          "speaker": "Drew",
+          "text": "We need to be really careful here. Even if these patterns exist, we can't use them to limit anyone's opportunities."
+        }
+      ]
+    },
+    {
+      "id": "cultural-evolution-bridge",
+      "subheading": "Cultural Evolution and Institutional Design",
+      "characters": [
+        "Professor Hartwell",
+        "Blake",
+        "Drew",
+        "Casey",
+        "Avery"
+      ],
+      "tensionLevel": "medium",
+      "learningObjective": "Connecting evolutionary insights to cultural evolution and institutional design",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Avery",
+          "text": "This connects back to cultural evolution, doesn't it? If these are inherited behavioral tendencies, maybe institutions should account for them rather than ignore them."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But we can't let biology become destiny. Cultural evolution should help us transcend these limitations, not reinforce them."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm willing to be wrong. But understanding these patterns might help us design better institutions. If people have different natural strengths, maybe we need systems that harness both approaches."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That still sounds like sophisticated biological determinism. Why not just treat people as individuals regardless of sex?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Many historical institutions did try to channel different behavioral patterns - medieval guilds had different structures for different types of work and temperaments."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The key insight is that we're not isolated individuals - we're an interdependent species. Understanding our cooperative and competitive patterns isn't about stereotyping, it's about designing institutions that work with human nature."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And cultural evolution operates much faster than biological evolution. We can develop new norms and institutions that channel inherited tendencies in productive directions."
+        },
+        {
+          "speaker": "Drew",
+          "text": "As long as these insights expand opportunities rather than restrict them. Biology shouldn't be used to justify excluding anyone from anything."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Agreed completely. The goal is understanding human interdependence to build better systems, not to limit human potential. Next week we'll explore how cultural evolution specifically works - it may be humanity's most distinctive trait."
         }
       ]
     }
