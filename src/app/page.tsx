@@ -29,6 +29,7 @@ export default function SeminarPage() {
   
   const availableChapters = [
     { id: 'correlation', title: 'Understanding Correlation' },
+    { id: 'evo', title: 'Evolutionary Psychology - Warriors and Worriers' },
     { id: 'other', title: 'Other chapters (coming soon)' }
   ];
 
