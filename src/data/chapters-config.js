@@ -14,5 +14,10 @@ export const chaptersConfig = [
     id: 'cultlearn',
     title: 'Cultural Evolution and Social Learning',
     filename: 'cultlearn.JSON'
+  },
+  {
+    id: 'games',
+    title: 'Game Theory and Social Order',
+    filename: 'games.JSON'
   }
 ];
