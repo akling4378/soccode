@@ -127,6 +127,94 @@
       ],
       "professorReturnPre": "Getting back to what",
       "professorReturnPost": "was saying."
+    },
+    {
+      "id": "avery-hartwell-major",
+      "professorPause": "Avery, while everyone else is thinking, can I ask what you are majoring in?",
+      "studentBanter": [
+        {
+          "speaker": "Avery",
+          "text": "Engineering. But I'm thinking of minoring in econ. It's like engineering in that you think in terms of a system. I'm really liking this course, too."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Mainstream economics is actually too close to engineering for my taste."
+        },
+        {
+          "speaker": "Avery",
+          "text": "I gather that you think social systems are more complicated."
+        }
+      ],
+      "professorReturnPre": "More complex, yes. I would be happy to talk more later. Meanwhile,",
+      "professorReturnPost": "was saying."
+    },
+    {
+      "id": "blake-hartwell-plans",
+      "professorPause": "Everybody's so quiet, not sure how to react. Blake, you're a senior right?",
+      "studentBanter": [
+        {
+          "speaker": "Blake",
+          "text": "Mmm-hmm."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Do you know what you're going to do after you graduate?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "I want to go into business, but I don't want to work for a big company. What I'd really like to do is start my own company. I've got a couple of ideas."
+        }
+      ],
+      "professorReturnPre": "I'd like to hear about that some time. But we should think about what",
+      "professorReturnPost": "was saying."
+    },
+    {
+      "id": "casey-hartwell-law-school",
+      "professorPause": "Well, that has everyone stumped. Casey, do you have plans for when you graduate?",
+      "studentBanter": [
+        {
+          "speaker": "Casey",
+          "text": "I've applied to law school. But I might defer for a year. Assuming I get in."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "What would you do instead?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "I need to make some money and then I'd like to travel."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Where would you like to go?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Well, you know I'm into ancient Greece and Rome, right? I might like to see the sights there. But I'm also curious about Japan, so who knows?"
+        }
+      ],
+      "professorReturnPre": "Interesting. And what",
+      "professorReturnPost": "is also interesting."
+    },
+    {
+      "id": "drew-hartwell-dance-studio",
+      "professorPause": "That made the room go quiet. Drew, what kind of profession would you like to end up in?",
+      "studentBanter": [
+        {
+          "speaker": "Drew",
+          "text": "Well, I have this fantasy of eventually having my own dance studio teaching kids musical theater."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "So meanwhile can you be like an assistant dance teacher at someone else's studio?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "No money. I'm actually getting a teaching certificate and that's what I'll do the first couple of years after graduation. But you asked where I would *like* to end up. But we should get back to"
+        }
+      ],
+      "professorReturnPre": "Keeping me on track, Drew, as usual.",
+      "professorReturnPost": "was saying."
     }
   ]
 }
