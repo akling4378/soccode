@@ -1,0 +1,26 @@
+{
+  "id": "dummy",
+  "title": "Cross-Reference Test",
+  "description": "Testing clickable concept cross-references",
+  "promptInstructions": {
+    "focus": "Simple test chapter for cross-reference functionality"
+  },
+  "breakpoints": [
+    {
+      "id": "buffett-deficit",
+      "subheading": "Testing Cross-References",
+      "characters": [
+        "Professor Hartwell"
+      ],
+      "tensionLevel": "low",
+      "learningObjective": "Test the cross-reference popup system",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Warren Buffett says that if there were a law that said that if the deficit exceeds 3 percent of GDP then no one in Congress is eligible to run again, that would end the deficit. But the Prisoner's Dilemma says that he could be wrong."
+        }
+      ]
+    }
+  ]
+}

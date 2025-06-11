@@ -1,0 +1,30 @@
+{
+  "concepts": [
+    {
+      "id": "prisoners-dilemma",
+      "name": "Prisoner's Dilemma",
+      "shortDefinition": "Individual rational behavior can lead to a collectively bad outcome",
+      "elaboration": "In the classic example, if A and B both don't confess, they get off scot-free. If they both confess, they each get 5 years in prison. If one confesses and the other does not, the confessor gets released with a reward, and the non-confessor gets 10 years in prison. The individually rational outcome leads to both confessing.",
+      "homeChapter": "games"
+    },
+    {
+      "id": "first-iron-law",
+      "name": "First Iron Law",
+      "shortDefinition": "Sometimes it's this way, and sometimes it's that way",
+      "elaboration": "Correlations show tendencies, not certainties. Individual exceptions don't disprove patterns, but patterns don't predict individual cases with certainty.",
+      "homeChapter": "correlation"
+    },
+    {
+      "id": "dunbars-number",
+      "name": "Dunbar's Number",
+      "shortDefinition": "Approximately 150 people - the cognitive limit for stable social relationships",
+      "elaboration": "Organizations above this size require formal structure rather than informal coordination.",
+      "homeChapter": "games"
+    }
+  ],
+  "chapters": [
+    {"id": "correlation", "title": "Understanding Correlation"},
+    {"id": "games", "title": "Game Theory and Social Order"},
+    {"id": "dummy", "title": "Cross-Reference Test"}
+  ]
+}

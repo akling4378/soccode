@@ -19,5 +19,10 @@ export const chaptersConfig = [
     id: 'games',
     title: 'Game Theory and Social Order',
     filename: 'games.JSON'
-  }
+  },
+  {
+  id: 'dummy',
+  title: 'Cross-Reference Test',
+  filename: 'dummy.JSON'
+}
 ];
