@@ -8,6 +8,9 @@ export function createHandlers(state, setState) {
     setCurrentBreakpoint,
     setShowCallOnMe,
     setApiResponse,
+    setShowBanter,
+    setCurrentBanter,
+    setUserSubmittedText,
     chapterData
   } = state;
 
@@ -24,6 +27,10 @@ export function createHandlers(state, setState) {
     setCurrentBreakpoint(0);
     setShowCallOnMe(false);
     setApiResponse('');
+    // Clear banter state when changing chapters
+    setShowBanter(false);
+    setCurrentBanter(null);
+    setUserSubmittedText('');
   };
 
   const handleCallOnMe = () => setShowCallOnMe(true);
@@ -35,6 +42,10 @@ export function createHandlers(state, setState) {
     setCurrentBreakpoint(state.currentBreakpoint + 1);
     setShowCallOnMe(false);
     setApiResponse('');
+    // Clear banter state when navigating
+    setShowBanter(false);
+    setCurrentBanter(null);
+    setUserSubmittedText('');
     
     // Fix: Scroll to top when navigating to next section
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -45,6 +56,10 @@ export function createHandlers(state, setState) {
     setCurrentBreakpoint(state.currentBreakpoint - 1);
     setShowCallOnMe(false);
     setApiResponse('');
+    // Clear banter state when navigating
+    setShowBanter(false);
+    setCurrentBanter(null);
+    setUserSubmittedText('');
     
     // Fix: Scroll to top when navigating to previous section
     window.scrollTo({ top: 0, behavior: 'smooth' });
