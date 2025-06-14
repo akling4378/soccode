@@ -2,7 +2,7 @@
 export const chaptersConfig = [
   {
     id: 'correlation',
-    title: 'Understanding Correlation',
+    title: 'Problems with Studies',
     filename: 'correlation.JSON'
   },
   {

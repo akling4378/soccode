@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Fetch Test</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 20px;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        input[type="url"]:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .result {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .result-success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .result-error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .result-loading {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        .content-preview {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .stats {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .test-urls {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .test-urls h4 {
+            margin: 0 0 10px 0;
+            color: #1976d2;
+        }
+        .test-url {
+            display: block;
+            color: #1976d2;
+            text-decoration: none;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .test-url:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>URL Fetch Test</h1>
+            <p>Testing web_fetch functionality in production environment</p>
+        </div>
+
+        <div class="test-urls">
+            <h4>Test URLs (click to try):</h4>
+            <a class="test-url" onclick="fillUrl('https://www.nationalaffairs.com/publications/detail/cultural-intelligence')">National Affairs - Cultural Intelligence</a>
+            <a class="test-url" onclick="fillUrl('https://en.wikipedia.org/wiki/Evolutionary_psychology')">Wikipedia - Evolutionary Psychology</a>
+            <a class="test-url" onclick="fillUrl('https://www.econlib.org/library/Columns/y2014/Klingwarriors.html')">EconLib - Warriors and Worriers</a>
+        </div>
+
+        <div class="input-group">
+            <label for="urlInput">Enter URL to fetch:</label>
+            <input type="url" id="urlInput" placeholder="https://example.com/article" />
+        </div>
+
+        <button class="btn" onclick="fetchUrl()" id="fetchBtn">Fetch Content</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function fillUrl(url) {
+            document.getElementById('urlInput').value = url;
+        }
+
+        async function fetchUrl() {
+            const url = document.getElementById('urlInput').value.trim();
+            const fetchBtn = document.getElementById('fetchBtn');
+            const resultDiv = document.getElementById('result');
+
+            if (!url) {
+                showResult('Please enter a URL first.', 'error');
+                return;
+            }
+
+            // Validate URL format
+            try {
+                new URL(url);
+            } catch (e) {
+                showResult('Please enter a valid URL (including https://).', 'error');
+                return;
+            }
+
+            fetchBtn.disabled = true;
+            fetchBtn.textContent = 'Fetching...';
+            showResult('Fetching content from: ' + url, 'loading');
+
+            try {
+                const startTime = Date.now();
+                
+                // Try to call web_fetch through Claude API
+                const response = await fetch('/api/claude', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: `Use web_fetch to get content from ${url}. Return ONLY the fetched content with no commentary, analysis, or additional text.`
+                    })
+                });
+
+                const endTime = Date.now();
+                const duration = endTime - startTime;
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                
+                if (data.response) {
+                    showResult('✅ Fetch successful!', 'success', data.response, url, duration);
+                } else {
+                    throw new Error('No content returned from API');
+                }
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                showResult(`❌ Fetch failed: ${error.message}`, 'error');
+            } finally {
+                fetchBtn.disabled = false;
+                fetchBtn.textContent = 'Fetch Content';
+            }
+        }
+
+        function showResult(message, type, content = null, url = null, duration = null) {
+            const resultDiv = document.getElementById('result');
+            
+            let html = `<div class="result result-${type}">
+                <strong>${message}</strong>`;
+            
+            if (content) {
+                const preview = content.length > 1000 ? content.substring(0, 1000) + '...' : content;
+                html += `<div class="content-preview">${escapeHtml(preview)}</div>`;
+                
+                if (url && duration) {
+                    html += `<div class="stats">
+                        <strong>URL:</strong> ${url}<br>
+                        <strong>Content Length:</strong> ${content.length.toLocaleString()} characters<br>
+                        <strong>Fetch Time:</strong> ${duration}ms
+                    </div>`;
+                }
+            }
+            
+            html += '</div>';
+            resultDiv.innerHTML = html;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Test on page load if there's a default URL
+        window.onload = function() {
+            // Could auto-test with a default URL if desired
+        };
+    </script>
+</body>
+</html>
