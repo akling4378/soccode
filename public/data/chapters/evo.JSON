@@ -1,219 +1,409 @@
 {
-  "id": "evolutionary-psychology",
+  "id": "evo",
   "title": "Evolutionary Psychology - Warriors and Worriers",
-  "description": "Examining gender differences through evolutionary lens while practicing critical evaluation of research claims",
+  "description": "Examining gender differences through evolutionary lens while practicing critical evaluation of scientific claims",
   "promptInstructions": {
-    "focus": "Balance explaining Benenson's model with healthy skepticism about evolutionary claims. Drew should intervene if discussion becomes too abstract or potentially harmful. Use citation safeguards for specific research claims."
+    "focus": "Balance explaining evolutionary psychology research with healthy skepticism about evolutionary claims and attention to individual variation",
+    "academicEmphasis": "Emphasize the difference between group statistical tendencies and individual traits",
+    "commonMisconceptions": "Watch for students either dismissing all evolutionary explanations or using them to justify stereotyping",
+    "keyTerms": ["90 percent chimp 10 percent bee", "The Blank Slate", "Warriors and Worriers", "Folk Theory of Mind", "Moral Dyad"]
   },
   "breakpoints": [
     {
-      "id": "aea-vs-modern",
-      "subheading": "The Environment of Evolutionary Adaptation vs. Modern Culture",
-      "characters": [
-        "Professor Hartwell",
-        "Blake",
-        "Casey",
-        "Avery"
-      ],
+      "id": "chimp-bee",
+      "subheading": "90 Percent Chimp, 10 Percent Bee",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
       "tensionLevel": "medium",
-      "learningObjective": "Understanding the difference between biological and cultural evolution timescales",
+      "learningObjective": "Understand human uniqueness in combining competition and cooperation",
       "hasCallOnMe": true,
       "dialogue": [
         {
           "speaker": "Professor Hartwell",
-          "text": "Blake, you mentioned last week that evolutionary psychology sounds like 'storytelling about cavemen.' That's exactly the right skeptical stance. Let's start with what differentiates the Environment of Evolutionary Adaptation from our modern world."
-        },
-        {
-          "speaker": "Blake",
-          "text": "Right, so this is the idea that we're basically Stone Age brains trying to navigate a digital world? Our psychology is stuck in the Pleistocene while our technology races ahead?"
-        },
-        {
-          "speaker": "Casey",
-          "text": "This connects to fundamental questions in intellectual history. Rousseau thought we could strip away civilization to discover natural man, though that approach seems problematic now."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Good connection, Casey. The crucial insight is about timescales. The EEA lasted hundreds of thousands of years with minimal cultural evolution relative to biological evolution. But modern environments have existed only a few thousand years, with explosive cultural evolution and relatively static biology."
+          "text": "We've explored correlation and causation, and now we're moving into more controversial territory. Psychologist Jonathan Haidt has a memorable way of describing human nature. He says we're \"90 percent chimp, 10 percent bee.\" What do you think he means by that?"
         },
         {
           "speaker": "Avery",
-          "text": "So we have this fundamental mismatch - biological evolution operates on geological timescales, but cultural evolution is exponential. We're running ancient software on modern hardware."
+          "text": "Well, chimps are highly competitive, right? They fight for dominance, resources, mates. And bees are the opposite - they cooperate completely for the hive."
         },
         {
           "speaker": "Blake",
-          "text": "But how can we possibly test these claims? We can't run controlled experiments on hunter-gatherer societies across millennia. Isn't this just unfalsifiable storytelling?"
+          "text": "So humans do both. We compete like crazy but we also cooperate in ways no other species can match."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of Hobbes versus Rousseau. Hobbes saw humans as naturally competitive - \"war of all against all.\" Rousseau believed we were naturally cooperative until civilization corrupted us."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But isn't this kind of simplistic? Reducing human behavior to animal analogies?"
         },
         {
           "speaker": "Professor Hartwell",
-          "text": "That's exactly why this field is controversial, Blake. The evidence has to be indirect - cross-cultural studies, developmental psychology, primate research. Which brings us to Joyce Benenson's approach."
+          "text": "Drew raises an important skeptical point. But consider what biologist Nichola Raihani argues. She says ant colonies are true superorganisms - the individual ant is just a body part. But humans are different."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Right, because we're conscious of the trade-offs. When I cooperate, I know I might be sacrificing something. Bees just follow instinct."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Exactly. And that's what makes us unique. Michael Tomasello has this great line - \"you would never see two chimpanzees carrying a log together.\" Chimps don't really cooperate, they just compete less intensely sometimes."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But evolutionary psychology has such a troubled history. Victorian scientists used \"biology\" to justify keeping women out of universities, claiming their brains were too small."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's exactly what worries me. Once you start talking about \"human nature,\" it's a short step to saying inequality is natural and inevitable."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But we can't ignore research just because it might be misused. The Big Five personality studies show consistent patterns across cultures. That suggests something deeper than just social conditioning."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And look at the results. Human cooperation has let us dominate every ecosystem on Earth. No other species comes close."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "These are all valid concerns and observations. But I think we need to distinguish between understanding patterns and making moral judgments about them. Understanding why humans evolved certain tendencies doesn't mean we can't choose how to act on them."
+        },
+        {
+          "speaker": "Drew",
+          "text": "I suppose. But who gets to decide what counts as \"natural\" versus what's just cultural bias dressed up as science?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "The ancient Greeks thought slavery was natural. Every era thinks its prejudices are scientific facts."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's why we need rigorous methodology. Cross-cultural studies, large sample sizes, replication--"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right, and Raihani's point about consciousness matters. We're not slaves to our evolved tendencies. We can recognize them and decide what to do about them."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I think Blake's highlighting something crucial. The 90-10 split suggests we have competing impulses, not a single \"nature.\" Our challenge as individuals and societies is figuring out when to compete and when to cooperate."
         }
       ]
     },
     {
-      "id": "benenson-research",
-      "subheading": "Benenson's Warriors and Worriers Research",
-      "characters": [
-        "Professor Hartwell",
-        "Blake",
-        "Drew",
-        "Casey",
-        "Avery"
-      ],
+      "id": "warriors-worriers",
+      "subheading": "Warriors and Worriers",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
       "tensionLevel": "high",
-      "learningObjective": "Understanding reproductive strategies and their behavioral implications while maintaining critical perspective",
+      "learningObjective": "Examine claims about gender differences while distinguishing group patterns from individual traits",
       "hasCallOnMe": true,
       "dialogue": [
         {
           "speaker": "Professor Hartwell",
-          "text": "I could be making this up, but I believe that Benenson studied children across cultures precisely to identify patterns that emerge before cultural conditioning. Her basic insight is that human males evolved traits associated with becoming warriors, while females evolved traits associated with becoming worriers."
+          "text": "This brings us to one of the most controversial areas in evolutionary psychology - Joyce Benenson's research on gender differences. She argues that males evolved as \"warriors\" and females as \"worriers.\" Before we dive in, what's your reaction to that framework?"
         },
         {
           "speaker": "Drew",
-          "text": "Wait, here we go. Are we really going to reduce human behavior to gender stereotypes based on evolution? This sounds like a direct path to justifying discrimination."
-        },
-        {
-          "speaker": "Blake",
-          "text": "Drew's right to be suspicious. Even if biological differences exist, why should they determine how we organize society today?"
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "I'm willing to be wrong. But let's look at the specific evidence. I could be making this up, but I believe Benenson found that boys are drawn to fighting each other while girls are not, boys enjoy playing without adult authority while girls prefer supervision, and girls engage in caregiving play that boys avoid."
+          "text": "Honestly? It sounds like exactly the kind of thing that's been used to keep women out of leadership roles. \"Oh, women are just natural worriers, they can't handle conflict.\""
         },
         {
           "speaker": "Casey",
-          "text": "Historically, biological arguments have been weaponized. Victorian scientists argued women's brains were too small for higher education - we know how that turned out."
-        },
-        {
-          "speaker": "Avery",
-          "text": "Even if these patterns exist, they're statistical distributions with enormous overlap. You can't predict any individual's behavior from group averages."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Right, ri-ri-ri-right. But here's what's interesting - I could be making this up, but I believe Benenson argues that women are actually more competitive than men, not less competitive."
+          "text": "The history here is appalling. For centuries, every limitation placed on women was justified by appeals to \"natural differences.\" Different brain sizes, different emotional constitutions, different intellectual capacities."
         },
         {
           "speaker": "Blake",
-          "text": "That seems to contradict everything we usually hear about women being more cooperative."
+          "text": "But hold on. Benenson isn't some Victorian gentleman scientist. She's a Harvard researcher who's spent decades studying children across different cultures. Her data is solid."
         },
         {
-          "speaker": "Professor Hartwell",
-          "text": "Her argument is that men compete overtly with explicit rules - think sports or formal hierarchies. Women compete covertly through social exclusion and alliance-building. Arnold Kling puts it this way: for females, every other female is a potential competitor, and women eliminate competitors by ganging up and excluding the unwanted woman."
+          "speaker": "Avery",
+          "text": "And it connects to broader personality research. Women consistently score higher on emotional instability - what used to be called neuroticism - across cultures and age groups."
         },
         {
           "speaker": "Drew",
-          "text": "But doesn't this just confirm harmful stereotypes about women being manipulative and men being straightforward?"
+          "text": "See, that's exactly the problem. You're calling women more \"emotionally unstable\"--"
+        },
+        {
+          "speaker": "Avery",
+          "text": "No, that's just the technical term. It means being more responsive to threats and stress. In many contexts, that's adaptive."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's step back. Benenson's argument is about evolutionary pressures. She's saying that for most of human history, males and females faced different reproductive challenges."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right. A male's reproductive success depended on access to females, often through competition with other males. So you get selection for risk-taking, coalition-building, overt competition."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But this is exactly how social Darwinism worked. Take current inequalities, invent evolutionary stories to explain them, then claim they're inevitable."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm willing to be wrong. But look at Benenson's methodology. She studies children as young as two or three, before cultural conditioning has had much effect. And she finds consistent patterns across radically different societies."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What kind of patterns?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Boys engage in more physical fighting, they form larger, looser groups with shifting alliances. They're more interested in formal rules and competitive games."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Girls form tighter friendship groups, they're more risk-averse, more concerned with safety and avoiding conflict. But when they do compete, it's often covert - exclusion rather than direct confrontation."
+        },
+        {
+          "speaker": "Drew",
+          "text": "This still sounds like stereotyping to me. Plenty of girls are competitive, plenty of boys are cautious."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's a crucial point, Drew. These are statistical tendencies, not individual destinies. The distributions overlap enormously."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But even if the research is accurate, what's the relevance? We don't organize modern society around stone-age survival strategies."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Actually, maybe we do more than we realize. Look at how institutions work. Corporate hierarchies, political campaigns, academic departments - they're all about coalition building and competition."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And some observers argue that as institutions become more feminized, they change in predictable ways. Arnold Kling has written about this."
+        },
+        {
+          "speaker": "Drew",
+          "text": "\"Feminized\" - do you hear how that sounds? Like women are taking over and ruining everything."
+        },
+        {
+          "speaker": "Avery",
+          "text": "I'm not making a value judgment. Kling's describing what he sees as institutional changes. More emphasis on safety and avoiding risk, less tolerance for open conflict, more attention to consensus and inclusivity."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But isn't that progress? Why is avoiding unnecessary conflict a bad thing?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Kling's point isn't that it's good or bad. He's saying that if you change the gender composition of an institution, you might change how it operates. Sometimes that's beneficial, sometimes it creates new problems."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But this assumes that men and women naturally bring different approaches to institutions. That sounds like--"
+        },
+        {
+          "speaker": "Blake",
+          "text": "--like stereotyping. Yeah, you keep saying that. But what if the stereotypes reflect real average differences?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Kling talks about how academia used to reward open debate and competition between ideas. Now there's more focus on creating safe spaces and avoiding speech that might cause harm."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And you're saying that's because there are more women in academia?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. Ri-ri-ri-ri-right. But on the other hand, correlation isn't causation, as we discussed last week. Maybe these changes reflect broader cultural shifts, not just gender composition."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Or maybe the old system wasn't as meritocratic as people remember. Maybe it just favored people who were comfortable with aggressive debate - which might exclude valuable voices."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But if the warrior/worrier model is correct, then aggressive debate might be how you actually test ideas effectively. If you remove that, you might get more consensus but less truth."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Kling gives the example of performance evaluations. In older systems, you competed openly for rankings and rewards based on measurable outcomes. In newer systems, there's more emphasis on collaboration and avoiding anyone feeling excluded."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Which sounds more humane to me."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But maybe less effective at identifying and rewarding actual performance."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I think what's important here is recognizing that any institutional design involves trade-offs. If Benenson's research is correct, then understanding these tendencies might help us design better institutions. Ones that work with human psychology rather than ignoring it."
+        },
+        {
+          "speaker": "Drew",
+          "text": "I'm still not convinced this isn't just sophisticated stereotyping. Individual variation has to matter more than group averages."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Absolutely. That's why we have to remember - always - that we're dealing with overlapping distributions, not separate categories. Any individual woman might be more competitive than any individual man."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The key insight from personality psychology is that knowing someone's group membership tells you very little about their individual traits. The within-group variation is always larger than the between-group differences."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So even if these evolutionary theories are correct, they can't justify treating people differently based on gender?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly right, Casey. Understanding patterns is one thing. Using them to make assumptions about individuals is quite another."
         }
       ]
     },
     {
-      "id": "evolutionary-logic-modern",
-      "subheading": "Evolutionary Logic and Modern Implications",
-      "characters": [
-        "Professor Hartwell",
-        "Blake",
-        "Drew",
-        "Casey",
-        "Avery"
-      ],
-      "tensionLevel": "high",
-      "learningObjective": "Connecting evolutionary psychology to contemporary institutional analysis",
-      "hasCallOnMe": false,
-      "dialogue": [
-        {
-          "speaker": "Professor Hartwell",
-          "text": "The underlying evolutionary logic is about reproductive strategies. Males could potentially impregnate many women, so individual survival was less critical. Females needed to protect their own health to bear children and ensure their survival - I could be making this up, but I believe Benenson notes that until recently, 40 percent of children died before age two."
-        },
-        {
-          "speaker": "Drew",
-          "text": "This is exactly what I was worried about. Now we're talking about humans like breeding stock and using that to explain contemporary behavior."
-        },
-        {
-          "speaker": "Blake",
-          "text": "And it conveniently supports traditional gender roles. Men get to be warriors and competitors, women get to be nurturers and worriers."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "I'm not trying to be difficult. But consider Kling's observation about contemporary campus culture. He suggests that as universities became majority female, they shifted from catering to men's warrior nature toward women's worrier culture - emphasizing safety, avoiding conflict, seeking protection from administrators."
-        },
-        {
-          "speaker": "Casey",
-          "text": "That's a fascinating empirical claim. We could actually test whether institutional culture correlates with gender composition over time."
-        },
-        {
-          "speaker": "Avery",
-          "text": "But this assumes these tendencies are fixed rather than culturally malleable. What if institutions shape behavior as much as gender composition shapes institutions?"
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Exactly the right question, Avery. Which brings us to cultural evolution - humans are unique precisely because we can develop new norms and institutions that channel inherited tendencies in different directions."
-        },
-        {
-          "speaker": "Blake",
-          "text": "So we're not prisoners of our evolutionary past?"
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Not at all. As Henrich argues, cultural evolution operates much faster than biological evolution. We can create new software for our ancient hardware."
-        }
-      ]
-    },
-    {
-      "id": "cultural-evolution-design",
-      "subheading": "Cultural Evolution and Institutional Design",
-      "characters": [
-        "Professor Hartwell",
-        "Blake",
-        "Drew",
-        "Casey",
-        "Avery"
-      ],
+      "id": "moral-dyad",
+      "subheading": "The Moral Dyad",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
       "tensionLevel": "medium",
-      "learningObjective": "Connecting evolutionary insights to cultural evolution and institutional design",
+      "learningObjective": "Understand how we think about minds and assign moral responsibility",
       "hasCallOnMe": true,
       "dialogue": [
         {
-          "speaker": "Avery",
-          "text": "This connects to what we discussed about cultural intelligence, doesn't it? If these are inherited behavioral tendencies, maybe institutions should work with them rather than ignore them."
-        },
-        {
-          "speaker": "Drew",
-          "text": "But we can't use biology to justify keeping women out of leadership or men out of caregiving. Cultural evolution should help us transcend these limitations."
-        },
-        {
           "speaker": "Professor Hartwell",
-          "text": "I'm willing to be wrong. But understanding these patterns might help us design better institutions. Kling notes that males historically constructed the rules underlying religions, governments, and economic systems - games with formal rules. Maybe we need institutions that incorporate both approaches."
-        },
-        {
-          "speaker": "Blake",
-          "text": "That still sounds like sophisticated biological determinism. Why not just treat people as individuals regardless of gender?"
+          "text": "This discussion of individual versus group patterns brings us to a fascinating area of research - how we think about minds in general. Daniel Wegner and Kurt Gray have studied what they call our intuitive theories about what makes something have a mind. When you imagine what makes something have a mind, what comes to you?"
         },
         {
           "speaker": "Casey",
-          "text": "Many historical institutions did channel different behavioral patterns - medieval guilds had different structures for different temperaments and skills."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "The key insight is that we're not isolated individuals - we're an interdependent species. Understanding our cooperative and competitive patterns isn't about stereotyping, it's about designing institutions that work with human nature while promoting flourishing."
-        },
-        {
-          "speaker": "Avery",
-          "text": "And cultural evolution operates much faster than biological evolution. We can develop new norms that channel inherited tendencies productively."
-        },
-        {
-          "speaker": "Drew",
-          "text": "As long as these insights expand opportunities rather than restrict them. Biology shouldn't become an excuse for limiting anyone's potential."
-        },
-        {
-          "speaker": "Professor Hartwell",
-          "text": "Agreed completely. But here's what concerns me - Kling argues that our current institutions of higher education and media systematically undermine prestige for both markets and traditional social norms. If cultural learning depends on following prestigious models, what happens when we give prestige to the wrong things?"
+          "text": "Consciousness, obviously. Self-awareness. What Descartes called the thinking substance."
         },
         {
           "speaker": "Blake",
-          "text": "You mean like giving prestige to people who denounce entire classes as villains rather than those who actually create value?"
+          "text": "The ability to make choices. Agency. If something can't decide between alternatives, it doesn't really have a mind."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what about feelings? A mind that can't experience pain or joy doesn't seem fully real to me."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So we have cognition, agency, and experience. But how do these relate to each other?"
         },
         {
           "speaker": "Professor Hartwell",
-          "text": "That's exactly what Kling worries about. The goal is understanding human interdependence to build better systems, not to limit human potential. Next week we'll explore how cultural evolution specifically works - it may be humanity's most distinctive trait."
+          "text": "Wegner and Gray found something surprising. People tend to think of minds in terms of just two dimensions: agency - the ability to make intentional choices - and experience - the ability to feel sensations and emotions. Arnold Kling calls this our \"folk theory of mind.\""
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's interesting. So a computer might have agency but no experience. A baby might have experience but limited agency."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Wait, are you saying babies don't have agency? They make choices all the time."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Not the same kind of choices. A baby can't plan ahead, can't weigh complex alternatives--"
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is reminding me of medieval debates about animal souls. Do dogs have minds? What about plants?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "The research shows we're inconsistent about this. We'll get angry at a computer that crashes, as if it chose to frustrate us. But we don't really think it feels pain when we hit it."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "And this leads to what Wegner and Gray call the \"moral dyad.\" When we witness an interaction between two entities, we tend to see one as the agent - having intentionality but no feelings - and the other as the patient - having feelings but no agency."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Like the robot versus the baby example?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. And this shapes how we assign moral responsibility. We blame the agent and feel sympathy for the patient."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But that's completely arbitrary, isn't it? Most real situations involve two entities who both have agency and feelings."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right, but we can't seem to see both at the same time. If someone gets addicted to painkillers, we either blame them for their choices or see them as victims of the pharmaceutical company."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's a cognitive shortcut that probably served us well in simple environments but breaks down in complex modern situations."
+        },
+        {
+          "speaker": "Drew",
+          "text": "This has huge implications for how we think about social problems. Poverty, crime, addiction - we're always looking for someone to blame and someone to pity."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "And in political conflicts, each side sees itself as the patient - having legitimate feelings and concerns - while seeing the other side as the agent - coldly pursuing selfish interests."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like in the Middle East. Israelis see themselves as responding to real security threats, Palestinians see themselves as responding to real oppression. Each side views the other as purely strategic."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But this is exactly why the individual differences point matters so much. This moral dyad thinking treats groups as if they're single entities with unified minds."
+        },
+        {
+          "speaker": "Avery",
+          "text": "When actually, both groups contain individuals with different levels of agency and different experiences."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So our folk theory of mind makes us worse at understanding conflicts?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "It can. When we reduce complex situations to simple agent-patient dynamics, we miss the humanity on both sides."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, this shows up in how different eras have classified people. Slaves were seen as having feelings but no agency. Aristocrats were seen as having agency but being above ordinary human concerns."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And today we do the same thing with different groups. Wealthy people are seen as pure agents - calculating machines pursuing profit. Poor people are seen as pure patients - victims with no responsibility for their situations."
+        },
+        {
+          "speaker": "Avery",
+          "text": "The personality research suggests this is backwards. Individual traits matter much more than group membership for predicting how someone will behave."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But don't we need some way to think about social patterns? Not everything is just individual choice."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm not trying to be difficult. But I think the key insight from this research is that we need to hold both truths simultaneously. There are real social patterns and structures that constrain individual choices. But there are also real individual differences in how people respond to those constraints."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So instead of asking \"Is this person an agent or a patient?\" we should ask \"In what ways does this person have agency, and in what ways are they constrained?\""
+        },
+        {
+          "speaker": "Avery",
+          "text": "And that applies to groups too. Instead of seeing men or women as unified categories, recognize the variation within each group."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Which brings us back to the evolutionary psychology debate. Maybe the research on gender differences is useful, but only if we remember it's about statistical tendencies in populations, not facts about individuals."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Our folk theory of mind wants to put people into simple categories. But real human psychology is much more complex and individual than our moral intuitions suggest."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So whether we're talking about evolutionary psychology or social justice, the challenge is seeing people as full human beings - with both agency and experience, both individual traits and social contexts."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Well put, Drew. Understanding human interdependence means recognizing that we're all simultaneously agents and patients, competitors and cooperators, individuals and group members."
         }
       ]
     }

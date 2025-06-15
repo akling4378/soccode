@@ -6,6 +6,11 @@ export const chaptersConfig = [
     filename: 'correlation.JSON'
   },
   {
+  id: 'personality',
+  title: 'Personality Psychology',
+  filename: 'personality.JSON'
+},
+  {
     id: 'evo',
     title: 'Evolutionary Psychology - Warriors and Worriers', 
     filename: 'evo.JSON'
