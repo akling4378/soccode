@@ -1,0 +1,299 @@
+{
+  "id": "epistemology",
+  "title": "Social Epistemology",
+  "description": "How we decide what to believe, the limits of individual knowledge, and the challenge of expertise in democracy",
+  "promptInstructions": {
+    "focus": "You are discussing how humans acquire knowledge through social processes, the biases that affect our beliefs, and the tension between expert authority and democratic legitimacy.",
+    "academicEmphasis": "Keep discussions grounded in epistemological concepts while connecting to real-world examples of institutional trust and expertise.",
+    "commonMisconceptions": "Watch for students either dismissing all expertise as biased or accepting expert claims uncritically without considering democratic accountability.",
+    "keyTerms": ["naive realism", "myside bias", "asymmetric insight", "scout mindset", "steel-manning", "thinking in bets", "Constitution of Knowledge", "accountability arenas"]
+  },
+  "breakpoints": [
+    {
+      "id": "naive-realism",
+      "subheading": "Naive Realism and Myside Bias",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how naive realism and tribal loyalties distort our perception of truth",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me start with an old story. Five blind men encounter an elephant. The first touches the trunk and says \"An elephant is like a snake.\" The second feels the leg and says \"No, an elephant is like a tree trunk.\" The third touches the side and insists \"You're both wrong - an elephant is like a wall.\" What's the moral of this story?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "That we all have limited perspectives on reality. Each person thinks they're seeing the whole truth, but they're only getting part of it."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. And that brings us to what psychologists call naive realism - the assumption that your perspective on reality is simply true. But here's what's interesting about our current moment: we're not just dealing with different perspectives on the same elephant. We seem to be dealing with entirely different elephants."
+        },
+        {
+          "speaker": "Blake",
+          "text": "What do you mean?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Well, consider how Americans view basic facts about their country. Some see a nation making steady progress on racial equality. Others see a country where systemic racism remains as entrenched as ever. Some see experts and institutions as generally trustworthy sources of truth. Others see them as fundamentally corrupted by political bias."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But surely some of these views are more accurate than others? I mean, we can look at data on police shootings, or income inequality, or vaccine effectiveness."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's where it gets complicated though. The same data gets interpreted completely differently depending on which framework you're using to understand it."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So you're saying there's no objective truth? That's just postmodern nonsense."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm willing to be wrong. But I think the issue is more subtle than that. Dan Williams argues that we have two different forms of naive realism operating in America. Conservatives tend to trust common sense - what seems obvious to ordinary people. Progressives tend to trust credentialed experts - what the scientific consensus says."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That reminds me of the Progressive Era tension. Reformers like William Jennings Bryan pushed for direct democracy - initiatives, referendums, direct election of senators. But they also wanted expert governance through independent regulatory agencies. They never really resolved whether the people or the experts should have the final say."
+        },
+        {
+          "speaker": "Drew",
+          "text": "The problem is both can be wrong. During COVID, a lot of ordinary people resisted vaccines based on conspiracy theories. That was clearly a mistake."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But the experts made mistakes too. They told people not to wear masks initially, then completely reversed course. They closed outdoor spaces when the science showed outdoor transmission was minimal."
+        },
+        {
+          "speaker": "Blake",
+          "text": "See, this is my problem. If the experts can be wrong and regular people can be wrong, how do we decide anything? Why should I trust anyone?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the heart of our epistemological crisis, Blake. And it's made worse by what researchers call myside bias. We all feel attached to our tribe's beliefs. When a study supports our side, we assume it's reliable. When it contradicts our side, we look for methodological flaws."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Or we just dismiss the other side's motives. \"They're just racist.\" \"They're just virtue signaling.\" We think we understand their psychology better than they do."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That's what psychologists call asymmetric insight. We assume we understand other people's motives better than they understand their own motives. When someone disagrees with us, instead of engaging with their actual arguments, we claim to know their \"real\" reasons."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's like we're running different operating systems. The same input data gets processed completely differently depending on which cognitive framework you're using."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right, so we're back to my question. If everyone's biased and everyone can be wrong, what's the point of trying to figure out what's true?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Well, that brings us to some strategies individuals can use to resist their own biases..."
+        }
+      ]
+    },
+    {
+      "id": "individual-strategies",
+      "subheading": "Individual Strategies Against Bias",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Learn techniques for overcoming myside bias and thinking more objectively",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Julia Galef distinguishes between what she calls \"soldier mindset\" and \"scout mindset.\" The soldier defends existing beliefs against attack. The scout explores territory with an open mind. How might we cultivate more of a scout mindset?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Socrates had the right idea - \"I know that I know nothing.\" Intellectual humility has been valued since ancient times."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But that's just paralyzing relativism. If we can't trust our own judgments, how do we make decisions?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "There's a difference between certainty and confidence. I can be pretty sure vaccines work without claiming I understand every detail of immunology."
+        },
+        {
+          "speaker": "Avery",
+          "text": "One technique is thinking in probabilities instead of certainties. Instead of saying \"Nuclear power is safe,\" you might say \"There's an 80% chance that nuclear power poses less risk than fossil fuels.\""
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. And when you assign probabilities, you can update them as new evidence comes in. It's less psychologically threatening than admitting you were completely wrong."
+        },
+        {
+          "speaker": "Blake",
+          "text": "I still don't see how this helps. You're just putting numbers on your biases."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Well, another approach is steel-manning rather than straw-manning. In medieval disputations, scholars had to accurately summarize their opponent's position before criticizing it. Thomas Aquinas would present the strongest possible version of views he disagreed with."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That actually sounds useful. Like, instead of dismissing people who oppose rent control as \"shills for landlords,\" you'd have to engage with their actual economic arguments."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Or instead of calling people who support rent control \"economically illiterate,\" you'd have to acknowledge their concerns about displacement and affordability."
+        },
+        {
+          "speaker": "Blake",
+          "text": "OK, but who decides what counts as steel-manning? You could still just pick the arguments you know how to refute."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good point, Blake. That's why some people suggest stating the conditions that would change your mind. For instance, \"I'd reconsider my position on nuclear power if I became convinced there's no safe way to store nuclear waste for thousands of years.\""
+        },
+        {
+          "speaker": "Drew",
+          "text": "Or \"I'd change my mind about rent control if I saw evidence that it actually increased affordable housing supply in the long term.\""
+        },
+        {
+          "speaker": "Casey",
+          "text": "The problem is that most political beliefs aren't really held for empirical reasons. They're more like tribal membership badges. Changing your mind feels like betraying your group."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Which brings us back to the social nature of knowledge. We don't figure out truth as isolated individuals - we do it through institutions that can harness disagreement productively."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But we just established that institutions and experts can be wrong too. So how does that help?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me suggest that the issue isn't whether experts are right or wrong, but how we design systems that make expertise more reliable and accountable..."
+        }
+      ]
+    },
+    {
+      "id": "institutional-solutions",
+      "subheading": "Institutional Solutions and the Expert Problem",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Explore the tension between expertise and democracy in knowledge-producing institutions",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "David Brin argues that our civilization succeeded because we created what he calls \"accountability arenas\" - science, democracy, markets, and courts. Each one takes competing human egos and forces them to test their ideas against reality. But how do we extend this to the relationship between experts and the public?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "The problem is that most of us can't evaluate expert claims directly. I can't personally verify climate data or vaccine safety studies. So I have to decide who to trust."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And historically, that trust has been earned through institutional prestige. We trusted doctors because they graduated from medical schools, scientists because they published in peer-reviewed journals."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But now we know those institutions are corrupted. Medical journals publish studies funded by pharmaceutical companies. Climate scientists have career incentives to find alarming results. How do we trust anything?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "I think you're throwing out the baby with the bathwater. Yes, experts make mistakes, but they're still more likely to be right than random people on the internet."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Are they though? I mean, during COVID, the experts told people they couldn't visit dying relatives in hospitals, but they could shop at Walmart. That seemed more about power than public health."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. Ri-ri-ri-ri-right. But on the other hand, the experts were correct about vaccine safety and effectiveness, despite massive public skepticism."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This tension goes back to the Progressive Era problem I mentioned. The reformers wanted government by the people and government by experts. But those can conflict. What happens when the expert consensus contradicts public opinion?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Exactly. If democracy means anything, shouldn't people have the right to make their own mistakes?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "But some mistakes affect everyone. Climate change, pandemic response - these are collective action problems where individual choices create systemic risks."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And some expert recommendations hurt vulnerable people the most. School closures devastated working-class kids who couldn't afford tutors or reliable internet."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Jonathan Rauch suggests we need what he calls a \"Constitution of Knowledge\" - institutions that can harness disagreement the way science harnesses competing hypotheses. But I think experts need to show more humility about the limits of their expertise."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like acknowledging when they're making value judgments rather than purely technical assessments?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. An epidemiologist can tell you that closing schools reduces disease transmission. But deciding whether that's worth the educational and psychological costs to children - that's not a purely scientific question."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So you're saying experts should stick to their lane?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "But the lanes aren't always clear. Economic policies have health effects. Health policies have economic effects. You need some way to weigh different types of expertise."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And you need to include the voices of people who actually live with the consequences of expert decisions."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm not trying to be difficult. But I think the challenge is designing institutions where experts maintain necessary authority while remaining accountable to democratic feedback. Too much humility and expertise becomes useless. Too little humility and it becomes authoritarian."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Medieval universities had something called the \"disputation\" - formal debates where scholars had to defend their positions against sustained criticism. Maybe we need modern versions of that."
+        },
+        {
+          "speaker": "Blake",
+          "text": "You mean like forcing public health officials to debate their critics in public forums?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "That could work if the critics were arguing in good faith. But what if they're just spreading conspiracy theories?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Who decides what counts as good faith? That's just another expert judgment."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "These are exactly the questions we need to wrestle with. How do we maintain both democratic legitimacy and epistemic authority? How do we distinguish between productive skepticism and destructive nihilism? These challenges go to the heart of human interdependence in a complex society."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Great, so we're back where we started. No one has the answers."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Perhaps that's the most honest place to be. As Aristotle said, \"The more you know, the more you realize you don't know.\""
+        },
+        {
+          "speaker": "Avery",
+          "text": "But at least now we have a framework for thinking about these trade-offs systematically."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And hopefully we can design institutions that work better for actual people, not just for experts or ideologues."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Indeed. The tension between expertise and democracy isn't going away. But understanding how our social epistemology works - how we decide what to believe by deciding who to believe - that's essential for navigating these challenges thoughtfully."
+        }
+      ]
+    }
+  ]
+}

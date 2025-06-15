@@ -21,6 +21,11 @@ export const chaptersConfig = [
     filename: 'cultlearn.JSON'
   },
   {
+    id: 'epistemology',
+    title: 'Social Epistemology',
+    filename: 'epistemology.JSON'
+  },
+  {
     id: 'games',
     title: 'Game Theory and Social Order',
     filename: 'games.JSON'
