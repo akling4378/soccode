@@ -31,6 +31,12 @@ export const chaptersConfig = [
     filename: 'games.JSON'
   },
   {
+    id: 'trust',
+    title: 'Trust and Accountability',
+    filename: 'trust.JSON'
+  },
+ 
+  {
   id: 'dummy',
   title: 'Cross-Reference Test',
   filename: 'dummy.JSON'

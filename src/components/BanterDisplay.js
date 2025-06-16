@@ -17,7 +17,7 @@ export default function BanterDisplay({ showBanter, currentBanter, readerName, u
 
   return (
     <div className="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-      <span className="font-semibold text-yellow-800">Class discussion:</span>
+      <span className="font-semibold text-yellow-800">Side Conversation:</span>
       <div className="mt-2">
         <div className="mb-3">
           <span className="font-semibold text-blue-600">Professor Hartwell:</span>
