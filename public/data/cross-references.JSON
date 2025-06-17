@@ -1,27 +1,6 @@
 {
   "concepts": [
     {
-      "id": "prisoners-dilemma",
-      "name": "Prisoner's Dilemma",
-      "shortDefinition": "Individual rational behavior can lead to a collectively bad outcome",
-      "elaboration": "In the classic example, if A and B both don't confess, they get off scot-free. If they both confess, they each get 5 years in prison. If one confesses and the other does not, the confessor gets released with a reward, and the non-confessor gets 10 years in prison. The individually rational outcome leads to both confessing.",
-      "homeChapter": "games"
-    },
-    {
-      "id": "first-iron-law",
-      "name": "First Iron Law",
-      "shortDefinition": "Sometimes it's this way, and sometimes it's that way",
-      "elaboration": "Correlations show tendencies, not certainties. Individual exceptions don't disprove patterns, but patterns don't predict individual cases with certainty.",
-      "homeChapter": "correlation"
-    },
-    {
-      "id": "dunbars-number",
-      "name": "Dunbar's Number",
-      "shortDefinition": "Approximately 150 people - the cognitive limit for stable social relationships",
-      "elaboration": "Organizations above this size require formal structure rather than informal coordination.",
-      "homeChapter": "games"
-    },
-    {
       "id": "binary-data",
       "name": "binary data",
       "shortDefinition": "data from situations that can be either/or",
@@ -71,6 +50,13 @@
       "homeChapter": "correlation"
     },
     {
+      "id": "first-iron-law",
+      "name": "First Iron Law",
+      "shortDefinition": "Sometimes it's this way, and sometimes it's that way",
+      "elaboration": "First Iron Law of Social Science. Sometimes it's this way, and sometimes it's that way. It is risky to claim that a generalization is always true.",
+      "homeChapter": "correlation"
+    },
+    {
       "id": "p-hacking",
       "name": "p-hacking",
       "shortDefinition": "tweaking analysis to get publishable results",
@@ -104,90 +90,6 @@
       "shortDefinition": "inaccurate measurement reduces correlation",
       "elaboration": "Measurement error reduces correlation. Conversely, if there is strong correlation, we can infer that measurement error is not a major issue",
       "homeChapter": "correlation"
-    },
-    {
-      "id": "warriors-and-worriers",
-      "name": "Warriors and Worriers",
-      "shortDefinition": "Benenson's theory of gender behavioral differences",
-      "elaboration": "Joyce Benenson's theories of different behavioral propensities of men and women, why these propensities evolved, and anthropological evidence for this",
-      "homeChapter": "evo"
-    },
-    {
-      "id": "ninety-percent-chimp-ten-percent-bee",
-      "name": "90 percent chimp, 10 percent bee",
-      "shortDefinition": "humans balance competition and cooperation",
-      "elaboration": "Bees cooperate a lot and do not compete, chimps compete a lot and cooperate very little. Psychologist Jonathan Haidt says that humans excel at both, but with a bias toward competition.",
-      "homeChapter": "evo"
-    },
-    {
-      "id": "blank-slate",
-      "name": "The Blank Slate",
-      "shortDefinition": "the view that behavior is entirely cultural",
-      "elaboration": "Steven Pinker defends evolutionary psychology against the view that human behavior is entirely culturally determined. He says that his opponents think of the human brain as a blank slate, meaning that it has no tendencies imprinted by evolution.",
-      "homeChapter": "evo"
-    },
-    {
-      "id": "folk-theory-of-mind",
-      "name": "Folk Theory of Mind",
-      "shortDefinition": "how people judge if something has a mind",
-      "elaboration": "Arnold Kling describes the findings of Daniel Wegner and Kurt Gray that people tend to think of an entity as having a mind if it has agency (the ability to make choices) and feelings (the ability to experience pain and other feelings).",
-      "homeChapter": "evo"
-    },
-    {
-      "id": "moral-dyad",
-      "name": "Moral Dyad",
-      "shortDefinition": "moral judgments divide actors into agents or patients",
-      "elaboration": "From Daniel Wegner and Kurt Gray the observation that our moral judgments tend to divide actors into either having agency (they call this the robot) or having feelings (they call this the baby).",
-      "homeChapter": "evo"
-    },
-    {
-      "id": "secret-of-our-success",
-      "name": "Secret of Our Success",
-      "shortDefinition": "human advantage comes from collective intelligence",
-      "elaboration": "In the book The Secret our Success anthropologist Joseph Henrich points out that the advantage that humans have over other species is our collective brains rather than our individual brains.",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "learning-by-copying",
-      "name": "learning by copying",
-      "shortDefinition": "copying others is usually better than innovating",
-      "elaboration": "When a human encounters a novel problem, the best solution is usually to copy another human who has dealt with a similar problem. Choosing instead to innovate is risky, and it tends to pay off only in rapidly-changing environments.",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "cultural-evolution",
-      "name": "cultural evolution",
-      "shortDefinition": "humans accumulate shared knowledge across generations",
-      "elaboration": "Humans are unique in that we accumulate shared knowledge. This means that cultural evolution is more rapid than biological evolution, especially in recent centuries. Other species rely on biological evolution, which is much slower.",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "three-es",
-      "name": "The three e's",
-      "shortDefinition": "experimentation, evaluation, and evolution",
-      "elaboration": "Experimentation means trying new ideas. Evaluation means examining the results. Evolution means keeping ideas that work and discarding ideas that do not work or that used to work but are now obsolete.",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "beliefs-are-social",
-      "name": "beliefs are social",
-      "shortDefinition": "we decide what to believe by deciding who to believe",
-      "elaboration": "Arnold Kling has an aphorism that we decide what to believe by deciding who to believe. This raises the question of how we decide who to believe.",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "prestige-hierarchy",
-      "name": "prestige hierarchy",
-      "shortDefinition": "hierarchy based on admiration",
-      "elaboration": "A hierarchy in which the people at the top are admired by people lower down",
-      "homeChapter": "cultlearn"
-    },
-    {
-      "id": "dominance-hierarchy",
-      "name": "dominance hierarchy",
-      "shortDefinition": "hierarchy based on fear",
-      "elaboration": "A hierarchy in which the people at the top are feared by people lower down",
-      "homeChapter": "cultlearn"
     },
     {
       "id": "extraversion",
@@ -260,6 +162,90 @@
       "homeChapter": "personality"
     },
     {
+      "id": "ninety-percent-chimp-ten-percent-bee",
+      "name": "90 percent chimp, 10 percent bee",
+      "shortDefinition": "humans balance competition and cooperation",
+      "elaboration": "Bees cooperate a lot and do not compete, chimps compete a lot and cooperate very little. Psychologist Jonathan Haidt says that humans excel at both, but with a bias toward competition.",
+      "homeChapter": "evo"
+    },
+    {
+      "id": "blank-slate",
+      "name": "The Blank Slate",
+      "shortDefinition": "the view that behavior is entirely cultural",
+      "elaboration": "Steven Pinker defends evolutionary psychology against the view that human behavior is entirely culturally determined. He says that his opponents think of the human brain as a blank slate, meaning that it has no tendencies imprinted by evolution.",
+      "homeChapter": "evo"
+    },
+    {
+      "id": "warriors-and-worriers",
+      "name": "Warriors and Worriers",
+      "shortDefinition": "Benenson's theory of gender behavioral differences",
+      "elaboration": "Joyce Benenson's theories of different behavioral propensities of men and women, why these propensities evolved, and anthropological evidence for this",
+      "homeChapter": "evo"
+    },
+    {
+      "id": "folk-theory-of-mind",
+      "name": "Folk Theory of Mind",
+      "shortDefinition": "how people judge if something has a mind",
+      "elaboration": "Arnold Kling describes the findings of Daniel Wegner and Kurt Gray that people tend to think of an entity as having a mind if it has agency (the ability to make choices) and feelings (the ability to experience pain and other feelings).",
+      "homeChapter": "evo"
+    },
+    {
+      "id": "moral-dyad",
+      "name": "Moral Dyad",
+      "shortDefinition": "moral judgments divide actors into agents or patients",
+      "elaboration": "From Daniel Wegner and Kurt Gray the observation that our moral judgments tend to divide actors into either having agency (they call this the robot) or having feelings (they call this the baby).",
+      "homeChapter": "evo"
+    },
+    {
+      "id": "secret-of-our-success",
+      "name": "Secret of Our Success",
+      "shortDefinition": "human advantage comes from collective intelligence",
+      "elaboration": "In the book The Secret our Success anthropologist Joseph Henrich points out that the advantage that humans have over other species is our collective brains rather than our individual brains.",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "learning-by-copying",
+      "name": "learning by copying",
+      "shortDefinition": "copying others is usually better than innovating",
+      "elaboration": "When a human encounters a novel problem, the best solution is usually to copy another human who has dealt with a similar problem. Choosing instead to innovate is risky, and it tends to pay off only in rapidly-changing environments.",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "cultural-evolution",
+      "name": "cultural evolution",
+      "shortDefinition": "humans accumulate shared knowledge across generations",
+      "elaboration": "Humans are unique in that we accumulate shared knowledge. This means that cultural evolution is more rapid than biological evolution, especially in recent centuries. Other species rely on biological evolution, which is much slower.",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "three-es",
+      "name": "The three e's",
+      "shortDefinition": "experimentation, evaluation, and evolution",
+      "elaboration": "Experimentation means trying new ideas. Evaluation means examining the results. Evolution means keeping ideas that work and discarding ideas that do not work or that used to work but are now obsolete.",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "beliefs-are-social",
+      "name": "beliefs are social",
+      "shortDefinition": "we decide what to believe by deciding who to believe",
+      "elaboration": "Arnold Kling has an aphorism that we decide what to believe by deciding who to believe. This raises the question of how we decide who to believe.",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "prestige-hierarchy",
+      "name": "prestige hierarchy",
+      "shortDefinition": "hierarchy based on admiration",
+      "elaboration": "A hierarchy in which the people at the top are admired by people lower down",
+      "homeChapter": "cultlearn"
+    },
+    {
+      "id": "dominance-hierarchy",
+      "name": "dominance hierarchy",
+      "shortDefinition": "hierarchy based on fear",
+      "elaboration": "A hierarchy in which the people at the top are feared by people lower down",
+      "homeChapter": "cultlearn"
+    },
+    {
       "id": "naive-realism",
       "name": "naive realism",
       "shortDefinition": "believing your perspective is objectively true",
@@ -307,14 +293,114 @@
       "shortDefinition": "Galef's term for open-minded exploration",
       "elaboration": "Julia Galef's term for trying to explore a topic with an open mind. The opposite is soldier mindset, which means trying hard to defend your belief, as if counterarguments were threats that must be shoved aside.",
       "homeChapter": "epistemology"
+    },
+    {
+      "id": "moral-pressures",
+      "name": "moral pressures",
+      "shortDefinition": "internalized values leading to cooperation",
+      "elaboration": "Internalized values that lead people to cooperate rather than cheat",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "reputational-pressures",
+      "name": "reputational pressures",
+      "shortDefinition": "fear of being branded as untrustworthy",
+      "elaboration": "Fear of being branded as a bad cooperator. If you cheat and people find out, they will be reluctant to deal with you.",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "institutional-pressures",
+      "name": "institutional pressures",
+      "shortDefinition": "cooperation to avoid legal punishment",
+      "elaboration": "You cooperate in order to avoid legal punishment",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "security-systems",
+      "name": "security systems",
+      "shortDefinition": "physical prevention of norm violations",
+      "elaboration": "You are physically prevented from violating social norms",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "big-gods",
+      "name": "Big Gods",
+      "shortDefinition": "belief in moralizing deities fostering cooperation",
+      "elaboration": "A claim made by anthropologist Ara Norenzayan that belief in moralizing, punitive deities helped foster cooperation in large-scale societies",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "fundamental-social-rule",
+      "name": "fundamental social rule",
+      "shortDefinition": "reward cooperators and punish defectors",
+      "elaboration": "Reward cooperators and punish defectors. This is how rules are enforced and social order is maintained.",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "tit-for-tat-strategy",
+      "name": "tit-for-tat strategy",
+      "shortDefinition": "matching others' cooperation or defection",
+      "elaboration": "In repeated games, where you and another person must decide on each turn whether to cooperate or defect, this strategy says that if the other player cooperates on this turn, you cooperate on the next turn; but if the other player cheats on this turn, then you cheat on the next turn. In simulations, following this strategy has been shown to lead to a pattern of regular cooperation.",
+      "homeChapter": "trust"
+    },
+    {
+      "id": "rule-of-the-clan",
+      "name": "Rule of the Clan",
+      "shortDefinition": "decentralized order based on kinship groups",
+      "elaboration": "Mark Weiner describes rule of the clan as a decentralized order based primarily on extended kinship groups. Personal relationships and honor codes provide order.",
+      "homeChapter": "order"
+    },
+    {
+      "id": "society-of-status",
+      "name": "Society of Status",
+      "shortDefinition": "rights determined by birth position",
+      "elaboration": "As described by Henry Maine, a society in which a person's rights and duties are determined by their position at birth or within a group.",
+      "homeChapter": "order"
+    },
+    {
+      "id": "society-of-contract",
+      "name": "Society of Contract",
+      "shortDefinition": "rights determined by general laws",
+      "elaboration": "As described by Henry Maine, a society in which a person's rights and duties are determined by general laws applied to everyone",
+      "homeChapter": "order"
+    },
+    {
+      "id": "limited-access-order",
+      "name": "limited-access order",
+      "shortDefinition": "state controlled by violence-capable coalition",
+      "elaboration": "Also called the Natural State by North, Weingast, and Wallis. A state controlled by a coalition of groups that have the capacity to exercise violence. Access to economic and political power is limited to members of the coalition. No one outside of the coalition is able to engage in highly-organized political or economic activity.",
+      "homeChapter": "order"
+    },
+    {
+      "id": "open-access-order",
+      "name": "open-access order",
+      "shortDefinition": "liberal democratic order with broad access",
+      "elaboration": "As described by North, Weingast, and Wallis, a liberal democratic order. Although obtaining economic and political power is never easy, everyone has access in the sense that they do not have to be part of a ruling coalition in order to form a large business or organize a political interest group.",
+      "homeChapter": "order"
+    },
+    {
+      "id": "dunbars-number",
+      "name": "Dunbar's Number",
+      "shortDefinition": "cognitive limit of ~150 stable relationships",
+      "elaboration": "Approximately 150 people - the cognitive limit for stable social relationships. Organizations above this size require formal structure rather than informal coordination.",
+      "homeChapter": "games"
+    },
+    {
+      "id": "prisoners-dilemma",
+      "name": "Prisoner's Dilemma",
+      "shortDefinition": "individual rationality leading to collective irrationality",
+      "elaboration": "Individual rational behavior can lead to a collectively bad outcome. In the classic example, if A and B both don't confess, they get off scot-free. If they both confess, they each get 5 years in prison. If one confesses and the other does not, the confessor gets released with a reward, and the non-confessor gets 10 years in prison. The individually rational outcome leads to both confessing.",
+      "homeChapter": "games"
     }
   ],
   "chapters": [
     {"id": "correlation", "title": "Problems with Studies"},
+    {"id": "personality", "title": "Personality Psychology"},
     {"id": "evo", "title": "Evolutionary Psychology - Warriors and Worriers"},
     {"id": "cultlearn", "title": "Cultural Evolution and Social Learning"},
-    {"id": "games", "title": "Game Theory and Social Order"},
-    {"id": "personality", "title": "Personality Psychology"},
-    {"id": "epistemology", "title": "Social Epistemology"}
+    {"id": "epistemology", "title": "Social Epistemology"},
+    {"id": "trust", "title": "Trust and Accountability"},
+    {"id": "order", "title": "Forms of Order"},
+    {"id": "games", "title": "Game Theory and Social Order"}
   ]
 }
