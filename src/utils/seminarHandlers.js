@@ -11,6 +11,7 @@ export function createHandlers(state, setState) {
     setShowBanter,
     setCurrentBanter,
     setUserSubmittedText,
+    setShowOfficeHours, // New
     chapterData
   } = state;
 
@@ -31,6 +32,8 @@ export function createHandlers(state, setState) {
     setShowBanter(false);
     setCurrentBanter(null);
     setUserSubmittedText('');
+    // Close office hours if open
+    setShowOfficeHours(false);
   };
 
   const handleCallOnMe = () => setShowCallOnMe(true);
@@ -65,12 +68,19 @@ export function createHandlers(state, setState) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Office Hours handlers
+  const handleOpenOfficeHours = () => setShowOfficeHours(true);
+
+  const handleCloseOfficeHours = () => setShowOfficeHours(false);
+
   return {
     handleNameSubmit,
     handleChapterChange,
     handleCallOnMe,
     handleCancelInput,
     nextBreakpoint,
-    prevBreakpoint
+    prevBreakpoint,
+    handleOpenOfficeHours,   // New
+    handleCloseOfficeHours   // New
   };
 }

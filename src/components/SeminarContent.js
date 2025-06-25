@@ -21,7 +21,8 @@ export default function SeminarContent({
   totalBreakpoints,
   onPrevBreakpoint,
   onNextBreakpoint,
-  onCallOnMe
+  onCallOnMe,
+  onOpenOfficeHours // New prop
 }) {
   return (
     <div className="p-6">
@@ -85,6 +86,7 @@ export default function SeminarContent({
         showCallOnMe={showCallOnMe}
         apiResponse={apiResponse}
         onCallOnMe={onCallOnMe}
+        onOpenOfficeHours={onOpenOfficeHours} // New prop passed to NavigationControls
       />
     </div>
   );

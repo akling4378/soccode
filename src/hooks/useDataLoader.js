@@ -2,11 +2,18 @@
 import { useEffect } from 'react';
 import { chaptersConfig } from '../data/chapters-config';
 
-export function useDataLoader({ currentChapter, setChapterData, setBanterData }) {
+export function useDataLoader({ 
+  currentChapter, 
+  setChapterData, 
+  setBanterData,
+  setOfficeHoursPersonality,
+  setCrossReferences 
+}) {
   
   useEffect(() => {
     loadChapterData(currentChapter);
     loadBanterData();
+    loadOfficeHoursData(); // Load once when component mounts
   }, [currentChapter]);
 
   const loadChapterData = async (chapterId) => {
@@ -50,5 +57,29 @@ export function useDataLoader({ currentChapter, setChapterData, setBanterData })
     }
   };
 
-  return { loadChapterData, loadBanterData };
+  const loadOfficeHoursData = async () => {
+    // Load office hours personality
+    try {
+      const personalityResponse = await fetch('/data/office-hours-personality.JSON');
+      if (!personalityResponse.ok) throw new Error('Office hours personality not found');
+      const personalityData = await personalityResponse.json();
+      setOfficeHoursPersonality(personalityData);
+    } catch (error) {
+      console.error('Error loading office hours personality:', error);
+      setOfficeHoursPersonality(''); // Fallback to empty string
+    }
+
+    // Load cross-references
+    try {
+      const crossRefResponse = await fetch('/data/cross-references.JSON');
+      if (!crossRefResponse.ok) throw new Error('Cross-references not found');
+      const crossRefData = await crossRefResponse.json();
+      setCrossReferences(crossRefData.concepts || []);
+    } catch (error) {
+      console.error('Error loading cross-references:', error);
+      setCrossReferences([]); // Fallback to empty array
+    }
+  };
+
+  return { loadChapterData, loadBanterData, loadOfficeHoursData };
 }

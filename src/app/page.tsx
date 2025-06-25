@@ -10,16 +10,19 @@ import { createHandlers } from '../utils/seminarHandlers';
 import SeminarEntry from '../components/SeminarEntry';
 import SeminarHeader from '../components/SeminarHeader';
 import SeminarContent from '../components/SeminarContent';
+import OfficeHours from '../components/OfficeHours';
 
 export default function SeminarPage() {
   // All state management
   const state = useSeminarState();
 
-  // Data loading
+  // Data loading - now includes office hours data
   useDataLoader({
     currentChapter: state.currentChapter,
     setChapterData: state.setChapterData,
-    setBanterData: state.setBanterData
+    setBanterData: state.setBanterData,
+    setOfficeHoursPersonality: state.setOfficeHoursPersonality,
+    setCrossReferences: state.setCrossReferences
   });
 
   // Banter management
@@ -36,8 +39,13 @@ export default function SeminarPage() {
     startBanter
   });
 
-  // Event handlers
+  // Event handlers - now includes office hours handlers
   const handlers = createHandlers(state, state);
+
+  // Filter cross-references for current chapter - FIXED
+  const chapterConcepts = state.crossReferences?.concepts?.filter(
+    concept => concept.homeChapter === state.currentChapter
+  ) || [];
 
   // Render entry screen
   if (!state.showSeminar) {
@@ -86,6 +94,17 @@ export default function SeminarPage() {
           onPrevBreakpoint={handlers.prevBreakpoint}
           onNextBreakpoint={handlers.nextBreakpoint}
           onCallOnMe={handlers.handleCallOnMe}
+          onOpenOfficeHours={handlers.handleOpenOfficeHours} // ADDED - This was missing
+        />
+
+        {/* Office Hours Modal */}
+        <OfficeHours 
+          isOpen={state.showOfficeHours}
+          chapterTitle={state.chapterData?.title}
+          chapterConcepts={chapterConcepts}
+          officeHoursPersonality={state.officeHoursPersonality}
+          readerName={state.readerName}
+          onClose={handlers.handleCloseOfficeHours}
         />
       </div>
     </div>

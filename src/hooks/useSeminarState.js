@@ -21,6 +21,11 @@ export function useSeminarState() {
   // Data state
   const [chapterData, setChapterData] = useState(null);
   const [banterData, setBanterData] = useState(null);
+  
+  // Office Hours state
+  const [showOfficeHours, setShowOfficeHours] = useState(false);
+  const [officeHoursPersonality, setOfficeHoursPersonality] = useState('');
+  const [crossReferences, setCrossReferences] = useState([]);
 
   return {
     // Core state
@@ -41,6 +46,11 @@ export function useSeminarState() {
     
     // Data state
     chapterData, setChapterData,
-    banterData, setBanterData
+    banterData, setBanterData,
+    
+    // Office Hours state
+    showOfficeHours, setShowOfficeHours,
+    officeHoursPersonality, setOfficeHoursPersonality,
+    crossReferences, setCrossReferences
   };
 }

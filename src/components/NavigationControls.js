@@ -9,7 +9,8 @@ export default function NavigationControls({
   hasCallOnMe,
   showCallOnMe,
   apiResponse,
-  onCallOnMe
+  onCallOnMe,
+  onOpenOfficeHours // New prop
 }) {
   const isFirstBreakpoint = currentBreakpoint === 0;
   const isLastBreakpoint = currentBreakpoint >= totalBreakpoints - 1;
@@ -38,6 +39,16 @@ export default function NavigationControls({
             Call on me!
           </button>
         )}
+        
+        {isLastBreakpoint && (
+          <button
+            onClick={onOpenOfficeHours}
+            className="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600 transition-colors"
+          >
+            Office Hours
+          </button>
+        )}
+        
         <button
           onClick={onNext}
           disabled={isLastBreakpoint}
