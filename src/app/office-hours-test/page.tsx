@@ -25,38 +25,64 @@ const DialogueRenderer = ({ speaker, text }) => {
   const [showPopup, setShowPopup] = useState(null);
 
   const renderTextWithCrossReferences = (text) => {
-    let processedText = text;
-    const elements = [];
-    let lastIndex = 0;
-
+    // Find all concept matches with their positions
+    const matches = [];
+    
     concepts.forEach(concept => {
       const regex = new RegExp(`\\b${concept.name}\\b`, 'gi');
       let match;
       
       while ((match = regex.exec(text)) !== null) {
-        // Add text before match
-        if (match.index > lastIndex) {
-          elements.push(text.slice(lastIndex, match.index));
-        }
-        
-        // Add clickable concept
-        elements.push(
-          <span
-            key={`${concept.id}-${match.index}`}
-            className="text-blue-500 underline cursor-pointer hover:text-blue-700"
-            onClick={() => setShowPopup(concept)}
-          >
-            {match[0]}
-          </span>
-        );
-        
-        lastIndex = match.index + match[0].length;
+        matches.push({
+          start: match.index,
+          end: match.index + match[0].length,
+          text: match[0],
+          concept: concept
+        });
       }
     });
     
+    // Sort matches by position
+    matches.sort((a, b) => a.start - b.start);
+    
+    // Remove overlapping matches (keep the first one)
+    const cleanMatches = [];
+    let lastEnd = 0;
+    
+    matches.forEach(match => {
+      if (match.start >= lastEnd) {
+        cleanMatches.push(match);
+        lastEnd = match.end;
+      }
+    });
+    
+    // Build the elements array
+    const elements = [];
+    let currentIndex = 0;
+    
+    cleanMatches.forEach((match, index) => {
+      // Add text before this match
+      if (match.start > currentIndex) {
+        elements.push(text.slice(currentIndex, match.start));
+      }
+      
+      // Add clickable concept
+      elements.push(
+        <span
+          key={`${match.concept.id}-${match.start}`}
+          className="text-blue-500 underline cursor-pointer hover:text-blue-700"
+          onClick={() => setShowPopup(match.concept)}
+        >
+          {match.text}
+        </span>
+      );
+      
+      currentIndex = match.end;
+    });
+    
     // Add remaining text
-    if (lastIndex < text.length) {
-      elements.push(text.slice(lastIndex));
+    if (currentIndex < text.length) {
+      elements.push(text.slice(currentIndex));
     }
     
     return elements.length > 0 ? elements : text;

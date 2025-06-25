@@ -45,12 +45,22 @@ export default function SeminarContent({
           userSubmittedText={userSubmittedText}
         />
 
-        {/* API Response Display */}
+        {/* API Response Display - NOW USES DialogueRenderer */}
         {apiResponse && (
           <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded">
             <span className="font-semibold text-green-800">Discussion continues:</span>
-            <div className="mt-2">
-              {apiResponse}
+            <div className="mt-2 space-y-2">
+              {Array.isArray(apiResponse) ? (
+                apiResponse.map((dialogueItem, index) => (
+                  <DialogueRenderer 
+                    key={index}
+                    speaker={dialogueItem.speaker}
+                    text={dialogueItem.text}
+                  />
+                ))
+              ) : (
+                <div className="text-gray-800">{apiResponse}</div>
+              )}
             </div>
           </div>
         )}
