@@ -1,0 +1,44 @@
+{
+  "suggestedReadings": [
+    {
+      "chapter": "correlation",
+      "trigger": "how statistics can mislead",
+      "recommendation": "John Ioannides has a notorious paper titled Why Most Published Studies are False. Edward Leamer wrote a famous paper Let's Take the Con out of Econometrics. Nassim Taleb wrote a paper Fooled by Correlation and also a book called The Black Swan."
+    },
+    {
+      "chapter": "personality",
+      "trigger": "Personality measures and their uses",
+      "recommendation": "Rob Henderson's Newsletter on Substack is a useful resource. You can Google Rob Henderson Big Five or Rob Henderson HEXACO or Rob Henderson Dark Triad."
+    },
+    {
+      "chapter": "evo",
+      "trigger": "issues regarding evolutionary psychology",
+      "recommendation": "Steve Stewart-Williams has a book called The Ape that Understood the Universe"
+    },
+    {
+      "chapter": "cultlearn",
+      "trigger": "how culture changes over time or differs across societies",
+      "recommendation": "We have mentioned Joseph Henrich. His two books are The Secret of Our Success, about cultural evolution, and The Weirdest People in the World, about how the deep cultural roots of Westernized, Educated, Industrialized, Rich, and Democratic societies. There is also Michael Muthukrishna's book A Theory of Everyone"
+    },
+    {
+      "chapter": "epistemology",
+      "trigger": "the challenge of finding truth",
+      "recommendation": "Dan Williams has a substack called Conspicuous Cognition which is a great resource. In particular, Google Dan Williams Politics Truth Ideology Syllabus"
+    },
+    {
+      "chapter": "games",
+      "trigger": "game theory",
+      "recommendation": "one classic book that uses game theory is The Strategy of Conflict, by Thomas Schelling. A book that applies game theory to the problem of security is Liars and Outliers, by Bruce Schneier."
+    },
+    {
+      "chapter": "trust",
+      "trigger": "how trust and cooperation are possible",
+      "recommendation": "Arnold Kling has an essay called The Fundamental Rule of Social Morality, which argues that enforcing group norms by rewarding cooperators and punishing defectors is how societies hold together. For an interesting take on how modern surveillance technology affects society see David Brin's book The Transparent Society."
+    },
+    {
+      "chapter": "order",
+      "trigger": "how democracies differ from other states",
+      "recommendation": "Arnold Kling has written some book reviews on related topics. Arnold Kling The Pre-Modern Order looks at social organization before 1500, Arnold Kling Balaji-land looks at a futuristic vision from Balaji Srinivasan, Arnold Kling The Two Forms of Social Order summarizes North, Weingast and Wallis."
+    }
+  ]
+}

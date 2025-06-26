@@ -16,13 +16,14 @@ export default function SeminarPage() {
   // All state management
   const state = useSeminarState();
 
-  // Data loading - now includes office hours data
+  // Data loading - now includes suggested readings
   useDataLoader({
     currentChapter: state.currentChapter,
     setChapterData: state.setChapterData,
     setBanterData: state.setBanterData,
     setOfficeHoursPersonality: state.setOfficeHoursPersonality,
-    setCrossReferences: state.setCrossReferences
+    setCrossReferences: state.setCrossReferences,
+    setSuggestedReadings: state.setSuggestedReadings
   });
 
   // Banter management
@@ -39,13 +40,18 @@ export default function SeminarPage() {
     startBanter
   });
 
-  // Event handlers - now includes office hours handlers
+  // Event handlers
   const handlers = createHandlers(state, state);
 
-  // Filter cross-references for current chapter - FIXED
-  const chapterConcepts = state.crossReferences?.concepts?.filter(
+  // Filter cross-references for current chapter
+  const chapterConcepts = state.crossReferences.filter(
     concept => concept.homeChapter === state.currentChapter
-  ) || [];
+  );
+
+  // Filter suggested readings for current chapter
+  const chapterSuggestedReadings = state.suggestedReadings.filter(
+    reading => reading.chapter === state.currentChapter
+  );
 
   // Render entry screen
   if (!state.showSeminar) {
@@ -94,7 +100,7 @@ export default function SeminarPage() {
           onPrevBreakpoint={handlers.prevBreakpoint}
           onNextBreakpoint={handlers.nextBreakpoint}
           onCallOnMe={handlers.handleCallOnMe}
-          onOpenOfficeHours={handlers.handleOpenOfficeHours} // ADDED - This was missing
+          onOpenOfficeHours={handlers.handleOpenOfficeHours}
         />
 
         {/* Office Hours Modal */}
@@ -102,6 +108,7 @@ export default function SeminarPage() {
           isOpen={state.showOfficeHours}
           chapterTitle={state.chapterData?.title}
           chapterConcepts={chapterConcepts}
+          suggestedReadings={chapterSuggestedReadings}
           officeHoursPersonality={state.officeHoursPersonality}
           readerName={state.readerName}
           onClose={handlers.handleCloseOfficeHours}

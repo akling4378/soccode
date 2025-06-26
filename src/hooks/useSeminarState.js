@@ -2,55 +2,77 @@
 import { useState } from 'react';
 
 export function useSeminarState() {
-  // Core state
+  // Basic seminar state
   const [readerName, setReaderName] = useState('');
   const [showSeminar, setShowSeminar] = useState(false);
   const [currentChapter, setCurrentChapter] = useState('correlation');
+  const [chapterData, setChapterData] = useState(null);
   const [currentBreakpoint, setCurrentBreakpoint] = useState(0);
-  
-  // Interaction state
+
+  // User interaction state
   const [showCallOnMe, setShowCallOnMe] = useState(false);
   const [userInput, setUserInput] = useState('');
-  const [apiResponse, setApiResponse] = useState('');
-  
-  // Banter state
-  const [showBanter, setShowBanter] = useState(false);
-  const [currentBanter, setCurrentBanter] = useState(null);
   const [userSubmittedText, setUserSubmittedText] = useState('');
-  
-  // Data state
-  const [chapterData, setChapterData] = useState(null);
-  const [banterData, setBanterData] = useState(null);
-  
-  // Office Hours state
+  const [apiResponse, setApiResponse] = useState('');
+
+  // Banter system state
+  const [banterData, setBanterData] = useState([]);
+  const [currentBanter, setCurrentBanter] = useState(null);
+  const [showBanter, setShowBanter] = useState(false);
+
+  // Office hours state
   const [showOfficeHours, setShowOfficeHours] = useState(false);
-  const [officeHoursPersonality, setOfficeHoursPersonality] = useState('');
+  const [officeHoursPersonality, setOfficeHoursPersonality] = useState(null);
+
+  // Cross-reference system state
   const [crossReferences, setCrossReferences] = useState([]);
 
+  // Suggested readings state
+  const [suggestedReadings, setSuggestedReadings] = useState([]);
+
   return {
-    // Core state
-    readerName, setReaderName,
-    showSeminar, setShowSeminar,
-    currentChapter, setCurrentChapter,
-    currentBreakpoint, setCurrentBreakpoint,
-    
-    // Interaction state
-    showCallOnMe, setShowCallOnMe,
-    userInput, setUserInput,
-    apiResponse, setApiResponse,
-    
-    // Banter state
-    showBanter, setShowBanter,
-    currentBanter, setCurrentBanter,
-    userSubmittedText, setUserSubmittedText,
-    
-    // Data state
-    chapterData, setChapterData,
-    banterData, setBanterData,
-    
-    // Office Hours state
-    showOfficeHours, setShowOfficeHours,
-    officeHoursPersonality, setOfficeHoursPersonality,
-    crossReferences, setCrossReferences
+    // Basic seminar state
+    readerName,
+    setReaderName,
+    showSeminar,
+    setShowSeminar,
+    currentChapter,
+    setCurrentChapter,
+    chapterData,
+    setChapterData,
+    currentBreakpoint,
+    setCurrentBreakpoint,
+
+    // User interaction state
+    showCallOnMe,
+    setShowCallOnMe,
+    userInput,
+    setUserInput,
+    userSubmittedText,
+    setUserSubmittedText,
+    apiResponse,
+    setApiResponse,
+
+    // Banter system state
+    banterData,
+    setBanterData,
+    currentBanter,
+    setCurrentBanter,
+    showBanter,
+    setShowBanter,
+
+    // Office hours state
+    showOfficeHours,
+    setShowOfficeHours,
+    officeHoursPersonality,
+    setOfficeHoursPersonality,
+
+    // Cross-reference system state
+    crossReferences,
+    setCrossReferences,
+
+    // Suggested readings state
+    suggestedReadings,
+    setSuggestedReadings
   };
 }

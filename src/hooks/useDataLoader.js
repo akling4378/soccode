@@ -1,85 +1,58 @@
 // src/hooks/useDataLoader.js
 import { useEffect } from 'react';
-import { chaptersConfig } from '../data/chapters-config';
+import { loadChapterData, loadKnowledgeBase } from '../lib/dataLoader';
 
-export function useDataLoader({ 
-  currentChapter, 
-  setChapterData, 
+export function useDataLoader({
+  currentChapter,
+  setChapterData,
   setBanterData,
   setOfficeHoursPersonality,
-  setCrossReferences 
+  setCrossReferences,
+  setSuggestedReadings
 }) {
-  
   useEffect(() => {
-    loadChapterData(currentChapter);
-    loadBanterData();
-    loadOfficeHoursData(); // Load once when component mounts
-  }, [currentChapter]);
+    async function loadData() {
+      try {
+        // Load chapter data
+        const chapterData = await loadChapterData(currentChapter);
+        setChapterData(chapterData);
 
-  const loadChapterData = async (chapterId) => {
-    try {
-      const chapterConfig = chaptersConfig.find(ch => ch.id === chapterId);
-      if (!chapterConfig) {
-        throw new Error('Chapter config not found');
+        // Load knowledge base (includes banter)
+        const knowledgeBase = await loadKnowledgeBase();
+        
+        // Load banter data
+        const banterResponse = await fetch('/data/seminar-banter.JSON');
+        if (banterResponse.ok) {
+          const banterData = await banterResponse.json();
+          setBanterData(banterData.banterDialogues);
+        }
+
+        // Load office hours personality
+        const officeHoursResponse = await fetch('/data/office-hours-personality.JSON');
+        if (officeHoursResponse.ok) {
+          const officeHoursData = await officeHoursResponse.json();
+          setOfficeHoursPersonality(officeHoursData);
+        }
+
+        // Load cross-references
+        const crossRefResponse = await fetch('/data/cross-references.JSON');
+        if (crossRefResponse.ok) {
+          const crossRefData = await crossRefResponse.json();
+          setCrossReferences(crossRefData.concepts || []);
+        }
+
+        // Load suggested readings
+        const suggestedReadingsResponse = await fetch('/data/suggested-readings.JSON');
+        if (suggestedReadingsResponse.ok) {
+          const suggestedReadingsData = await suggestedReadingsResponse.json();
+          setSuggestedReadings(suggestedReadingsData.suggestedReadings || []);
+        }
+
+      } catch (error) {
+        console.error('Error loading data:', error);
       }
-      
-      const response = await fetch(`/data/chapters/${chapterConfig.filename}`);
-      if (!response.ok) throw new Error('Chapter not found');
-      const data = await response.json();
-      setChapterData(data);
-    } catch (error) {
-      console.error('Error loading chapter:', error);
-      setChapterData({
-        id: chapterId,
-        title: `${chapterId.replace('-', ' ')} (Coming Soon)`,
-        description: "Chapter under development",
-        breakpoints: [{
-          id: 'placeholder',
-          subheading: 'Chapter Under Development',
-          dialogue: [{
-            speaker: 'Professor Hartwell',
-            text: `The ${chapterId.replace('-', ' ')} chapter is being developed. Please check back soon!`
-          }],
-          hasCallOnMe: false
-        }]
-      });
-    }
-  };
-
-  const loadBanterData = async () => {
-    try {
-      const response = await fetch('/data/seminar-banter.JSON');
-      if (!response.ok) throw new Error('Banter data not found');
-      const data = await response.json();
-      setBanterData(data);
-    } catch (error) {
-      console.error('Error loading banter data:', error);
-    }
-  };
-
-  const loadOfficeHoursData = async () => {
-    // Load office hours personality
-    try {
-      const personalityResponse = await fetch('/data/office-hours-personality.JSON');
-      if (!personalityResponse.ok) throw new Error('Office hours personality not found');
-      const personalityData = await personalityResponse.json();
-      setOfficeHoursPersonality(personalityData);
-    } catch (error) {
-      console.error('Error loading office hours personality:', error);
-      setOfficeHoursPersonality(''); // Fallback to empty string
     }
 
-    // Load cross-references
-    try {
-      const crossRefResponse = await fetch('/data/cross-references.JSON');
-      if (!crossRefResponse.ok) throw new Error('Cross-references not found');
-      const crossRefData = await crossRefResponse.json();
-      setCrossReferences(crossRefData.concepts || []);
-    } catch (error) {
-      console.error('Error loading cross-references:', error);
-      setCrossReferences([]); // Fallback to empty array
-    }
-  };
-
-  return { loadChapterData, loadBanterData, loadOfficeHoursData };
+    loadData();
+  }, [currentChapter, setChapterData, setBanterData, setOfficeHoursPersonality, setCrossReferences, setSuggestedReadings]);
 }

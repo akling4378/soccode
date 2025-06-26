@@ -1,11 +1,19 @@
-// src/components/OfficeHours.js - Updated with readerName
+// src/components/OfficeHours.js - Fixed with readerName and suggested readings
 import React, { useState, useEffect } from 'react';
 import OfficeHoursHeader from './OfficeHoursHeader';
 import ConversationArea from './ConversationArea';
 import OfficeHoursInput from './OfficeHoursInput';
 import { useOfficeHours } from '../hooks/useOfficeHours';
 
-export default function OfficeHours({ isOpen, chapterTitle, chapterConcepts, officeHoursPersonality, readerName, onClose }) {
+export default function OfficeHours({ 
+  isOpen, 
+  chapterTitle, 
+  chapterConcepts, 
+  suggestedReadings,
+  officeHoursPersonality, 
+  readerName, 
+  onClose 
+}) {
   const {
     conversation,
     currentInput,
@@ -15,7 +23,7 @@ export default function OfficeHours({ isOpen, chapterTitle, chapterConcepts, off
     exchangesRemaining,
     handleSubmitComment,
     resetConversation
-  } = useOfficeHours(chapterTitle, chapterConcepts, officeHoursPersonality);
+  } = useOfficeHours(chapterTitle, chapterConcepts, suggestedReadings, officeHoursPersonality);
 
   // Reset and scroll when opened
   useEffect(() => {
