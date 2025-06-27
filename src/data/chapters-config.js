@@ -35,7 +35,11 @@ export const chaptersConfig = [
     title: 'Trust and Accountability',
     filename: 'trust.JSON'
   },
- 
+  {
+    id: 'disrupt',
+    title: 'The Information Disruption',
+    filename: 'disrupt.JSON'
+  },
   {
   id: 'dummy',
   title: 'Cross-Reference Test',

@@ -22,15 +22,34 @@ export async function loadChapterData(chapterId) {
 
 export async function loadKnowledgeBase() {
   try {
-    const response = await fetch('/data/seminar-knowledge-base.JSON');
-    if (response.ok) {
-      return await response.json();
+    const knowledgeBaseResponse = await fetch('/data/seminar-knowledge-base.JSON');
+    const crossReferencesResponse = await fetch('/data/cross-references.JSON');
+    
+    if (knowledgeBaseResponse.ok && crossReferencesResponse.ok) {
+      const knowledgeBase = await knowledgeBaseResponse.json();
+      const crossReferences = await crossReferencesResponse.json();
+      
+      // Merge the data
+      return {
+        ...knowledgeBase,
+        concepts: crossReferences.concepts || []
+      };
     }
   } catch (error) {
     console.log('Knowledge base load failed:', error);
   }
   
   return {
+    globalPromptInstructions: {
+      baseContext: "You are in an interactive seminar called 'The Social Code' on human interdependence.",
+      behaviorRules: [
+        "Stay in character and maintain their personalities.",
+        "Professor Hartwell should address the student by name when he first speaks.",
+        "If the comment is off-topic, inappropriate, or disruptive, Drew should IMMEDIATELY interrupt and redirect the conversation."
+      ],
+      responseFormat: "Format your response as dialogue only.",
+      continuationPrompt: "Continue the seminar discussion."
+    },
     concepts: [],
     characters: {
       "Professor Hartwell": { role: "Teacher", voice: "Scholarly" },

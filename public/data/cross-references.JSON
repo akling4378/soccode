@@ -379,6 +379,14 @@
       "homeChapter": "order"
     },
     {
+      "id": "donscription",
+      "name": "donscription",
+      "shortDefinition": "combines donation with subscription",
+      "elaboration": "As described by Andrey Mir, this is the new business model for newspapers.  They appeal to a narrow ideological constituency, who subscribe to get their biases reinforced.  Their subscription amounts to a donation to a cause.",
+      "homeChapter": "disrupt"
+    },
+
+    {
       "id": "dunbars-number",
       "name": "Dunbar's Number",
       "shortDefinition": "cognitive limit of ~150 stable relationships",
@@ -401,6 +409,8 @@
     {"id": "epistemology", "title": "Social Epistemology"},
     {"id": "trust", "title": "Trust and Accountability"},
     {"id": "order", "title": "Forms of Order"},
-    {"id": "games", "title": "Game Theory and Social Order"}
+    {"id": "games", "title": "Game Theory and Social Order"},
+    {"id": "disrupt", "title": "The Information Disruption"}
+
   ]
 }

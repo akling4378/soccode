@@ -27,11 +27,10 @@ export async function callClaudeAPI({
 
 CURRENT CHAPTER: ${chapterData.title}
 CURRENT SECTION: ${currentBreakpointData.subheading}
-
 ${chapterInstructions.focus ? `FOCUS: ${chapterInstructions.focus}` : ''}
 
 CONCEPTS:
-${knowledgeBase.concepts.map(c => `- ${c.concept}: ${c.explanation}`).join('\n')}
+${knowledgeBase.concepts.map(c => `- ${c.name}: ${c.elaboration}`).join('\n')}
 
 CHARACTERS:
 ${Object.entries(knowledgeBase.characters).map(([name, info]) => 

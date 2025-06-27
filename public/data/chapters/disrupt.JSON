@@ -1,0 +1,411 @@
+{
+  "id": "disrupt",
+  "title": "Information Disruption",
+  "description": "How the shift from consensus-era media to fragmented attention economy has transformed social cohesion and democratic discourse",
+  "promptInstructions": {
+    "focus": "You are discussing the transformation of America's information environment from the 1960s consensus era to today's fragmented, engagement-driven media landscape.",
+    "academicEmphasis": "Keep discussions grounded in economic incentives, historical precedents, and the relationship between media structures and social cohesion.",
+    "commonMisconceptions": "Watch for students either romanticizing the old media consensus or dismissing all concerns about information fragmentation as elitist gatekeeping.",
+    "keyTerms": ["donscription", "engagement metrics", "information abundance", "elite narrative control", "attention economy", "postjournalism", "consensus era"]
+  },
+  "breakpoints": [
+    {
+      "id": "consensus-vs-fragmentation",
+      "subheading": "The Great Consensus Era vs. Today's Fragmentation",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how shared information sources created social cohesion in 1960 vs. today's fragmented landscape",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's start with a thought experiment. It's 1960. You turn on the television for the evening news. What are your options?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Three networks. CBS, NBC, ABC. Walter Cronkite was basically the voice of America."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And everyone watched the same thing. My grandparents talked about how the whole family would gather around the TV."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. And if you wanted to read the news?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Two or three newspapers per city, maybe four in the biggest cities. But they all covered basically the same stories in similar ways."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Sounds incredibly boring. And controlled."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake raises an important point. But consider this - by 1960, Americans largely shared a common narrative about current events. Fast forward to 2025. Casey, how many news sources can you access right now on your phone?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Thousands? Tens of thousands if you count social media accounts, podcasts, newsletters..."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But that's the problem. My relatives on different sides of my family literally live in completely different information universes. They can't even agree on basic facts anymore."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Why is that necessarily bad? Maybe the 1960 \"consensus\" was just elite manipulation."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But there's a systems issue here. When we talked about beliefs being social - that we decide what to believe by deciding who to believe - that worked when there was general agreement about who the trustworthy sources were."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. As of 1960, despite political differences, Americans largely agreed on who to believe for basic news. As of 2025, they don't. And this connects directly to what we learned about cultural evolution. If beliefs are social, what happens when the social consensus about information sources completely fragments?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "You get different tribes with incompatible worldviews. Like the religious wars after Gutenberg's printing press disrupted medieval information control."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Except now it's happening in real time, and it's tearing families apart."
+        }
+      ]
+    },
+    {
+      "id": "proliferation-problem",
+      "subheading": "The Proliferation Problem and Loss of Shared Narrative",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Examine the data on media consumption changes and understand the feedback loops of audience fragmentation",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's dig into the numbers. The Reuters Institute study from 2025 found some striking changes. Drew, what percentage of Americans got their news from television as of 2025?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "I think it was down to 50 percent?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Down from 72 percent in just 2013. And we can estimate that at its peak in the 20th century, television news probably reached over 90 percent of Americans."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's a massive shift in just one generation. And the study showed that over half of Americans under 35 now get their news primarily from social media platforms like YouTube."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Good. Why should three old white guys in suits decide what everyone thinks about?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Because Blake, shared narratives have historically been crucial for social cohesion. Look at how the BBC helped unite Britain during World War II, or how Cronkite's reporting shaped American understanding of Vietnam."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Or how those same institutions perpetuated segregation, covered up government lies, and ignored whole communities."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Both things can be true though. The old system had serious flaws, but at least families could talk to each other without screaming."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This gets to a fundamental tension. The proliferation of sources has democratized information access, but it's also meant the end of what Benedict Anderson called \"imagined community\" - that sense that we're all reading the same news and thinking about the same issues."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And there's a feedback loop here. As audiences fragment, content creators have less incentive to appeal to everyone and more incentive to serve specific niches. Which fragments audiences even further."
+        },
+        {
+          "speaker": "Casey",
+          "text": "It's almost like social media has recreated the partisan press of the early 1800s, before professional journalism developed norms of objectivity."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Maybe that objectivity was always a myth. At least now we're honest about the bias."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But the human cost is real. When people can't agree on basic facts, how do you maintain democracy? How do you solve problems that require collective action?"
+        }
+      ]
+    },
+    {
+      "id": "attention-economy",
+      "subheading": "The Battle for Attention and Engagement Metrics",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how scarce attention creates incentives for outrage-driven content rather than informative content",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew touches on something crucial. In 1960, media took attention for granted. People watched the news because there were limited options. Today, attention is the scarce resource. Avery, what does that do to incentives?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Everything becomes about engagement metrics. Clicks, shares, time-on-site. The algorithms aren't optimized for truth or social cohesion - they're optimized for keeping eyeballs on screens."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And what keeps eyeballs on screens?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Outrage. Fear. Anger. I've read that negative emotions are much more engaging than positive ones."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Which explains why everyone's always talking about \"doomscrolling.\" People get trapped in these cycles of consuming increasingly alarming content."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This represents a fundamental shift in media incentives. The old broadcast model needed to be bland enough not to offend advertisers or alienate large segments of the audience. The new model rewards content that provokes strong emotional reactions."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And there's a race to the bottom effect. If one source uses more sensational headlines or more extreme framing, others have to match it or lose audience."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But at least now we're seeing authentic reactions instead of the sanitized, corporate-approved messaging of the broadcast era."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Authentic? Blake, \"clickbait\" headlines are the opposite of authentic. They're carefully engineered to manipulate emotional responses."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And it's not just headlines. Entire narratives get shaped by what generates engagement rather than what helps people understand complex issues."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Consider this: in 1960, news was designed to inform and reassure. Walter Cronkite ended each broadcast with \"And that's the way it is.\" The tone was authoritative but calming. Today's media environment is frenzied and agitated by design."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Because calm, reassuring content doesn't generate the engagement metrics that platforms need to sell advertising or keep people scrolling."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So instead of three old guys telling everyone to stay calm and trust the system, we have thousands of voices telling everyone to be angry and suspicious. I still think that's better."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Even when those thousands of voices are often wrong, and the anger is tearing society apart?"
+        }
+      ]
+    },
+    {
+      "id": "donscription-economics",
+      "subheading": "The Economics of Donscription",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Analyze how changing business models from advertising to donations fundamentally altered media incentives",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's examine how the economics work. Blake and Casey are both right in different ways, but they're missing how business models shape content. Avery, what happened to newspaper advertising revenue?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Basically destroyed by the internet. Craigslist took classified ads, Google took display advertising, social media took everything else."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. And this forced newspapers to find new revenue models. Drew, what did Andrey Mir call the new model?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "\"Donscription\" - a combination of donation and subscription. People aren't really paying for information they can't get elsewhere. They're donating to support a cause they believe in."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Which means newspapers now have to make their subscribers feel like they're part of a righteous fight rather than just informed citizens."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Better than being beholden to corporate advertisers who want to avoid controversy."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But Blake, consider the incentives this creates. Mir argues that donscription requires media to \"politicize, radicalize and polarize agendas.\" Subscribers don't pay to learn - they pay to have their worldview validated and their political enemies attacked."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the data supports this. The New York Times and Washington Post more than doubled their readership during the Trump years by taking increasingly partisan stances. But newspapers that tried to maintain objectivity saw their audiences collapse by 80 percent or more."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So the financial incentives now reward the most divisive coverage rather than the most accurate or constructive coverage."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is exactly what Mir means by \"postjournalism.\" Instead of pretending to show the world as it is, media now openly imposes the world as it should be - at least according to their subscriber base."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But why is that necessarily wrong? At least now we're honest about perspective and bias instead of hiding behind false claims of objectivity."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake raises a fair point. But consider this: advertising-supported media had to avoid alienating large portions of their audience. This created incentives for moderation and consensus-building. Donscription-supported media profits by alienating the other side."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's like the difference between a restaurant that needs to appeal to everyone in town versus one that only needs to serve people who already agree with the chef's political views."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And when most people get their news from sources that intentionally anger them about the other side, how do you maintain the social trust needed for democracy?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, this kind of media environment has preceded periods of serious social conflict. The partisan press of the 1850s helped drive the country toward civil war."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Or maybe it just revealed conflicts that the establishment press was covering up. Sometimes social consensus is built on ignoring real problems."
+        }
+      ]
+    },
+    {
+      "id": "free-speech-debate",
+      "subheading": "Free Speech vs. Misinformation - The Central Dilemma",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Grapple with the fundamental tension between preserving free speech and maintaining social cohesion in an age of information abundance",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "We've traced how we got from the consensus era of 1960 to today's fragmented, engagement-driven media environment. This brings us to perhaps the central debate of our time: How do we balance free speech with the problems of misinformation?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's easy. Free speech wins, always. The alternative is having some authority decide what's true and false, and we've seen how that works out throughout history."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But Blake, what good is free speech if it destroys the social order needed to maintain free speech? The religious wars following the printing press lasted over a century and killed millions."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And people are getting hurt right now. When misinformation convinces people to reject vaccines or medical treatment, that's not abstract - those are real families losing loved ones."
+        },
+        {
+          "speaker": "Avery",
+          "text": "From our earlier discussion of Rauch and David Brin, we know that open competition between ideas can lead to truth over time. But that assumes certain institutional frameworks that may not exist in social media environments."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So your solution is what? Censorship? Having tech executives or government bureaucrats decide what Americans are allowed to think?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "I'm not talking about censorship. I'm talking about platforms taking responsibility for the harm they cause when they amplify dangerous misinformation."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And historically, successful societies have always had mechanisms for maintaining social consensus. When those break down, you get fragmentation and conflict."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me pose this carefully. As of 2024-2025, we've seen figures like Joe Rogan reach tens of millions with content that often includes medical misinformation. Tucker Carlson has built a following by promoting conspiracy theories. Alex Jones profited for years selling supplements while claiming school shootings were hoaxes."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And who gets to decide what counts as misinformation? The same experts who told us weapons of mass destruction were in Iraq? The same authorities who said the lab leak theory was impossible?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "But Blake, that's exactly why we need competitive systems for evaluating truth claims rather than just letting anyone say anything without consequences."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Right. Free speech doesn't mean freedom from criticism or freedom from platforms deciding they don't want to amplify certain content."
+        },
+        {
+          "speaker": "Casey",
+          "text": "The question is whether we can maintain the institutional frameworks that allow truth to emerge from competition, or whether we're heading toward a kind of epistemic chaos where shared truth becomes impossible."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Casey raises the stakes clearly. This isn't just about individual freedom versus social order. It's about whether democratic societies can function when citizens inhabit completely separate information universes."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But I keep coming back to this: who do you trust to be the arbiter? Every proposal for fighting misinformation ends up giving more power to the same elites who've been wrong about so many things."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Maybe the answer isn't finding perfect arbiters, but designing better systems. The old media gatekeepers weren't perfect, but at least they had professional standards and accountability."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And we could imagine technological solutions. Better tools for tracking information sources, transparency about algorithmic recommendations, ways to surface higher-quality content without outright censorship."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But none of that addresses the fundamental economic incentives we discussed. As long as engagement-driven business models reward outrage and polarization, we'll keep getting outrage and polarization."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "So we're left with a genuine dilemma. The information abundance that has democratized access to knowledge has also made shared truth more elusive. The platforms that have given voice to the voiceless have also amplified the most destructive voices."
+        },
+        {
+          "speaker": "Blake",
+          "text": "I still think the answer is more speech, not less. Bad ideas get defeated by better ideas, not by censorship."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what if the systems that used to help better ideas win aren't working anymore? What if engagement algorithms actually reward the worst ideas?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "And what if we're in a transition period where the old institutional solutions have broken down but new ones haven't emerged yet?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "That might explain why this feels so chaotic. We're between paradigms - the old consensus-era institutions can't function in the new information environment, but we haven't developed new institutions adapted to current realities."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Which brings us back to our central themes in this course. Human interdependence requires some level of shared understanding and social trust. When information systems undermine that shared understanding, they threaten the cooperation that civilization depends on. But when information systems become tools of authoritarian control, they threaten the individual freedom that makes cooperation voluntary rather than coerced."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So we need to figure out how to preserve both the benefits of information abundance and the social cohesion needed for democracy."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right, but I'm not giving up my right to think for myself just because other people can't handle hearing different opinions."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And I'm not willing to watch society collapse just because some people prioritize their individual expression over collective stability."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Perhaps that tension - between individual autonomy and social coordination - is itself instructive. The information disruption has made this ancient dilemma more acute, but it hasn't created an entirely new problem. Societies have always had to balance the freedom to dissent with the need for sufficient consensus to function."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Maybe the goal isn't to solve the dilemma permanently, but to develop more adaptive institutions that can adjust as the information environment continues to evolve."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I think that's right, Avery. The information disruption isn't a crisis to be solved once and for all, but an ongoing challenge requiring continuous institutional innovation. The question is whether democratic societies can adapt quickly enough to preserve both freedom and social cohesion in an age of information abundance."
+        }
+      ]
+    }
+  ]
+}
