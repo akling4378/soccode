@@ -385,6 +385,34 @@
       "elaboration": "As described by Andrey Mir, this is the new business model for newspapers.  They appeal to a narrow ideological constituency, who subscribe to get their biases reinforced.  Their subscription amounts to a donation to a cause.",
       "homeChapter": "disrupt"
     },
+    {
+      "id": "revolt-public",
+      "name": "The Revlot of the Public",
+      "shortDefinition": "Martin Gurri book on social disruption caused by media",
+      "elaboration": "Gurri argues that there has been an informatin tsunami that has overwhelmed and discredited elites.  The Internet enables protests to emerge without leaders or plans.",
+      "homeChapter": "revolt"
+    },
+    {
+      "id": "intimate",
+      "name": "intimate world",
+      "shortDefinition": "your friends, family, and co-workers",
+      "elaboration": "Arnold Kling points out that this used to be separate from the remote world of celebrities and politicians, but now all appear together on the same phone.",
+      "homeChapter": "revolt"
+    },
+    {
+      "id": "remote",
+      "name": "remote world",
+      "shortDefinition": "celebrities, politicians, and world events",
+      "elaboration": "Arnold Kling points out that this used to be separate from the intimate world of friends, family, and co-workers, but now all appear together on the same phone.",
+      "homeChapter": "revolt"
+    },
+    {
+      "id": "Gmoment",
+      "name": "Martin Gurri moment",
+      "shortDefinition": "a protest that erupts suddenly, or a victory by an upstart politician or party",
+      "elaboration": "protests that have erupted suddenly include the Arab Spring, Black Lives Matter, and campus protests about the war in Gaza.  These protests do not require leaders, planning, or organization.  Upstart political figures include Donald Trump, Georgia Meloni, France's National Rally and Parti le gauche, Alternative for Deutschland, and Zohran Mamdani",
+      "homeChapter": "revolt"
+    },
 
     {
       "id": "dunbars-number",
@@ -410,7 +438,8 @@
     {"id": "trust", "title": "Trust and Accountability"},
     {"id": "order", "title": "Forms of Order"},
     {"id": "games", "title": "Game Theory and Social Order"},
-    {"id": "disrupt", "title": "The Information Disruption"}
+    {"id": "disrupt", "title": "The Information Disruption"},
+    {"id": "revolt", "title": "The Revolt of the Public"}
 
   ]
 }

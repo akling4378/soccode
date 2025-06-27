@@ -40,7 +40,11 @@
       "trigger": "how the Internet disrupts media and social beliefs",
       "recommendation": "Andrey Mir's book is called Postjournalism, which is discussed by Arnold Kling in an essay called How Economics Drives News Media.  Dan Williams has a useful substack essay on the Decline of Legacy Media.  He references the Reuters report, which you can find by searching for Reuters Digital News Report 2025."
     },
-
+    {
+      "chapter": "revolt",
+      "trigger": "The Revolt of the Public",
+      "recommendation": "Of course, there is Martin Gurri's book The Revolt of the Public.  And he wrote an article called Looking-Glass Politics.  Gurri writes frequently in various media outlets.  You can search for his writing in Google News."
+    },
     {
       "chapter": "order",
       "trigger": "how democracies differ from other states",

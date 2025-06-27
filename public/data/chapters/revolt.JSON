@@ -1,0 +1,341 @@
+{
+  "id": "revolt",
+  "title": "The Revolt of the Public",
+  "description": "How the information tsunami created leaderless protest movements and disrupted traditional elite-public relationships in the digital age",
+  "promptInstructions": {
+    "focus": "You are discussing Martin Gurri's analysis of how information abundance has empowered public protest while undermining traditional authority structures.",
+    "academicEmphasis": "Keep discussions grounded in the relationship between information technology, protest movements, and institutional legitimacy. Connect to earlier course concepts about cooperation, cultural evolution, and personality psychology.",
+    "commonMisconceptions": "Watch for students either celebrating all anti-establishment movements uncritically or dismissing legitimate concerns about institutional dysfunction.",
+    "keyTerms": ["information tsunami", "revolt of the public", "elite narrative control", "performative participation", "intimate world vs remote world", "anti-establishment", "institutional adaptation"]
+  },
+  "breakpoints": [
+    {
+      "id": "information-tsunami-protests",
+      "subheading": "The Information Tsunami and Early Protests",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how Martin Gurri connected exponential information growth to the emergence of spontaneous protest movements starting around 2010",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I want to start today with a puzzle that began appearing around 2010. Suddenly, across the world, we started seeing these spontaneous protest movements erupting - the Tea Party here in the United States, the Indignados in Spain, and then what became known as the Arab Spring in Tunisia and Egypt. What made these different from previous protest movements was their speed and their seemingly leaderless nature."
+        },
+        {
+          "speaker": "Casey",
+          "text": "These remind me of the 1848 revolutions in Europe - protests spreading rapidly across borders. But those still had recognizable political programs and leadership structures."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly the contrast I want to draw, Casey. A former CIA analyst named Martin Gurri was tracking foreign media for the agency, and he noticed something unprecedented happening in the early 2000s. The volume of information being uploaded to the Internet was doubling every year. By his calculations, as much information was being added annually as had accumulated in all previous years combined."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That sounds overwhelming for anyone trying to keep track of what was happening in the world."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's precisely Gurri's insight, Drew. He connected what he called this 'tsunami of information' to the volatile protest environment that emerged. The old model where elites controlled the narrative through traditional media was breaking down. In December 2010, when a young street vendor named Mohamed Bouazizi set himself on fire after police confiscated his goods, it triggered massive protests that led to Tunisia's president being ousted within a month."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the same information that overwhelmed the intelligence analysts also empowered ordinary people to organize without traditional institutions?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Avery. Gurri's book 'The Revolt of the Public' argues that the Internet had given ordinary individuals the power to provide and interpret information that had previously been controlled by elites. Through social media, events could quickly mobilize people to take to the streets without the planning, organization, and formal programs that had characterized political movements before."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Finally - regular people could bypass the gatekeepers who decided what was important and what wasn't."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's one way to see it, Blake. But Gurri observed that this created a fundamental imbalance. The public gained the power to tear down but not necessarily to build up. They could challenge authority but couldn't easily propose or implement alternatives."
+        }
+      ]
+    },
+    {
+      "id": "modern-vs-traditional-protests",
+      "subheading": "How Modern Protests Differ from Past Movements",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Compare organizational structures and goals of traditional movements like Civil Rights with contemporary leaderless protests",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me ask you to compare two movements. Casey, you mentioned the Civil Rights movement earlier this semester. How was that organized?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "It had clear institutional structure - the NAACP, the Southern Christian Leadership Conference. Charismatic leaders like Martin Luther King Jr. They had specific legislative goals - the Civil Rights Act, the Voting Rights Act."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Now compare that to the Black Lives Matter protests that erupted after George Floyd's death, or the campus protests we've seen recently. What's different?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "The recent protests spread much faster, but they didn't seem to have the same kind of organizational backbone."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the demands were much more diffuse. 'Defund the police' could mean anything from budget reallocation to complete abolition, depending on who you asked."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Those are both key differences Gurri identified. Modern protests excel at negation - saying what they're against - but struggle with proposition - saying specifically what they want to build instead. The speed of digital mobilization means people can gather before there's time to develop coherent programs or organizational structures."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But isn't that more democratic? Instead of following orders from some self-appointed leaders, people can participate directly."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the tension, Blake. You gain spontaneity and authenticity, but you lose the ability to negotiate specific changes or maintain momentum over time. When New York Governor Andrew Cuomo told Black Lives Matter protesters 'You won, you won... what do you want?' he was highlighting this exact problem."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So these movements are more like the medieval peasant revolts - explosive expressions of anger without sustainable political programs."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Interesting comparison, Casey. Though I'd say the medieval revolts usually had very specific grievances about taxes or land rights. Modern protests often express a more generalized frustration with 'the system' without clear alternatives."
+        }
+      ]
+    },
+    {
+      "id": "recent-gurri-moments",
+      "subheading": "Recent Martin Gurri Moments",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Examine contemporary examples of how digital information flows trigger rapid, decentralized protest movements",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me give you three recent examples that fit Gurri's pattern perfectly. First, the campus protests over Gaza that erupted in 2023. A conflict thousands of miles away instantly mobilized students across hundreds of American universities. By some counts, nearly 12,400 pro-Palestine protests occurred in just eight months."
+        },
+        {
+          "speaker": "Drew",
+          "text": "I remember how quickly those spread. One day there were a few demonstrations, then suddenly encampments appeared on campuses everywhere."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Drew. No central organization coordinated this - it spread through social media networks. Second example: Venezuela's election in July 2024. When the government declared Maduro the winner despite opposition claims of having evidence showing their candidate won by a landslide, protests erupted immediately. People began banging pots and pans from their balconies, then moved to the streets."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's interesting - the protests started with this traditional Latin American form of dissent, the cacerolazo, but spread through modern digital networks."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly that blend of old and new, Avery. Third example: Iran's 'Woman, Life, Freedom' movement after Mahsa Amini's death in 2022. A 22-year-old Kurdish woman died in police custody for allegedly wearing her hijab improperly. Within days, protests spread across Iran's provinces, with people forming local groups like 'Neighborhood Youth Alliances' without any central coordination."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But didn't the Iranian government shut down internet access to try to stop the protests?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "They tried, Casey, which actually proves Gurri's point about how dependent these movements are on digital information flow. When the government restricted internet access, it could disrupt the protests' coordination. But it also demonstrated how the traditional elite response - control information - was no longer fully effective."
+        },
+        {
+          "speaker": "Blake",
+          "text": "These all sound like people finally having the tools to challenge authority directly, without having to go through official channels that are designed to slow things down and water down their demands."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the empowerment side, Blake. But notice that in all three cases, the initial energy didn't translate into lasting political change. The campus protests subsided without clear policy victories. Maduro remains in power in Venezuela despite widespread belief that he lost the election. The Iranian regime, while shaken, has largely maintained control."
+        }
+      ]
+    },
+    {
+      "id": "intimate-remote-worlds-collide",
+      "subheading": "When the Intimate and Remote Worlds Collide",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how social media merges personal and distant spheres, creating psychological pressure for performative political participation",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Arnold Kling has made an observation that I think helps explain the psychological pressure people feel in these situations. He talks about how our 'intimate world' and 'remote world' have traditionally been separate, but social media has mashed them together."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What does he mean by those terms?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, the intimate world is your friends, family, and co-workers - the people you interact with regularly and personally. The remote world is celebrities, politicians, major events happening far away - things you might have opinions about but wouldn't normally act on directly. Kling argues that on our smartphones, these worlds have collided. Our friends try to act like celebrities by posting their political opinions for everyone to see. Meanwhile, celebrities and politicians try to act like our friends by speaking directly to us through social media."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So we end up feeling personally connected to events that we have no actual power to influence?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. And this creates a new kind of psychological pressure. People don't just have opinions about distant events anymore - they feel a moral obligation to do something, to take a public stand. Kling uses the analogy of a basketball fan who used to be content cheering from the stands but now feels like they ought to run out onto the court and make a statement."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That would explain why people feel compelled to post political opinions on social media even when they know it's not going to convince anyone."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Casey. It's become performative participation. People aren't necessarily planning to change the world with their posts or their presence at protests. They just feel they can't remain silent spectators when important things are happening. The January 6th Capitol protest is an extreme example - my guess is that 90 percent of the people who entered the building didn't have a specific plan. They just felt compelled to be part of the moment."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But why is that necessarily bad? Maybe it's better for people to care about what's happening rather than just being passive consumers of news."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's a fair question, Blake. The challenge is that this emotional investment often exceeds people's actual knowledge or ability to influence outcomes. When you feel personally connected to events in Ukraine or Gaza or Venezuela, you experience them almost as if they were happening in your own community. But unlike actual community problems, you can't sit down with the people involved and work out practical solutions."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So we end up with all this activated energy but no productive outlets for it?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's Gurri's concern, Drew. The same digital tools that make people aware of injustices around the world also make them feel responsible for responding to every injustice, everywhere, all the time. It's psychologically exhausting and politically paralyzing."
+        }
+      ]
+    },
+    {
+      "id": "anti-establishment-politicians",
+      "subheading": "The Rise of Anti-Establishment Politicians",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Analyze how digital media has enabled outsider political candidates to bypass traditional gatekeepers and appeal directly to frustrated publics",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "One consequence of this revolt of the public has been the rise of political figures who would have been considered fringe candidates a generation ago. Donald Trump is the obvious American example, but this is a global phenomenon. We've seen Javier Milei in Argentina, Giorgia Meloni in Italy, Geert Wilders in the Netherlands."
+        },
+        {
+          "speaker": "Casey",
+          "text": "These candidates seem to have figured out how to use social media and alternative media to bypass traditional gatekeepers."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. In the past, candidates needed support from party establishments and mainstream media to gain traction. Now they can build audiences directly through social media, podcasts, and online platforms. They can go around the traditional elites who would have filtered them out."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Is there something systematic about why these particular types of candidates are succeeding? They seem to share certain characteristics even across different countries."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good observation, Avery. Most of them position themselves as outsiders fighting corrupt establishments. They speak in the language of the revolt of the public - claiming that ordinary people have been ignored or betrayed by elites. And they're comfortable with the confrontational, unfiltered style that works well on social media."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But some of these figures seem to be creating more problems than they're solving. Like, their whole appeal is based on being against things rather than having practical plans."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That fits Gurri's analysis perfectly, Drew. These politicians succeed by channeling public anger against institutions, but they often struggle when they actually have to govern and make those institutions work."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Maybe the problem isn't the candidates - maybe it's that the old system was so broken that people are willing to try anything different."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's certainly how many voters see it, Blake. The question is whether this leads to better governance or just different forms of dysfunction."
+        }
+      ]
+    },
+    {
+      "id": "elite-responses-path-forward",
+      "subheading": "Elite Responses and the Path Forward",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Debate different approaches to managing the tension between digital empowerment and institutional legitimacy, connecting to themes of emotional stability and cultural adaptation",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "So we come to the crucial question: how should established institutions and leaders respond to this revolt of the public? The initial elite reaction has often been denial and frustration."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like Hillary Clinton calling Trump supporters 'a basket of deplorables,' or the way many European leaders dismiss populist parties as illegitimate."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Casey. That kind of response creates a vicious cycle - elite contempt feeds populist anger, which leads to more elite reactionary responses. The elites can't accept that their monopoly on information and narrative control is gone."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But a lot of these elite institutions do important work. We can't just tear everything down because people are angry."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Why not? If these institutions aren't serving the people, maybe they deserve to be torn down. People should be able to make their own decisions without being managed by experts who think they know better."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's easy to say in theory, Blake, but in practice we need people who understand complex issues. The problem isn't that we have experts - it's that our current experts are completely out of touch with what ordinary people are going through."
+        },
+        {
+          "speaker": "Casey",
+          "text": "I worry that we're heading toward a complete breakdown of institutional authority. History shows us what happens when societies can't maintain legitimate governance - you get chaos, authoritarianism, or both."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Maybe the solution is to redesign institutions so they can operate at the speed and scale of the digital world. Traditional bureaucracies can't respond fast enough to stay relevant."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm willing to be wrong. But I think focusing only on institutional reform misses something important. Yes, institutions need to adapt. But the deeper challenge may be cultural. We need to somehow combine the younger generation's comfort with new media and technology with an older generation's approach that is less angry and more solution-oriented."
+        },
+        {
+          "speaker": "Blake",
+          "text": "You're asking people to be less passionate about injustice? That sounds like you want everyone to just accept the status quo."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not less passionate, Blake, but perhaps more emotionally stable. Remember our discussion of the Big Five personality traits? The digital environment seems to reward high emotional reactivity. But sustainable problem-solving requires the kind of emotional regulation that comes with maturity."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But emotional stability is a luxury when you're watching people suffer. How do you tell someone to be calm when their community is being destroyed?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Maybe we need better feedback loops between digital activism and actual problem-solving. Right now people can feel like they're making a difference by posting or protesting, but there's no clear connection to measurable improvements."
+        },
+        {
+          "speaker": "Casey",
+          "text": "The historical precedent isn't encouraging. Previous media disruptions - like the printing press - led to decades of religious wars before societies figured out how to manage the new information environment."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "You may be right, Casey. But I hold onto some hope that each generation adapts to its technological environment. The young people who are most comfortable with digital tools may also develop better instincts for when and how to use them constructively. The challenge is whether that happens fast enough to prevent serious institutional breakdown."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So basically we're all just hoping that people will figure out how to be more mature in how they use social media?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I know it sounds modest, Drew. But cultural change often works that way - through millions of individual choices about how to behave, rather than through grand institutional reforms. If enough people choose to engage with digital tools in ways that are more thoughtful and less reactive, that could reshape the entire environment."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That puts all the responsibility on individuals to fix a system that's fundamentally broken."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not to fix it, Blake, but to adapt to it. The information tsunami isn't going away. The question is whether we can develop the cultural wisdom to navigate it without losing our capacity for productive cooperation. That's a challenge for your generation to figure out."
+        }
+      ]
+    }
+  ]
+}

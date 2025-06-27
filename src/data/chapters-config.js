@@ -41,6 +41,12 @@ export const chaptersConfig = [
     filename: 'disrupt.JSON'
   },
   {
+    id: 'revolt',
+    title: 'The Revolt of the Public',
+    filename: 'revolt.JSON'
+  },
+
+  {
   id: 'dummy',
   title: 'Cross-Reference Test',
   filename: 'dummy.JSON'
