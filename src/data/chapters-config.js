@@ -45,7 +45,11 @@ export const chaptersConfig = [
     title: 'The Revolt of the Public',
     filename: 'revolt.JSON'
   },
-
+  {
+    id: 'three-languages',
+    title: 'The Three Languages of Politics',
+    filename: 'three-languages.JSON'
+  },
   {
   id: 'dummy',
   title: 'Cross-Reference Test',

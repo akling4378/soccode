@@ -422,6 +422,14 @@
       "homeChapter": "games"
     },
     {
+      "id": "Ideological-Turing-Test",
+      "name": "Ideological Turing Test",
+      "shortDefinition": "showing that you can state the other side's point of view",
+      "elaboration": "Coined by economist Bryan Caplan, borrowing the phrase Turing Test from computer science.  Suppose an opponent states their point of view and you try at the same time to state their point of view in your own words.  If a third party cannot tell which one of you is the person who truly believes that point of view, you pass the test.",
+      "homeChapter": "three-languages"
+    },
+    
+    {
       "id": "prisoners-dilemma",
       "name": "Prisoner's Dilemma",
       "shortDefinition": "individual rationality leading to collective irrationality",
@@ -439,7 +447,9 @@
     {"id": "order", "title": "Forms of Order"},
     {"id": "games", "title": "Game Theory and Social Order"},
     {"id": "disrupt", "title": "The Information Disruption"},
-    {"id": "revolt", "title": "The Revolt of the Public"}
+    {"id": "revolt", "title": "The Revolt of the Public"},
+    {"id": "three-languages", "title": "The Three Languages of Politics"}
+    
 
   ]
 }

@@ -1,0 +1,286 @@
+{
+  "id": "three-languages",
+  "title": "The Three Languages of Politics",
+  "description": "How political tribes use oppressor/oppressed, civilization/barbarism, and liberty/coercion framings to make their positions seem moral and opposing views immoral",
+  "promptInstructions": {
+    "focus": "Demonstrate how the same situation can be framed through different political languages. Characters should practice steel-manning opposing views, with some slipping up and revealing their biases before correcting themselves. Professor Hartwell should emphasize the difficulty of charitable interpretation."
+  },
+  "breakpoints": [
+    {
+      "id": "gaza-predictable-reactions",
+      "subheading": "Gaza and Predictable Reactions",
+      "characters": [
+        "Professor Hartwell",
+        "Casey",
+        "Drew", 
+        "Avery",
+        "Blake"
+      ],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how Kling's three political languages predict reactions to controversial events",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Having read The Three Languages of Politics by Arnold Kling, let's see how he would have predicted the way that conservatives and progressives would have framed the war in Gaza that began with the October 7, 2023 attack on Israel. Kling argues that political tribes use particular framings to try to establish that their position is moral and that alternative views are immoral. He talks about something called an Ideological Turing Test - being able to use the language and arguments that a person with whom you disagree would employ."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That's a reference to Alan Turing's test for artificial intelligence, isn't it? Whether a machine could convince you it was human by imitating human conversation."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. The Ideological Turing Test asks whether you could convince someone that you genuinely held opposing political views. Let me propose a role play. Casey, can you play the part of a progressive discussing Gaza?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "This wouldn't be me personally, but if I were a progressive I would say that the Palestinians have been oppressed by Israelis for decades. Living under occupation, restricted movement, limited economic opportunities. So I would frame the war as ruthless oppression by Israel. I would focus on the disproportionate response - Israel's military superiority being used against a trapped civilian population. I would accuse Israel of collective punishment and... well, some would say genocide."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good. Now Drew, can you take the role of a conservative?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "This wouldn't be my personal view either, but as a conservative I would say that Israel stands for civilized values - democracy, human rights, gender equality. Hamas engaged in a barbaric attack on innocent people on October 7th, committing murder, rape, and kidnapping. Terrorists who deliberately target civilians and use their own people as human shields represent everything that's opposed to civilization. Israel is defending itself against barbarism."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's actually striking how well Kling's model predicted the reactions. Those really were the two dominant framings we saw."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Kling might have predicted that a libertarian would focus on both sides using force and coercion, which violates individual rights. All taxation is theft, but using tax money to fund either Israeli military operations or Palestinian aid agencies is particularly wrong because it forces people to participate in a conflict they might oppose."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly right, Blake. Notice how each framing makes one side look moral and the other immoral. No one is in favor of oppression, barbarism, or coercion. But people on each team insist that the other side is guilty of exactly these things."
+        }
+      ]
+    },
+    {
+      "id": "more-examples-three-languages",
+      "subheading": "More Examples of the Three Languages",
+      "characters": [
+        "Professor Hartwell",
+        "Casey",
+        "Drew",
+        "Avery", 
+        "Blake"
+      ],
+      "tensionLevel": "low",
+      "learningObjective": "Apply the three political languages framework to domestic policy issues",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's work through some other examples to see how this pattern holds. Take the tax system. How would each language frame tax policy?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "A progressive would emphasize redistribution from rich to poor. The wealthy have benefited from society's infrastructure and should pay their fair share to help those who've been left behind by an unfair economic system."
+        },
+        {
+          "speaker": "Drew",
+          "text": "A conservative would say the tax system should reward hard work, thrift, and family formation. People who make responsible choices - working instead of staying on welfare, saving money, getting married before having children - shouldn't be penalized for their good decisions."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And a libertarian would say that taxation is fundamentally coercive. Every tax forces people to hand over money they earned, which violates their individual liberty."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Perfect. Here's another example. In 1992, the Boston Federal Reserve found that African-Americans were rejected for mortgage loans at much higher rates than whites, even after controlling for income and credit scores. How would each language interpret this?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Progressives would see this as evidence that African-Americans are being systematically oppressed by the mortgage lending system. Banks are perpetuating racial inequality by denying equal access to homeownership."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Conservatives might argue that responsible lending requires evaluating someone's ability to repay loans. If there are differences in rejection rates, it could reflect unmeasured factors related to creditworthiness rather than discrimination. People need to demonstrate they can handle financial responsibility."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Libertarians would say the government shouldn't interfere in private lending decisions. If banks are discriminating, they're hurting their own profits by turning away qualified borrowers. Market competition will solve the problem better than regulation."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good. One more example - student loan forgiveness. This one gets interesting because the same person can be framed as either privileged or oppressed."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Progressives would focus on students being oppressed by a predatory lending system. Young people are pushed into massive debt before they're old enough to understand the consequences, then trapped by payment systems designed to benefit lenders."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But conservatives could flip that completely. They'd ask who's really privileged here - the college graduate with a degree that increases lifetime earnings, or the plumber who didn't go to college but now has to subsidize the lawyer's student loans through taxes."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And libertarians would say the real problem is government involvement in education financing. Both the loans and the forgiveness represent government interference in what should be private decisions about education and lending."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That's fascinating how the same policy can make different people look like either the oppressor or the oppressed, depending on how you frame it."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. Notice how each language provides a complete moral framework. You can apply the same basic template to almost any political issue and predict how different tribes will react."
+        }
+      ]
+    },
+    {
+      "id": "populists-vs-elites",
+      "subheading": "Contemporary Politics - Populists vs. Elites",
+      "characters": [
+        "Professor Hartwell",
+        "Drew",
+        "Casey",
+        "Blake",
+        "Avery"
+      ],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how populist-elite tensions cut across traditional left-right politics",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "These three languages still operate, but recent politics has added another layer - the conflict between populists and elites. This cuts across traditional left-right divisions. Take something like social media content moderation. How do populists and elites frame this differently?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Populists would say that elite tech employees and university-educated experts are censoring common-sense voices. They're silencing people who disagree with the establishment narrative, whether it's about COVID policies, election integrity, or other issues where ordinary people's lived experience contradicts what the experts claim."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Elites would argue that trained professionals with expertise in media, psychology, and public health are protecting democracy from dangerous misinformation. They're preventing the spread of conspiracy theories that could undermine public health or democratic institutions."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But notice how both sides are using the oppressor/oppressed framework. Populists claim they're being oppressed by elite gatekeepers. Elites claim that vulnerable populations are being oppressed by misinformation."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And both sides use civilization/barbarism too. Populists say elites are destroying free speech and open debate - core civilizational values. Elites say populists are promoting ignorance and conspiracy thinking that threatens rational discourse."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. The populist-elite divide cuts across traditional left-right politics. You can have populist progressives who distrust corporate media and populist conservatives who distrust universities. You can have elite progressives and elite conservatives who both worry about misinformation, just from different sources."
+        },
+        {
+          "speaker": "Drew",
+          "text": "The COVID vaccine debate showed this clearly. Populists of various political backgrounds questioned official recommendations, while elites of various backgrounds defended the public health establishment."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Same with debates about free trade and immigration. Elite economists across the political spectrum tend to support both, while populists across the spectrum often oppose both."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So now we have this four-way tension instead of just left versus right. Populist left, elite left, populist right, elite right."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Blake. The language of expertise versus common sense has become as important as the traditional ideological languages. Populists claim elites are out of touch; elites claim populists are uninformed. Each side thinks the other poses a threat to democracy itself."
+        }
+      ]
+    },
+    {
+      "id": "social-psychology-political-language",
+      "subheading": "The Social Psychology of Political Language",
+      "characters": [
+        "Professor Hartwell",
+        "Avery",
+        "Casey",
+        "Blake",
+        "Drew"
+      ],
+      "tensionLevel": "medium",
+      "learningObjective": "Practice steel-manning opposing views while recognizing the difficulty of charitable interpretation",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Now let's step back and think about why people use these languages. Kling argues that tribal language serves two main purposes. First, it signals to people in your own political tribe. If you want praise from progressives, you emphasize oppression and systemic inequality. If you want approval from conservatives, you talk about civilizational values and personal responsibility."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So it's like a membership badge. Using the right language proves you belong to the group."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. But the second purpose is to demonize the other side. Nobody is actually for oppression, barbarism, or coercion. But people accuse those who disagree with them of supporting exactly these things."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This connects back to our discussion of asymmetric insight from the social epistemology chapter. Instead of examining the substance of someone's argument, you dismiss them by claiming to understand their evil motives."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Casey. I could be making this up, but I believe that libertarian philosopher Jason Brennan once wrote that typical conservatives advocate an American police state while typical progressives advocate an American nanny state. That's a perfect example of failing the Ideological Turing Test - describing your opponents in terms they would never accept."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But isn't that just being honest about what their policies would actually lead to, even if they don't intend it?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the seductive thing about political language, Blake. It always feels like you're just describing reality accurately. Kling would say we should be most wary of the language that fits with our own point of view."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So how do we get better at this? Just try to think of the most charitable interpretation of people we disagree with?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's try an exercise. I want each of you to explain a position you disagree with while giving credit to the other side's positive motives. Avery, you're generally pro-immigration. Can you explain the populist position against high levels of immigration?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Well... people who want stricter immigration controls might genuinely worry about economic competition for working-class jobs. If you're a construction worker or service worker, increased immigration could depress wages in your industry. They might also have legitimate concerns about rapid cultural change in their communities, or about whether social services can handle large influxes of new people. It's not necessarily about prejudice - it could be about economic security and social stability."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good. Blake, you're generally against foreign military intervention. Can you give credit to those who support an active American role internationally?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "I guess... people who support American global leadership might genuinely believe they're protecting democracy and human rights around the world. They see America as having unique capabilities to stop genocides or prevent regional conflicts from spiraling out of control. They think American withdrawal would create power vacuums that would be filled by authoritarian regimes, leading to more suffering. They're not trying to run other countries for their own good because obviously Americans know better than— wait, let me revise that."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Blake, you were about to say they want to run other countries for their own good, weren't you?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Oops. Yeah, let me revise that. They genuinely believe that American involvement promotes freedom and prevents worse outcomes, not that Americans necessarily know what's best for everyone else."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "It's not so easy, is it? Taking the most charitable view of the other side is hard for everyone."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Let me try one. I generally favor race-blind policies, but people who support affirmative action might genuinely believe that formal equality isn't enough when there are ongoing effects of historical discrimination. They think that without active intervention, systemic advantages will perpetuate inequality indefinitely. They're not trying to abandon merit - they believe merit itself is being obscured by unequal opportunities."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's better than I could do, Casey. I support universal pre-K, but people who oppose it might legitimately worry about the enormous costs and whether government programs can actually deliver quality early childhood education. They might think parents and communities are better positioned than bureaucracies to know what young children need. And they might worry that universal programs create dependency rather than empowering families to make their own choices."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Excellent work, all of you. Notice how much more productive this is than assuming the other side has evil motives."
+        },
+        {
+          "speaker": "Avery",
+          "text": "I wish we had some institution that would systematically lead people away from this kind of demonization and toward more charitable interpretation of disagreements."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I used to think that higher education would do that. It's what I hope to accomplish with something like this seminar."
+        }
+      ]
+    }
+  ]
+}
