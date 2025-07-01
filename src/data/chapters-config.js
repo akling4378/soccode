@@ -50,7 +50,12 @@ export const chaptersConfig = [
     title: 'The Three Languages of Politics',
     filename: 'three-languages.JSON'
   },
-  {
+   {
+    id: 'organizations',
+    title: 'How Organizations Actually Work',
+    filename: 'organizations.JSON'
+  },
+{
   id: 'dummy',
   title: 'Cross-Reference Test',
   filename: 'dummy.JSON'

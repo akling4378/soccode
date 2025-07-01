@@ -1,0 +1,443 @@
+{
+  "id": "organizations",
+  "title": "How Organizations Actually Work",
+  "description": "Examining how real organizations function through the lens of information flow, incentive alignment, mission drift, and the gap between intentions and outcomes",
+  "promptInstructions": {
+    "focus": "You are discussing how organizations evolve from mission-focused startups to complex bureaucracies, examining both the necessity and pathologies of large-scale coordination.",
+    "academicEmphasis": "Connect organizational dynamics to earlier course concepts about cooperation, personality psychology, and cultural evolution. Use concrete examples to illustrate abstract principles.",
+    "commonMisconceptions": "Watch for students either romanticizing small organizations/founder control or assuming good intentions automatically produce good outcomes in large institutions.",
+    "keyTerms": ["Dunbar's number", "founder mode", "principal-agent problem", "alignment", "mission drift", "intention heuristic", "Goodhart's Law", "tyranny of last year's budget"]
+  },
+  "breakpoints": [
+    {
+      "id": "small-vs-large-founder-mode",
+      "subheading": "Small vs. Large Organizations & Founder Mode",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand the transition from informal to formal coordination at Dunbar's number and evaluate the trade-offs between founder control and professional management",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Today we're moving from abstract theories about cooperation and cultural evolution to how these actually play out in organizations. Let's start with a basic transition that every successful organization faces. Remember our discussion of Dunbar's number?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "About 150 people - the cognitive limit for stable social relationships."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. When an organization stays below that size, coordination can happen informally. You just call Jane when you need something done. But once you cross that threshold, you need formal hierarchies, written procedures, organization charts. The question is how to manage that transition without losing the energy and focus that made the organization successful in the first place."
+        },
+        {
+          "speaker": "Blake",
+          "text": "I just read this essay by Paul Graham about exactly that problem. He calls it 'founder mode' versus 'manager mode.' Basically, the conventional wisdom is that once your company gets big, you have to hire professional managers and delegate everything to them. But Graham argues that's often a disaster."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What's wrong with delegation? Isn't that how you scale?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's what everyone assumes, Drew. But Graham talks about how Brian Chesky from Airbnb followed that advice and it nearly destroyed the company. The standard approach is 'hire good people and give them room to do their jobs' - sounds great, right? Except Graham says what it often means in practice is 'hire professional fakers and let them drive the company into the ground.'"
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's interesting. So founders who stay directly involved in decisions are actually more effective than those who delegate everything?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Exactly, Avery. Steve Jobs used to run annual retreats for the 100 most important people at Apple - and these weren't the 100 highest on the org chart. He stayed involved in details that other CEOs would delegate. Graham argues that founders can do things managers can't, and when they stop doing those things, the organization suffers."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But wait, Blake. Let me give you some counterexamples. What about Elizabeth Holmes at Theranos? She maintained total control, made all the key decisions, refused to delegate to experienced executives. The company was a complete fraud that put patients at risk."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Or Sam Bankman-Fried at FTX. He kept direct control over everything, including moving customer funds around without oversight. That 'founder mode' enabled him to steal billions of dollars."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Those are isolated cases of fraud--"
+        },
+        {
+          "speaker": "Casey",
+          "text": "What about Adam Neumann at WeWork? He had a grand vision, stayed involved in every decision, insisted on his personal judgment over experienced advisers. The company was valued at $47 billion and then nearly collapsed when people looked at the actual business model."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "These are excellent examples. What they illustrate is something we discussed much earlier in the semester. Avery, do you remember?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "The First Iron Law - sometimes it's this way, and sometimes it's that way. Sometimes founder mode works brilliantly, like with Jobs or Bezos. Sometimes it leads to disaster, like with Holmes or Bankman-Fried. You can't just assume one approach is always better."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. The challenge is figuring out when founder involvement helps and when it hurts. Blake, what do you think distinguishes the successful cases from the disasters?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Well... I guess Jobs and Bezos were actually building real products that customers wanted. Holmes and Bankman-Fried were basically running elaborate cons."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So maybe the problem isn't founder control versus delegation. Maybe it's whether there are any 'adults in the room' who can push back when the founder is making terrible decisions."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's a perceptive distinction, Drew. The question becomes how to maintain founder energy and vision while building in accountability and reality-testing."
+        }
+      ]
+    },
+    {
+      "id": "information-flow-problems",
+      "subheading": "The Alignment Problem - Information Flow",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how information gets distorted as it flows up organizational hierarchies, using historical and contemporary examples",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But let's step back and look at why large organizations struggle in the first place. Anthony Downs and Gordon Tullock proposed a model for understanding this. In any large organization, you have too much information for leaders to process, and too many people for leaders to give detailed instructions to."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So you need middle management to filter information going up and translate directions going down."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Casey. Think of a military analogy. A general can't read reports from every foot soldier about enemy activity - there would be thousands of messages, many of them false alarms. So information flows up through corporals to sergeants to lieutenants, getting filtered and summarized at each level. Similarly, the general can't give specific orders to every soldier, so broad directives get translated into more specific instructions as they flow down."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That sounds efficient. Each level processes the information that's relevant to their scope."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "In theory, yes. But in practice, crucial information gets lost or distorted at each step. Let me give you a tragic recent example. On October 7th, 2023, Hamas launched a massive attack on Israel that caught Israeli intelligence completely off-guard."
+        },
+        {
+          "speaker": "Drew",
+          "text": "I remember that. It seemed impossible that Israel wouldn't see it coming given their sophisticated intelligence capabilities."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly the puzzle, Drew. It turns out that Israeli observers on the ground had been reporting suspicious activity for weeks - unusual Hamas movements, training exercises, communications patterns. But as this information flowed up the chain, it got filtered out because it didn't fit what Israeli intelligence called 'the conception.'"
+        },
+        {
+          "speaker": "Blake",
+          "text": "What was the conception?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The prevailing view among senior officials was that Hamas was relatively content with the status quo and wouldn't risk a major confrontation. So when ground-level intelligence suggested otherwise, middle managers either didn't pass it up or senior officials dismissed it as not credible."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is exactly what happened at Gallipoli in World War I. Field commanders could see that the assault plans weren't working, that the terrain was impossible, that casualties were mounting for no gain. But the information that reached higher command was filtered through officers who didn't want to admit failure or contradict their superiors."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good parallel, Casey. Or think about Gettysburg - Confederate scouts reported the exact positions of Union forces, but that information either didn't reach Lee or was dismissed because it contradicted his assumptions about enemy movements."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the same communication problems that exist today existed 150 years ago?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The technology changes, Avery, but the human dynamics remain similar. People in the middle of hierarchies have their own interests and biases. They decide what their superiors want to hear. Information that challenges prevailing views or reflects badly on the messenger tends to get suppressed."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But don't leaders know this happens? Can't they create systems to get unfiltered information?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "They try, Drew. Some CEOs do 'skip-level' meetings to hear directly from lower-level employees. Some generals visit the front lines personally. But there are limits to how much any individual can process, and people quickly learn to game whatever system you create."
+        },
+        {
+          "speaker": "Blake",
+          "text": "This is why I'm suspicious of large organizations in general. They're structurally designed to hide information from the people making decisions."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That may be too strong, Blake. But you're right that information distortion is a persistent challenge that gets worse as organizations grow larger."
+        }
+      ]
+    },
+    {
+      "id": "compensation-gaming",
+      "subheading": "The Alignment Problem - Compensation & Gaming",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Examine how compensation systems intended to align incentives inevitably get gamed by employees, leading to unintended consequences",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "We've talked about information flowing up and down organizational hierarchies. Another alignment problem concerns compensation. The organization wants employees to pursue the organization's goals, but employees want to get the most pay for the least discomfort. How does an organization handle that?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "The compensation system has to solve the principal-agent problem - getting employees to do what the organization wants them to do. You align individual incentives with organizational objectives."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what if they get paid for doing the wrong thing? Like a teacher who helps students get good test scores without actually learning anything?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's exactly my point, Drew. The problem can be solved with smarter incentive design. Instead of rewarding test scores, you reward genuine learning outcomes. If salespeople get paid based on long-term customer satisfaction rather than just closing deals, they'll focus on quality relationships. It's just a matter of designing the right metrics."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. Ri-ri-ri-ri-right. But it's not quite that simple, Avery. Let me give you a real example. Around 2010, Wells Fargo bank had what seemed like a brilliant incentive system. They paid their retail banking employees based on how many new accounts they opened - checking accounts, savings accounts, credit cards. The idea was to reward employees for growing the business and serving more customers."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That sounds reasonable. More accounts means more customers being served."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's what the executives thought. But over several years, employees figured out how to game the system. They started opening fake accounts in customers' names without permission. A customer would come in to open a checking account, and the employee would secretly open a savings account and credit card too, earning triple the bonus. Some employees opened millions of fake accounts."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Wait, millions? How did nobody notice?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly the point, Blake. The employees were hitting their targets, their managers were getting promoted for running successful branches, and executives were celebrating record growth. The system looked like it was working perfectly - until customers started noticing mysterious fees and accounts they'd never opened."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of what happened with Roman tax collectors. They'd bid for the right to collect taxes in a province, then squeeze the population for as much as possible to make their profit. The incentive system created systematic abuse."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good connection, Casey. Arnold Kling makes the point that any compensation system will eventually get gamed by employees. Wells Fargo had to pay over three billion dollars in fines and fire thousands of employees. But the fundamental problem wasn't bad people - it was that clever people will always find ways to maximize their rewards while minimizing their effort."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But couldn't you just design better metrics? Instead of counting new accounts, measure customer satisfaction or long-term profitability?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "You'd think so, Avery. But then employees learn to game those metrics too. Schools that get judged on test scores start teaching to the test instead of providing real education. Hospitals that get judged on patient satisfaction scores start overprescribing pain medication. There's even a name for this - Goodhart's Law: 'When a measure becomes a target, it ceases to be a good measure.'"
+        },
+        {
+          "speaker": "Drew",
+          "text": "So you're saying there's no way to actually align what people do with what the organization needs?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not perfectly, Drew. And here's the deeper problem - any compensation system has to be periodically revised as employees figure out how to game it. That creates ongoing instability and cynicism. Employees stop focusing on the actual mission and start focusing on figuring out the reward system."
+        },
+        {
+          "speaker": "Blake",
+          "text": "This is exactly what I mean about organizations being fundamentally corrupting. You take decent people and put them in systems that reward gaming and manipulation instead of honest work."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That may be too strong, Blake. But you're right that there's something troubling about treating human motivation like an engineering problem to be solved with the right incentives."
+        }
+      ]
+    },
+    {
+      "id": "mission-drift-adaptability",
+      "subheading": "Mission Drift & Adaptability",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how organizations evolve from mission-focused to self-preserving, examining both successful adaptation and institutional sclerosis",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This connects to a broader pattern in organizational life cycles. Most organizations start with a clear, compelling mission. But as they mature, they tend to drift away from that mission and focus more on self-preservation."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What do you mean by mission drift?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, consider Boeing. For decades, the company was famous for engineering excellence. Their motto was 'If it's not Boeing, I'm not going.' Engineers ran the company and made decisions based on safety and performance. But starting in the 1990s, especially after the merger with McDonnell Douglas, the culture shifted toward financial optimization. Executives started asking how to maximize quarterly profits rather than how to build the best aircraft."
+        },
+        {
+          "speaker": "Casey",
+          "text": "What were the consequences of that shift?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Casey, the 737 MAX disasters. Boeing had a new, larger engine that changed the aircraft's flight characteristics. Instead of requiring extensive pilot retraining - which airlines wanted to avoid - they installed software called MCAS to automatically adjust the plane's attitude. But they didn't tell pilots about this system, and when it malfunctioned, pilots couldn't override it. Two planes crashed, killing 346 people."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So the focus on cutting costs and pleasing airline customers led them to compromise safety?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the conclusion of most investigations, Blake. The old Boeing would have prioritized getting the engineering right, even if it cost more or took longer. The new Boeing prioritized speed to market and cost savings."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But some companies do adapt successfully to changing environments. Amazon started as a bookstore and became a cloud computing giant."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Excellent contrast, Avery. Compare Amazon's adaptation to what happened with Bed Bath & Beyond. Both companies faced the shift to e-commerce. Amazon constantly experimented with new business models, even when they cannibalized existing revenue. Bed Bath & Beyond stuck to their traditional retail approach, offering 20% off coupons and cramming merchandise into physical stores."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What happened to Bed Bath & Beyond?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "They went bankrupt in 2023, Drew. Target, by contrast, invested heavily in integrating online and offline shopping - you can order online and pick up in store, return online purchases to physical locations. They adapted their business model while Bed Bath & Beyond tried to preserve their existing approach."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of the railroad companies in the early 20th century. They thought they were in the railroad business instead of the transportation business, so they missed the shift to automobiles and airplanes."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. Organizations become attached to their existing processes and power structures. Anthony Downs calls this 'the tyranny of last year's budget.' Once you've negotiated a budget allocation, it develops momentum. Changing it requires costly political negotiations that most people want to avoid."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So organizations naturally become conservative and change-averse as they get bigger?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the tendency, Blake. The people who succeed in mature organizations are often those who excel at managing internal politics rather than adapting to external challenges."
+        }
+      ]
+    },
+    {
+      "id": "intention-heuristic",
+      "subheading": "Profit vs. Nonprofit vs. Government - The Intention Heuristic",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Challenge the assumption that good intentions automatically produce good outcomes by examining failures across different organizational types",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Drew",
+          "text": "This is all pretty depressing, but I have to say - my friends and I always talk about working for a nonprofit after college as being something that's obviously morally better than working for a regular company. At least nonprofits are trying to help people instead of just making money."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's a very common view, Drew. But I want to challenge what Arnold Kling calls the 'intention heuristic' - the assumption that good intentions automatically lead to good outcomes."
+        },
+        {
+          "speaker": "Casey",
+          "text": "What's wrong with judging organizations by their stated missions?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Nothing wrong with considering missions, Casey. But let me give you some examples of how nonprofits and government agencies can fail despite good intentions. In 2005, Hurricane Katrina devastated New Orleans. FEMA - the Federal Emergency Management Agency - was supposed to coordinate disaster response. But they were completely overwhelmed. People were stranded on rooftops for days while FEMA officials struggled with bureaucratic procedures."
+        },
+        {
+          "speaker": "Avery",
+          "text": "What kind of procedures?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery, FEMA required extensive paperwork before sending aid. Local officials had to submit detailed requests through proper channels. Meanwhile, Walmart and other private companies were already delivering water and supplies because they could make decisions quickly without bureaucratic approval."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But at least FEMA was trying to help people systematically rather than just for profit."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm not trying to be difficult. But consider the Red Cross response to the 2010 Haiti earthquake. They raised 500 million dollars promising to build homes for earthquake victims. Five years later, they had built exactly six houses."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Six houses? Where did the money go?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Most of it went to overhead - staff salaries, administrative costs, consultants, travel expenses. The Red Cross had good intentions, but they lacked the operational expertise to actually build housing at scale. Private construction companies could have done the job more efficiently, but donors preferred giving to a 'nonprofit' organization."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Those sound like implementation failures rather than fundamental problems with the nonprofit model."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Maybe, Casey. But here's a more recent example. In 2021, Congress allocated 5 billion dollars for a National Electric Vehicle Infrastructure program to build charging stations across the country. The goal was to address climate change by making electric vehicles more practical."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That sounds like exactly the kind of program we need. What happened?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "As of 2024, Drew, the program has resulted in about eight operational charging stations. Most of the money has gone to planning, environmental reviews, permitting, and administrative overhead. Meanwhile, private companies like Tesla built thousands of charging stations using their own capital."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Why is the government program so much slower?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery, government agencies have to follow extensive rules about contracting, environmental review, prevailing wages, minority participation. These rules have good intentions - preventing corruption, protecting the environment, ensuring fair employment. But they make it incredibly slow and expensive to actually build anything."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So the procedural safeguards end up preventing the organization from accomplishing its mission?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's often what happens, Blake. The more safeguards you add, the more the organization focuses on following procedures rather than achieving results."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what's the alternative? Just let companies do whatever they want for profit?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not necessarily, Drew. But consider the feedback mechanisms. A business that doesn't serve customers well goes bankrupt. A nonprofit that doesn't achieve its mission can continue fundraising as long as donors feel good about the cause. A government agency that fails can often get more funding by arguing that the problem requires more resources."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So market feedback is more reliable than donor feedback or voter feedback?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "It's more immediate and specific, Casey. If you stop buying coffee from a shop because the service is terrible, that shop feels the impact right away. If you stop donating to a charity because their programs don't work, they can find other donors who haven't researched their effectiveness."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But markets only work for things people can afford to buy. What about helping homeless people or protecting the environment? Those need to be funded collectively."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "You're absolutely right, Avery. I'm not arguing against nonprofits or government programs. I'm arguing against the assumption that good intentions are sufficient, or that profit-seeking organizations are automatically morally inferior."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So how do you judge whether an organization is actually accomplishing good things?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Look at results, Drew. Are homeless people actually getting housed? Are students actually learning? Are customers actually being served? The legal structure - profit, nonprofit, government - matters less than whether the organization has effective feedback mechanisms and incentives to improve performance."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And whether they're honest about their failures instead of just claiming that good intentions are enough."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Blake. The intention heuristic can be a way of avoiding accountability. 'We meant well' becomes an excuse for poor results rather than a motivation to do better."
+        }
+      ]
+    }
+  ]
+}

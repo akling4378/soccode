@@ -428,7 +428,21 @@
       "elaboration": "Coined by economist Bryan Caplan, borrowing the phrase Turing Test from computer science.  Suppose an opponent states their point of view and you try at the same time to state their point of view in your own words.  If a third party cannot tell which one of you is the person who truly believes that point of view, you pass the test.",
       "homeChapter": "three-languages"
     },
-    
+    {
+      "id": "intention heuristic",
+      "name": "intention heuristic",
+      "shortDefinition": "judging an organization by its intentions rather than its results",
+      "elaboration": "Many people believe that nonprofits and government organizations are inherently morally superior, because they do not seek profits.  But if you look at results, profit-seeking corporations often do great social good, while nonprofits and government agencies might accomplish very little or even cause harm.",
+      "homeChapter": "organizations"
+    },
+    {
+      "id": "principal-agent",
+      "name": "principal-agent problem",
+      "shortDefinition": "when you hire someone to do something, will they do what you have asked for?",
+      "elaboration": "In an organization, employees have their own interests and desires.  These can conflict with the goals of higher-level managers.  A well-designed compensation system can help to align incentives, but there typically is no perfect solution.",
+      "homeChapter": "organizations"
+    },
+ 
     {
       "id": "prisoners-dilemma",
       "name": "Prisoner's Dilemma",
@@ -448,6 +462,8 @@
     {"id": "games", "title": "Game Theory and Social Order"},
     {"id": "disrupt", "title": "The Information Disruption"},
     {"id": "revolt", "title": "The Revolt of the Public"},
+    {"id": "organizations", "title": "How Organizations Actually Work"},
+
     {"id": "three-languages", "title": "The Three Languages of Politics"}
     
 
