@@ -55,6 +55,11 @@ export const chaptersConfig = [
     title: 'How Organizations Actually Work',
     filename: 'organizations.JSON'
   },
+  {
+    id: 'naive-economics',
+    title: 'Naive Economics',
+    filename: 'naive-economics.JSON'
+  },
 {
   id: 'dummy',
   title: 'Cross-Reference Test',

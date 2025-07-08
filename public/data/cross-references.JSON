@@ -442,14 +442,36 @@
       "elaboration": "In an organization, employees have their own interests and desires.  These can conflict with the goals of higher-level managers.  A well-designed compensation system can help to align incentives, but there typically is no perfect solution.",
       "homeChapter": "organizations"
     },
- 
     {
-      "id": "prisoners-dilemma",
-      "name": "Prisoner's Dilemma",
-      "shortDefinition": "individual rationality leading to collective irrationality",
-      "elaboration": "Individual rational behavior can lead to a collectively bad outcome. In the classic example, if A and B both don't confess, they get off scot-free. If they both confess, they each get 5 years in prison. If one confesses and the other does not, the confessor gets released with a reward, and the non-confessor gets 10 years in prison. The individually rational outcome leads to both confessing.",
-      "homeChapter": "games"
+      "id": "intention heuristic",
+      "name": "intention heuristic",
+      "shortDefinition": "judging an organization by its intentions rather than its results",
+      "elaboration": "Many people believe that nonprofits and government organizations are inherently morally superior, because they do not seek profits.  But if you look at results, profit-seeking corporations often do great social good, while nonprofits and government agencies might accomplish very little or even cause harm.",
+      "homeChapter": "organizations"
+    },
+    {
+      "id": "Social-Welfare-Function",
+      "name": "Social Welfare Function",
+      "shortDefinition": "a mathematical representation of everyone's preferences that, when maximized, yields a social optimum.",
+      "elaboration": "In the middle of the 20th century, there were many economics papers written on this topic, as economists wrestled with how an optimum outcome might be characterized.  The project ultimately was not considered a success.",
+      "homeChapter": "naive-economics"
+    },
+
+    {
+      "id": "Pareto",
+      "name": "Pareto Optimality",
+      "shortDefinition": "an economic condition in which no one can be made better off without someone else being made worse off",
+      "elaboration": "If rearranging resources could make one person better off without making anyone else worse off, then the economy is operating sub-optimally.",
+      "homeChapter": "naive-economics"
+    },
+    {
+      "id": "market-failure",
+      "name": "Market Failure",
+      "shortDefinition": "a condition in which an unregulated market will lead to sub-optimal outcome, with either too much or too little production of the good",
+      "elaboration": "Examples include monopoly, which typically produces too little.  Or a good that causes pollution, where the market will produce too much.",
+      "homeChapter": "naive-economics"
     }
+    
   ],
   "chapters": [
     {"id": "correlation", "title": "Problems with Studies"},

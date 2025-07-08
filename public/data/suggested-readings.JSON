@@ -55,7 +55,11 @@
       "trigger": "Why organizations work or fail",
       "recommendation": "There are all sorts of books on bureaucracy and organizations, going back to Max Weber.  James Burnham wrote a book called The Managerial Revolution that still gets read.  David Halberstam wrote The Best and the Brightest about the how the bureaucracy drifted into the quagmire in Vietnam.  More recently, Michael J. Mazarr wrote about the decision to go into Iraq.  That book had a nice review at thepsmiths.com"
     },
-
+    {
+      "chapter": "naive-economics",
+      "trigger": "MIT mathematical economics twentieth century",
+      "recommendation": "There is a book called MIT and the Transformation of American Economics, edited by E. Roy Weintraub.  I especially like the chapter by Beatrice Cherry.  A representative book from the late 20th-century period is Equality and Efficiency, the big trade-off, published by Arthur Okun in 1975."
+    },
     {
       "chapter": "order",
       "trigger": "how democracies differ from other states",

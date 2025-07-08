@@ -1,0 +1,417 @@
+{
+  "id": "naive-economics",
+  "title": "Naive Economics",
+  "description": "How mid-twentieth century economics achieved mathematical elegance through optimization models and social welfare functions, but rested on politically naive assumptions about government behavior and human motivation",
+  "promptInstructions": {
+    "focus": "You are discussing the period from roughly 1930-1990 when economics was dominated by mathematical optimization models, Social Welfare Functions, and the assumption that government acts as a benevolent social optimizer.",
+    "academicEmphasis": "Keep discussions grounded in the appeal of mathematical rigor, the separation of efficiency and equity concerns, and the assumptions about political behavior. Connect to earlier concepts about prestige hierarchies and cultural learning.",
+    "commonMisconceptions": "Watch for students either dismissing the mathematical approach entirely or defending it without acknowledging its political assumptions. Help them see both the intellectual appeal and the practical limitations.",
+    "keyTerms": ["Social Welfare Function", "Pareto optimality", "Pareto efficiency", "market failure", "God's-eye view", "economic engineering", "optimization", "efficiency vs equity", "mathematical economics", "naive economics"]
+  },
+  "breakpoints": [
+    {
+      "id": "mathematical-revolution",
+      "subheading": "The Post-War Mathematical Revolution (1947-1960)",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how Paul Samuelson's 1947 'Foundations of Economic Analysis' launched the mathematical revolution in economics, driven by physics envy and Defense Department funding",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Today we're looking at what I call \"naive economics\" - the dominant approach from roughly 1930 to 1990. To understand why it was so appealing, we need to start with 1947, when a young Paul Samuelson published \"Foundations of Economic Analysis.\" The title tells you everything about the ambition."
+        },
+        {
+          "speaker": "Blake",
+          "text": "\"Foundations\" sounds pretty presumptuous for a dissertation."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, Samuelson was arguing that economics should be reconceived as the study of mathematical optimization. Consumers optimize their satisfaction, firms optimize their profits, and - here's the key insight - these individual optimizations could be modeled mathematically."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That's... actually brilliant. Instead of just describing what people do, you can predict it mathematically."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery, that's exactly what made it so attractive. Remember, this was the post-war era. Physics had just won the war - radar, atomic weapons, mathematical precision applied to real problems. Economics wanted that same scientific respectability."
+        },
+        {
+          "speaker": "Casey",
+          "text": "There's precedent for this. Bentham tried to mathematize utility back in the 1780s, and the marginalists in the 1870s—"
+        },
+        {
+          "speaker": "Drew",
+          "text": "But did it actually work? I mean, for real people?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, that's the question we'll keep coming back to. But first, let's see why this approach became so dominant. MIT's economics department went from nothing in 1940 to dominating the profession by 1960. Why? Defense Department funding. Mathematical optimization seemed perfect for wartime resource allocation."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So the military funded economics because it looked useful for planning?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Blake. And that \"economic engineering\" mindset spread everywhere - to other universities, to policy institutions, to the Federal Reserve. Finally, economists had clear, mathematical answers to policy questions."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It must have been exciting. Like economics was finally becoming a real science."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the appeal, Avery. Let's pause here and think about what this meant for how economists saw their role."
+        }
+      ]
+    },
+    {
+      "id": "optimization-framework",
+      "subheading": "The Core Framework: Optimization Everywhere",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand how individual optimization by consumers and firms was supposed to lead to Pareto efficiency, and why Blake's critique about inequality being 'optimal' exposes a key problem",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The mathematical framework rested on a simple but powerful idea: everyone optimizes. You, as a consumer, maximize the utility you get from your choices - how much to work, save, spend. Amazon, as a firm, maximizes the difference between revenue and costs."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But do people really do calculus when they buy groceries?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, the economists would say it doesn't matter if people consciously calculate. What matters is whether they behave as if they're optimizing. If higher prices lead to less demand, that's consistent with optimization."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And mathematically, that gives you... what, demand curves? Supply curves?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Avery. But here's where it gets interesting. These individual optimizations, interacting through markets, were supposed to lead to something called Pareto efficiency for the economy as a whole."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What's that?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, imagine an allocation of resources where no one can be made better off without making someone else worse off. That's Pareto efficient."
+        },
+        {
+          "speaker": "Casey",
+          "text": "It's named after Vilfredo Pareto, the Italian economist. He was actually more of a sociologist later in life, wrote about elite circulation—"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Wait, hold on. If I own everything and everyone else owns nothing, nobody can be made better off without taking something from me. So that's... Pareto efficient?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, you've hit on exactly the problem with calling it \"optimal.\" That distribution is Pareto efficient, but most people wouldn't call it optimal."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's insane. How is massive inequality \"efficient\"?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "No, Drew, I think the point is that efficiency and fairness are separate questions. You can have an efficient distribution that's totally unfair."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery's got it. This distinction between efficiency and equity became central to the naive economics framework. Let me give you a moment to think about why economists might want to separate these issues."
+        }
+      ]
+    },
+    {
+      "id": "efficiency-equity-separation",
+      "subheading": "Efficiency vs. Equity: The Clean Separation",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how naive economics separated efficiency problems (market failures) from equity problems (redistribution), and why this seemed like an elegant solution",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Mainstream economics developed what seemed like an elegant solution to the efficiency-equity problem. Think of it as a two-step process."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Step one: make the pie as big as possible?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. Step one is achieving Pareto efficiency - making sure resources aren't wasted, that every possible mutual gain gets realized. Step two is deciding how to slice the pie - the equity question."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That's theoretically clean. You solve the efficiency problem through markets, then solve the equity problem through redistribution."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Casey. But markets don't always achieve Pareto efficiency on their own. When they fail - what economists call \"market failures\" - that's where government steps in with targeted interventions."
+        },
+        {
+          "speaker": "Blake",
+          "text": "What kind of market failures?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, the classic examples are monopolies, pollution, and what economists call \"public goods\" - things like national defense where markets tend to under-provide."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So government fixes the efficiency problems..."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, through specific policies - an antitrust law here, a pollution tax there, a subsidy for basic research. Each intervention targets a specific market failure."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And then separately, government handles equity through broad redistribution - income taxes, welfare programs, that sort of thing."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely, Avery. The beauty of this framework was that it gave economists clear, distinct roles for government: fix market failures to maximize efficiency, then redistribute to achieve whatever society considers fair."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But who decides what's fair?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, that brings us to what Arnold Kling calls the \"God's-eye view\" of the economy. Let's explore that."
+        }
+      ]
+    },
+    {
+      "id": "gods-eye-view",
+      "subheading": "The God's-Eye View of Government",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand the naive assumptions about government motivation and knowledge that underpinned the Social Welfare Function approach",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Naive economics assumed government could take what Kling calls a \"God's-eye view\" - a perspective that weighs everyone's interests equally and chooses policies to maximize overall social welfare."
+        },
+        {
+          "speaker": "Drew",
+          "text": "How do you measure \"social welfare\"?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, through something called a Social Welfare Function. In theory, you could assign weights to different people's utility and add them up to get a single number representing society's well-being."
+        },
+        {
+          "speaker": "Casey",
+          "text": "That goes back to Bentham's greatest good for the greatest number, doesn't it?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good connection, Casey. But here's what's crucial: naive economics assumed government would actually want to maximize this social welfare function."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Wait, since when do politicians optimize anything except their own chances of getting reelected?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, that's exactly the kind of question naive economics didn't ask. It simply assumed government would be motivated to act in society's interest."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But maybe that's not unreasonable? I mean, in a democracy, politicians need to serve voters..."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Avery, that's incredibly naive. Politicians serve the groups that get them elected, not some abstract social welfare function."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And even if they wanted to maximize welfare, how would they know how? These calculations seem impossibly complex."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, naive economics made a second assumption: that government, with the help of economists, would have the knowledge to implement optimal policies."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So economists become philosopher-kings, in a sense. Plato would find that ironic."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But isn't it good that economists were trying to give policy advice based on rigorous analysis rather than just politics?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Avery raises an important point. This framework gave economists a clear professional mission: identify market failures, calculate optimal taxes and subsidies, design redistribution schemes. Let's think about why that was so appealing to the profession."
+        }
+      ]
+    },
+    {
+      "id": "economic-engineering-status",
+      "subheading": "The High Status of Economic Engineering",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how mathematical economics provided both scientific legitimacy and institutional power to economists, transforming the profession's status",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "By the 1960s, this mathematical approach had transformed economics from a somewhat marginal field into a high-prestige profession. Economists suddenly had definitive answers to policy questions."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Finally, economics could be as rigorous as physics. You could prove theorems, make precise predictions..."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Avery. And that mathematical rigor translated into real institutional power. The Federal Reserve, the International Monetary Fund, key policy positions - increasingly filled by economists trained in this MIT-style mathematical optimization."
+        },
+        {
+          "speaker": "Casey",
+          "text": "It's remarkable how quickly it spread. From one department to dominating the entire profession in just two decades."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But was it actually working? Were these mathematical models giving good policy advice?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, that's where things get complicated. The models were internally consistent and mathematically elegant. Whether they captured the complexity of real economies and real politics... that's a different question."
+        },
+        {
+          "speaker": "Drew",
+          "text": "It sounds like economists were solving theoretical problems while actual people dealt with the consequences."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, that tension between mathematical elegance and practical relevance became increasingly important. But remember, this approach seemed to offer something economists had never had before: scientific legitimacy and clear social relevance."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And if the models were wrong, you could always improve them, make them more sophisticated..."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Or you could question whether the whole mathematical approach makes sense for studying human behavior."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake and Avery, you're both touching on debates that would reshape economics. But the engineers believed they could perfect their models, solve social problems through mathematical optimization."
+        },
+        {
+          "speaker": "Casey",
+          "text": "There's something very twentieth-century about that confidence. The idea that technical expertise could solve political problems."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. Let's take a moment to consider whether that confidence was justified."
+        }
+      ]
+    },
+    {
+      "id": "cracks-begin-to-show",
+      "subheading": "The Cracks Begin to Show",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand the emerging critiques of naive economics without fully exploring them - setting up tensions around non-quantifiable factors and political realism",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "By the 1970s and 80s, this elegant framework was facing serious challenges. The critiques came from both left and right, though we'll explore those in detail in later chapters."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But surely there were obvious problems earlier? I mean, what about power? What about culture? You can't just reduce everything to mathematical optimization."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Drew, but if you can't quantify something, how can you analyze it systematically? How can you give policy advice?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's exactly the problem! By only looking at what you can measure, you miss the most important things."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And the whole thing assumes politicians are benevolent social optimizers instead of self-interested power-seekers. That's not naive, it's delusional."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Now Blake, perhaps the framework could be modified to account for political constraints. The basic mathematical approach might still be sound..."
+        },
+        {
+          "speaker": "Drew",
+          "text": "No, Casey, it's not just about constraints. It's about power relationships, about who benefits and who loses, about things that can't be captured in equations."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But Drew, without some kind of systematic framework, you're just... what, telling stories? Making emotional appeals?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Better honest stories than false precision, Avery."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm willing to be wrong. But let me suggest that both perspectives have merit. The mathematical approach provided unprecedented analytical power. Whether that power was being applied to the right questions, with realistic assumptions about politics and human behavior... those became the crucial debates."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And meanwhile, real people's lives were being affected by policies based on these unrealistic models."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But surely some progress was made? Some market failures were identified and corrected?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Casey, how would you even know if the corrections worked? The whole system assumes you can measure welfare improvements."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. Ri-ri-ri-ri-right. These are the tensions that led to what we might call the \"post-naive\" period in economics. The critiques from the left focused on power relationships and structural inequality that the mathematical models ignored. The critiques from the right questioned whether government actually behaves the way the models assume."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the mathematical elegance came at the cost of political realism?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's one way to put it, Avery. Naive economics achieved remarkable mathematical sophistication, but its assumptions about politics and human behavior were... well, naive."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Finally."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So what happened next? Did economists admit the whole approach was flawed?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake, that's what we'll explore in our next chapters. The responses to these critiques fundamentally reshaped economic thinking, though not always in ways you might expect."
+        },
+        {
+          "speaker": "Casey",
+          "text": "And some economists, I assume, still defend the traditional approach?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Casey, the debates continue. But what's clear is that by 1990, the consensus around naive economics had largely collapsed. Whether what replaced it was an improvement... well, we'll see."
+        }
+      ]
+    }
+  ]
+}
