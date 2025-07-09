@@ -60,6 +60,12 @@ export const chaptersConfig = [
     title: 'Naive Economics',
     filename: 'naive-economics.JSON'
   },
+  {
+    id: 'political-realism',
+    title: 'Political Realism',
+    filename: 'political-realism.JSON'
+  },
+
 {
   id: 'dummy',
   title: 'Cross-Reference Test',

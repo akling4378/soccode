@@ -471,7 +471,28 @@
       "elaboration": "Examples include monopoly, which typically produces too little.  Or a good that causes pollution, where the market will produce too much.",
       "homeChapter": "naive-economics"
     }
-    
+    {
+      "id": "rent-seeking",
+      "name": "Rent-Seeking",
+      "shortDefinition": "When a government benefit is available, private actors will spend resources trying to obtain it.",
+      "elaboration": "The term rent is a synonym for profit, and rent-seeking is the attempt by private interests to lobby to obtain that profit for themselves.",
+      "homeChapter": "political-realism"
+    },
+  {
+      "id": "bootleggers",
+      "name": "Bootleggers and Baptists",
+      "shortDefinition": "A combination of civic interests (the Baptists who want to ban alcohol) and private interests (the bootleggers who want their legal competition eliminated)",
+      "elaboration": "In some industries, a set of firms that wants to see its competitors hampered by regulation, that set of firms will fund a public-interest group that favors regulation.",
+      "homeChapter": "political-realism"
+    },
+    {
+      "id": "subsidize-demand",
+      "name": "Subsidize demand, restrict supply",
+      "shortDefinition": "Contrary to market-failure theory, this describes a typical combination of government interventions.",
+      "elaboration": "Subsidizing demand is what you would do to encourage more of a good.  Restricting supply is what you would do if you wanted less of it. From a social perspective, these policies work at cross-purposes.  But they serve the concentrated interests of producers. ",
+      "homeChapter": "political-realism"
+    }
+
   ],
   "chapters": [
     {"id": "correlation", "title": "Problems with Studies"},
@@ -485,7 +506,8 @@
     {"id": "disrupt", "title": "The Information Disruption"},
     {"id": "revolt", "title": "The Revolt of the Public"},
     {"id": "organizations", "title": "How Organizations Actually Work"},
-
+    {"id": "naive-economics", "title": "Naive Economics"}, 
+    {"id": "political-realism", "title": "Political Realism"},
     {"id": "three-languages", "title": "The Three Languages of Politics"}
     
 

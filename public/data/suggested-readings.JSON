@@ -61,6 +61,12 @@
       "recommendation": "There is a book called MIT and the Transformation of American Economics, edited by E. Roy Weintraub.  I especially like the chapter by Beatrice Cherry.  A representative book from the late 20th-century period is Equality and Efficiency, the big trade-off, published by Arthur Okun in 1975."
     },
     {
+      "chapter": political-realism",
+      "trigger": "Public choice theory political realism",
+      "recommendation": "Bruce Yandle has a book on Bootleggers and Baptists.  For a classic article on how government programs persist only because they serve private interests, see Jonathan Rauch on the mohair subsidy.  Arnold Kling in his book Specialization and Trade shows how the political interests to subsidize demand and restrict supply naturally arise in an economy where production is specialized."
+    },
+
+    {
       "chapter": "order",
       "trigger": "how democracies differ from other states",
       "recommendation": "Arnold Kling has written some book reviews on related topics. Arnold Kling The Pre-Modern Order looks at social organization before 1500, Arnold Kling Balaji-land looks at a futuristic vision from Balaji Srinivasan, Arnold Kling The Two Forms of Social Order summarizes North, Weingast and Wallis."

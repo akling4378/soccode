@@ -1,0 +1,467 @@
+{
+  "id": "political-realism",
+  "title": "Political Realism",
+  "description": "How political realism challenges naive economics by examining how government policies get refracted through special interest politics rather than serving pure public welfare",
+  "promptInstructions": {
+    "focus": "You are discussing Arnold Kling's political realism framework and public choice theory. Focus on how political incentives shape policy outcomes rather than stated intentions.",
+    "academicEmphasis": "Keep discussions grounded in analyzing actual political incentives and institutional design. Connect to earlier course concepts about cooperation problems, cultural evolution, and epistemology. Emphasize systematic patterns rather than partisan critiques.",
+    "commonMisconceptions": "Watch for students either dismissing all government action as corrupt or defending policies based purely on stated intentions. Help them see this as analytical framework, not ideological position.",
+    "keyTerms": ["naive economics", "political realism", "rent-seeking", "intention heuristic", "concentrated benefits diffuse costs", "subsidize demand restrict supply", "bootleggers and baptists", "policy feedback loops", "regulatory capture"]
+  },
+  "breakpoints": [
+    {
+      "id": "naive-economics-baseline",
+      "subheading": "The Naive Economics Baseline",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand the contrast between naive economics (government as benevolent welfare maximizer) and political realism (government officials acting in their own interests)",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "We've explored how humans cooperate and compete in small groups and how cultural evolution shapes our institutions. Today we turn to a more controversial question: when government intervenes in the economy, whose interests does it actually serve?"
+        },
+        {
+          "speaker": "Professor Hartwell", 
+          "text": "In what Arnold Kling calls 'naive economics,' individuals and firms act on behalf of their own interests, but government does not. Instead, government corrects market failures and redistributes income from what we might call a God's-eye perspective - standing above the fray, dispassionately maximizing social welfare."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That seems reasonable. I mean, that's the whole point of democratic institutions, right? We elect representatives to serve the public interest, not private interests."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Oh, come on Drew. When has any government agency ever acted like some benevolent philosopher king? They're all just people with their own agendas."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake raises the central question of political realism: what if government actions result from officials acting on behalf of their own interests? This perspective gave rise to what became known as Public Choice Theory, though I prefer Kling's term - political realism."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This connects to Machiavelli's insight that we need to understand politics as it actually works, not as we wish it would work. Though I'd note that even Machiavelli believed good institutions could channel self-interest toward public benefit."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So we're applying the same behavioral assumptions to government that we apply to markets? Everyone acts in their own interest, but somehow we expected government officials to be different?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. The question becomes: if we drop that assumption, how does it change our analysis of government policy?"
+        }
+      ]
+    },
+    {
+      "id": "beyond-simple-corruption",
+      "subheading": "Beyond Simple Corruption",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Distinguish between crude corruption and sophisticated rent-seeking behavior in advanced democracies",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "A crude version of political realism would predict that government officials simply steal - using taxation to enrich friends and family, using regulation to help their own businesses. This sort of corruption exists, but in advanced democracies it's quite limited."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The more sophisticated versions bring private interests into the picture through what economists call 'rent-seeking.'"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Finally, a term that actually describes what's happening. Government creates profit opportunities, and everyone scrambles to grab them."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Wait, what exactly is rent-seeking? That sounds like landlord stuff."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good question, Drew. In economics, 'rent' doesn't mean what you pay for an apartment. It means profit that comes from having exclusive access to something valuable, rather than from creating value yourself."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So if the government offers a million-dollar research grant, the XYZ lab might spend nearly a million dollars trying to get it - lobbying, polishing applications, whatever. And if ten labs are competing, the total spent chasing that one grant could be many times the grant's value."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely. The resources spent in that competition could have been used productively elsewhere. This is the deadweight loss of rent-seeking."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of the court systems in pre-modern Europe. Enormous resources were spent on gaining favor with the king, rather than on actual productive activity."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But isn't some lobbying just... trying to educate policymakers about what would actually work?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Drew, you're already doing it - assuming the system works the way it's supposed to on paper instead of looking at what people actually have incentives to do."
+        }
+      ]
+    },
+    {
+      "id": "intention-heuristic",
+      "subheading": "The Intention Heuristic",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how evaluating policies by stated intentions rather than actual outcomes and incentive structures leads to analytical errors",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake has identified something crucial here. Drew, you're falling into what we call the 'intention heuristic' - evaluating a program by its stated intentions rather than its actual outcomes."
+        },
+        {
+          "speaker": "Drew",
+          "text": "I'm not ignoring outcomes! I'm just saying that we have to consider what programs are trying to accomplish."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Of course some programs achieve their stated goals. But political realism suggests that any government policy will be refracted through special-interest politics. Relative to the naive ideal, interventions will achieve less of the desired goal and have more undesired costs."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's like... the policy gets bent as it passes through the political system? Like light through a prism?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Excellent analogy, Avery. The bending follows predictable patterns based on who has concentrated interests and who bears diffuse costs."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is essentially James Madison's insight in Federalist 10 about the problem of faction, isn't it? Though Madison thought institutional design could constrain these tendencies."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So you're saying we should just give up on collective action? That seems pretty bleak."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Nobody's saying give up. We're saying stop pretending that good intentions magically override bad incentives. Look at the actual structure of interests, not the pretty rhetoric."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The key insight is that concentrated benefits and diffuse costs create systematic biases in the political process. Small groups with large per-person stakes will out-organize large groups with small per-person stakes."
+        }
+      ]
+    },
+    {
+      "id": "subsidize-demand-restrict-supply",
+      "subheading": "Subsidize Demand, Restrict Supply",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Recognize the pattern where government simultaneously subsidizes demand and restricts supply, and understand why this pattern emerges from political incentives despite being economically contradictory",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Kling observed that government intervention tends to follow a particular pattern: subsidize demand, restrict supply. From naive economics, this makes no sense - it's internally contradictory."
+        },
+        {
+          "speaker": "Drew",
+          "text": "How is it contradictory?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Well, if you're trying to fix a market failure from under-provision, you'd want to increase supply or subsidize demand. If you're trying to fix over-provision, you'd want to restrict supply or tax demand. Doing both at once works against itself."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. But from political realism, this pattern makes perfect sense. Producers have concentrated interests in restricting competition while consumers with subsidized demand don't fully feel the costs."
+        },
+        {
+          "speaker": "Blake",
+          "text": "It's brilliant, actually. Existing producers get protection from competition while new demand gets subsidized. Everyone wins except the people paying the taxes and dealing with higher prices."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This sounds similar to the guild system in medieval Europe - restrict who can practice a trade, but subsidize demand for guild members' services."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Are you seriously arguing that professional licensing is just medieval guild protectionism?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "When did Drew become the defender of every government intervention? Yes, a lot of licensing is exactly that. Do you really need government permission to braid hair?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The question isn't whether some licensing serves legitimate purposes, but whether the political process systematically over-produces restrictions that benefit existing practitioners at the expense of consumers and potential competitors."
+        }
+      ]
+    },
+    {
+      "id": "bootleggers-and-baptists",
+      "subheading": "Bootleggers and Baptists",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how moral coalitions and economic interests can align to support policies that serve concentrated interests while using public interest justifications",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "One of the most insightful models in political realism is 'bootleggers and baptists.' The phrase refers to alcohol prohibition - two very different groups supported the same policy for very different reasons."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the Baptists genuinely believed alcohol was harmful and should be restricted. But the bootleggers wanted alcohol restricted because it made their illegal sales more profitable?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely. You often need both groups to get restrictive policies passed - the 'baptists' provide moral legitimacy while the 'bootleggers' provide financial and political muscle."
+        },
+        {
+          "speaker": "Casey",
+          "text": "You see this throughout history. In medieval times, the Church provided moral justification for usury laws while established merchants benefited from restricted credit markets."
+        },
+        {
+          "speaker": "Drew",
+          "text": "This feels awfully cynical. Are you saying that every public interest group is secretly serving some industry interest?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Not secretly, Drew. The beauty is that the baptists are often sincere. They genuinely believe in their cause. The bootleggers just make sure that sincerity gets channeled in directions that serve their interests."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "A contemporary example might be marijuana legalization in California. Public health advocates pushed for strict regulations to protect children and communities. But those same regulations - with their compliance costs and bureaucratic barriers - help illegal dealers maintain market share by keeping legal marijuana expensive and hard to access."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the very regulations meant to eliminate the black market end up protecting it? That's... that's actually fascinating from a systems perspective."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Wait, are you saying we shouldn't regulate marijuana at all?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "I'm saying we should understand how regulatory costs create competitive advantages for illegal suppliers, regardless of regulators' intentions."
+        }
+      ]
+    },
+    {
+      "id": "policy-feedback-loops",
+      "subheading": "Policy Feedback Loops", 
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how policies create their own political constituencies that fight to maintain inefficient programs",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Political realism also helps us understand why bad policies persist. Policies create their own political constituencies - groups that benefit from the policy and will fight to maintain it."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like the corn ethanol subsidies? Even though most economists agree they're inefficient and environmentally questionable, they've created a powerful lobby of corn farmers and ethanol producers."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Once you subsidize an industry, that industry develops political muscle to defend the subsidy. The inefficiency becomes self-perpetuating."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So it's like... policies evolve to maximize their own political survival, not their effectiveness at achieving stated goals?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Which explains why a carbon tax - which economists say would be more efficient - gets nowhere, while industry-specific subsidies multiply like rabbits."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But some of those subsidies do serve legitimate purposes! Wind and solar subsidies helped those industries develop."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Perhaps, Drew. But notice how the political process favors targeted subsidies over broad-based approaches. A carbon tax would let markets choose the most efficient clean technologies. Industry subsidies let political connections choose the winners."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And once those subsidies exist, the solar industry and wind industry both lobby to maintain their specific advantages, even if that prevents more efficient solutions."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This is what Hayek meant about the impossibility of neutral expertise, isn't it? Even well-intentioned technocrats can't escape the political forces that shape which solutions get considered."
+        }
+      ]
+    },
+    {
+      "id": "applications-housing",
+      "subheading": "Applications - Housing",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Apply political realism concepts to analyze actual housing policy and understand how subsidizing demand while restricting supply creates political coalitions that maintain dysfunction",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's examine how these concepts apply to actual policies. Take housing - we've simultaneously subsidized demand through first-time buyer programs and restricted supply through zoning laws and environmental regulations."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Those programs help people afford homes! And environmental regulations protect communities."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Drew, there you go with the intention heuristic again. Look at the actual results - housing prices skyrocketing faster than incomes."
+        },
+        {
+          "speaker": "Avery",
+          "text": "From a systems perspective, it's like... we're pumping more water into a bucket while making the bucket smaller. The pressure just builds up."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "And who benefits from this arrangement, politically speaking?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Existing homeowners benefit from both the demand subsidies - which raise property values - and the supply restrictions - which protect those values from new competition."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So you're saying homeowners are the 'bootleggers' here?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Homeowners are politically organized at precisely the level where housing decisions get made - local government. Renters and potential buyers are more diffuse and less organized."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Plus homeowners vote at higher rates and stay in communities longer. Of course the political system serves their interests over renters."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the policy feedback loop means that as housing prices rise, homeowners have even more to protect, so they fight even harder against new development."
+        },
+        {
+          "speaker": "Drew",
+          "text": "This is really depressing. So we just... accept housing inequality?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Political realism doesn't tell us to accept anything, Drew. It tells us to design policies that work with political incentives rather than against them."
+        }
+      ]
+    },
+    {
+      "id": "applications-education",
+      "subheading": "Applications - Education",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Apply political realism to higher education policy and understand how student loan subsidies combined with accreditation restrictions create systematic distortions",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Consider higher education - another clear example of subsidizing demand while restricting supply."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Student loans make college 'affordable' by letting people go into debt, while accreditation requirements make sure they can only spend that money at approved institutions."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Accreditation ensures quality! You can't just let anyone call themselves a college."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But notice how the accreditation process is largely controlled by existing institutions. It's like letting medieval guilds decide who can compete with them."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the subsidized demand means colleges can keep raising tuition because students don't feel the full cost upfront. The debt comes later."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "From a political realism perspective, who benefits from this arrangement?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Students benefit from access to education..."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Students benefit from access to debt, you mean. Meanwhile, colleges get guaranteed revenue streams and protection from competition."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's actually worse than that. The system creates pressure to expand college enrollment even for jobs that don't require college skills, because that's where the subsidized money flows."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Bryan Caplan calls this 'signaling' - we're not necessarily producing more human capital, just requiring more credentials for the same jobs."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But surely college students learn things! I mean, the education has some value."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The question isn't whether education has value, Drew. It's whether this particular institutional arrangement maximizes that value or maximizes the political interests of existing providers."
+        }
+      ]
+    },
+    {
+      "id": "when-government-programs-work",
+      "subheading": "When Government Programs Work",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand that political realism doesn't predict universal government failure but helps explain systematic patterns while acknowledging successful programs",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Now Drew, you've been patient with this critique, but I can see you want to ask about successful government programs."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Yes! What about things like the internet? That came from government research funding. Or the interstate highway system. Or Social Security."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Oh great, here comes the 'but roads!' argument."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Actually, Blake, this is worth discussing seriously. The Roman Empire built excellent infrastructure, and many government programs have achieved their stated goals."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So when does the refraction through special interests work differently? What makes some programs more resistant to capture?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Excellent question, Avery. This brings us back to the First Iron Law of social science: sometimes it's this way, and sometimes it's that way. Political realism doesn't predict that government always fails, just that we should expect systematic biases."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So you're saying some government programs do work as intended?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Some do, some don't, and many fall somewhere in between. The point isn't to naively dismiss all government action or naively ignore political reality. It's to understand the forces that shape how policies actually get implemented."
+        },
+        {
+          "speaker": "Casey",
+          "text": "The interstate highway system succeeded partly because it had concentrated beneficiaries - construction companies, auto manufacturers, oil companies - whose interests aligned with the stated goal of national defense and mobility."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And maybe because the costs were diffuse enough that opposition wasn't well-organized? Plus the benefits were visible and widely distributed once built."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Fine, but notice that even successful programs like highways generated their own distortions - suburban sprawl, urban decay, dependence on automobiles. The special interests shaped how the program developed."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake makes an important point. Even 'successful' programs get refracted through political processes in ways that affect their design and consequences. The goal is to anticipate these forces, not to pretend they don't exist."
+        }
+      ]
+    }
+  ]
+}
