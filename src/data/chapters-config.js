@@ -36,6 +36,11 @@ export const chaptersConfig = [
     filename: 'trust.JSON'
   },
   {
+    id: 'order',
+    title: 'Forms of Order',
+    filename: 'order.JSON'
+  }, 
+  {
     id: 'disrupt',
     title: 'The Information Disruption',
     filename: 'disrupt.JSON'

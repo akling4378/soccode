@@ -1,0 +1,228 @@
+{
+  "id": "order",
+  "title": "Forms of Order",
+  "description": "Examining different types of political order and why transitions between them are so difficult",
+  "promptInstructions": {
+    "focus": "Help students understand the stability of different political orders and why democracy promotion often fails"
+  },
+  "breakpoints": [
+    {
+      "id": "rule-of-clan",
+      "subheading": "Rule of the Clan",
+      "characters": ["Professor Hartwell", "Avery", "Drew", "Blake", "Casey"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand clan-based social order as an alternative to both anarchy and strong states, and why democracy promotion fails",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Today we're exploring different forms of political order, and I want to start with a question that might seem obvious but actually isn't: Why is it so hard to create Western-style democracy everywhere? Take Afghanistan and Iraq - billions of dollars, years of effort, thousands of lives lost. What went wrong?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "Well, the institutional design probably wasn't sophisticated enough. Maybe if we'd studied their existing systems more carefully and created better transitional frameworks—"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Avery, we're talking about real people's lives here, not some policy paper. These places had their own ways of organizing society for centuries."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Drew's right. Maybe the problem is assuming everyone wants or needs Western democracy in the first place."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Interesting perspectives. Let me introduce you to legal historian Mark Weiner's analysis. Blake, you might find this particularly thought-provoking given your skepticism about strong central states. Weiner argues that when you don't have a powerful central government, you don't get libertarian paradise. You get what he calls 'Rule of the Clan.'"
+        },
+        {
+          "speaker": "Casey",
+          "text": "That sounds like Henry Maine's distinction between societies of status versus societies of contract."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Casey. In clan societies, your extended family membership is vital for all social and legal action. You have little choice but to maintain strong clan identity. Law is oriented toward the extended family as a group, not toward individuals."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But at least there's no massive central state controlling everything."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "True, Blake, but consider Afghanistan before the Soviet invasion. It was a textbook example of clan rule. Pashtun tribes, each with their own territory and honor codes. When disputes arose between clans, if elder mediation failed, the logic demanded vengeance. This could escalate into blood feuds lasting generations."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So the same loyalty that protects people within the clan creates violence between clans?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely, Drew. And it cripples economic development. In clan societies, you might show generous hospitality to a stranger, but you'd feel no guilt about cheating them in business. Commercial obligations only apply within your group."
+        },
+        {
+          "speaker": "Blake",
+          "text": "I see the problem. No individual rights, no contract enforcement with outsiders... that's not exactly freedom."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But if clan societies are so problematic, why couldn't we just help Afghanistan transition to something better?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly what the Soviets thought, Avery. They tried to impose a modern state structure on Afghanistan's clan-based society. The result? A decade-long war that helped bring down the Soviet Union itself."
+        }
+      ]
+    },
+    {
+      "id": "natural-state",
+      "subheading": "The Natural State",
+      "characters": ["Professor Hartwell", "Casey", "Drew", "Avery", "Blake"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand limited-access orders and why they are stable systems that resist change",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This brings us to a framework developed by Douglass North, Barry Weingast, and John Wallis. They argue that to understand political order, we need to focus on one crucial question: How do you control groups with the capacity for violence?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like Hobbes's war of all against all?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Similar concern, but different solution, Casey. North, Weingast, and Wallis say that most societies throughout history solve the violence problem through what they call a 'Natural State' or 'limited-access order.'"
+        },
+        {
+          "speaker": "Drew",
+          "text": "What does that mean in practice?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew, imagine all the groups in a society that could potentially engage in organized violence - military leaders, wealthy elites, regional strongmen, religious authorities. In a limited-access order, these groups form a coalition. They agree to share political and economic power among themselves, but they exclude everyone else."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So only coalition members can form large organizations?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Avery. In China, you can't build a major corporation unless you're connected to the Communist Party. In many oil-rich countries, the state distributes petroleum revenues to keep tribal leaders, military officers, and business elites happy and loyal."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That sounds like organized crime with better PR."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not a bad analogy, Blake. The key insight is that this system is actually quite stable. Why would a member of the ruling coalition want to break it up and risk civil war when they're already getting rich and powerful?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what about everyone else? What about ordinary people?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the tragedy, Drew. For residents outside the coalition, political and economic opportunities are severely constrained. They can survive, maybe even prosper modestly, but they can't build large businesses or organize significant political movements."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of medieval feudalism, or even the Roman patronage system."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Good historical parallel, Casey. And notice something crucial - when outsiders tried to force Iraq and Afghanistan into democracy, they were essentially trying to break up existing limited-access orders. The coalition members had everything to lose."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So that's why our democracy promotion efforts failed? We were asking people to give up the very thing that kept their societies stable?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "You're getting it, Avery. Limited-access orders resist change precisely because they solve the fundamental problem of controlling violence. Breaking them up risks anarchy."
+        }
+      ]
+    },
+    {
+      "id": "open-access-orders",
+      "subheading": "Open-Access Orders",
+      "characters": ["Professor Hartwell", "Drew", "Blake", "Avery", "Casey"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand open-access orders, their stability, and the preconditions needed for successful transitions",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But there is an alternative - what North, Weingast, and Wallis call an 'open-access order.' Anyone can form large economic organizations or political parties, as long as they follow general laws that apply to everyone."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Anyone? Really? Tell that to someone born poor in rural Mississippi."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Fair point, Drew. 'Open access' doesn't mean it's easy to gain power - it means you don't have to be part of a ruling coalition to try. A poor kid from Mississippi can, in principle, start a business or run for office without getting permission from a closed elite."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And these open-access orders are stable too?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Surprisingly, yes, Blake. Think about it - in Western democracies, when's the last time anyone seriously proposed banning an ethnic group from forming corporations or a political ideology from creating parties? Even when people hate the other side's politics, they don't usually want to destroy the system itself."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Because everyone has a stake in keeping access open?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right, Avery. If you can't win this election, maybe you'll win the next one. If your business fails, you can start another one. The system gives people hope for future opportunity."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But surely it can't be as simple as just holding elections. Look at all the democracies that have collapsed."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Brilliant observation, Casey. North, Weingast, and Wallis identify three crucial preconditions for a sustainable open-access order. First, civilian control over the military. Second, institutions that can outlast individual leaders. And third, elites must be subject to the rule of law."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Those sound pretty basic, but I'm guessing they're not?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Not at all, Drew. In many new democracies, the military still acts as a political force. Personal loyalties matter more than institutional rules. And powerful people routinely ignore laws that apply to everyone else."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So you can have elections without having an open-access order?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly, Blake. Russia holds elections, but try starting a major opposition political party. Many African countries have democratic constitutions, but businesses still need connections to the ruling party to operate at scale."
+        },
+        {
+          "speaker": "Avery",
+          "text": "This makes democracy promotion sound almost impossible. How do you create those preconditions?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's the million-dollar question, Avery. And it explains why simply installing democratic institutions often fails. You're asking societies to abandon stable limited-access orders without having built the institutional foundation for open-access alternatives."
+        },
+        {
+          "speaker": "Casey",
+          "text": "It took England centuries to develop those institutions, and even then the transition wasn't smooth."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And meanwhile, real people suffer through the chaos of failed transitions."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Both valid points. The sobering conclusion is that political order is far more complex than it appears. Each form - clan rule, limited-access, open-access - has its own internal logic and stability mechanisms. Understanding these dynamics doesn't give us easy answers, but it might help us avoid repeating costly mistakes."
+        }
+      ]
+    }
+  ]
+}
