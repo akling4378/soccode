@@ -1,0 +1,273 @@
+{
+  "id": "creative-destruction",
+  "title": "Creative Destruction",
+  "description": "How innovation drives dramatic improvements in living standards over time, why institutional differences explain prosperity gaps across countries, and the costs and benefits of economic change",
+  "promptInstructions": {
+    "focus": "You are discussing how economic progress accelerated dramatically after 1800, why living standards vary so much across countries, and how creative destruction creates both winners and losers.",
+    "academicEmphasis": "Ground discussions in specific data about improvements in longevity, income, and quality of life. Connect institutional differences to economic outcomes. Balance appreciation for progress with recognition of transition costs.",
+    "commonMisconceptions": "Watch for students either assuming progress was always gradual, or dismissing the genuine costs that economic change imposes on displaced workers and communities.",
+    "keyTerms": ["creative destruction", "Malthusian trap", "institutional differences", "intangible economy", "three e's", "network effects", "productivity growth"]
+  },
+  "breakpoints": [
+    {
+      "id": "evidence-dramatic-change",
+      "subheading": "The Evidence for Dramatic Change",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Understand that most improvement in human living standards occurred in the last 250 years, using specific data on income, longevity, calories, and quality of life",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "In doing the reading before class, what stood out to you as the evidence for a big increase in living standards starting around 1800?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "The income estimates were striking. Average per capita income was only around $250 in 1800, but it jumped to $850 by 1900 and over $8000 by 2000. That's more than a thirty-fold increase in just two centuries."
+        },
+        {
+          "speaker": "Casey",
+          "text": "I was fascinated by the calorie consumption data from Britain. From 1700 to 1989, average calories increased by fifty percent - from about 2100 to 3150 calories per day. And the leisure time statistics were remarkable too. In 1870, it took the average worker 1700 hours a year just to feed a family. By the 1970s, that was down to 260 hours."
+        },
+        {
+          "speaker": "Blake",
+          "text": "The Nordhaus study on artificial light caught my attention. In Babylonian times, it took 41 hours of work to afford 1000 lumen-hours of light. By the 1990s, less than one second of work. That's an almost incomprehensible improvement in efficiency."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But what really got to me was the longevity data from Sweden. Even if you survived to age 15 in the 18th century, life expectancy only increased by 26 years since then. And a 30-year-old Swedish woman in 1750 was 33 times more likely to die before her next birthday than a woman born in the 1990s. Thirty-three times!"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Wait, was the quality of life really as low as it appears to be in 1775? These numbers seem almost too dramatic to believe."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Think about what we take for granted that simply didn't exist in 1775. Indoor plumbing - most people had to walk to wells or outhouses. Mechanized transportation - if you wanted to travel, you walked or rode a horse. Antibiotics - a simple infection could kill you. Electricity - when the sun went down, you were largely done working for the day unless you could afford expensive candles or oil. The technological infrastructure we consider basic was completely absent."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the question becomes, why did this dramatic improvement happen when it did? What changed around 1800?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Excellent question. For thousands of years before 1800, innovation did occur, but the gains were absorbed by population growth. Economists call this Malthusian growth, after Thomas Malthus."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Malthus influenced Darwin's thinking about evolution, didn't he? The idea that population tends to outstrip resources?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Malthus observed that when food production improved, people would have more children. Population would grow until it pressed against the limits of what the improved food production could support. The result was that per capita consumption stayed roughly constant even as knowledge and techniques improved. Better farming methods meant more people, not better-fed people."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But something broke that pattern around 1800?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Yes. During the Industrial Revolution, productivity began growing fast enough to overcome the Malthusian limits. For the first time in human history, sustained improvements in living standards became possible."
+        }
+      ]
+    },
+    {
+      "id": "institutional-differences",
+      "subheading": "The Role of Institutions",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how institutional differences - both between political systems and within market economies - explain dramatic variations in prosperity across countries",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Now, if innovation and productivity growth explain improvements over time, what explains the dramatic differences we see across countries today?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "The institutional differences are stark. The reading mentioned that as of 2000, 900 million people in the 28 richest countries were earning about $9000 per year, while over a billion people were living in countries with average incomes of less than $1 per day."
+        },
+        {
+          "speaker": "Blake",
+          "text": "The Communist versus non-Communist comparisons are pretty compelling evidence. Cuba was richer than Mexico before Castro, now Mexico is ahead. Taiwan versus mainland China. And North Korea versus South Korea - South Koreans are almost 20 times richer on average."
+        },
+        {
+          "speaker": "Casey",
+          "text": "The Berlin Wall comparison is particularly telling because it was literally the same people, divided by different institutions for forty years. East Germany fell far behind West Germany."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But it's not just about capitalism versus communism, right? There are big differences within market economies too."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Absolutely. The reading gave some specific examples. In 2000, it took four days to get a business license in the United States, but over 50 days in Kenya or Egypt. Starting a business cost 1 percent of average income in the U.S., but 11 percent in India and 26 percent in Nigeria."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the compliance costs are enormous in some places. Business tax compliance takes about 175 hours per year in the U.S., but over 1500 hours in Brazil. Contract enforcement through courts takes 300 days in the U.S. but over 1400 days in India."
+        },
+        {
+          "speaker": "Blake",
+          "text": "The underground economy statistics are revealing too. In Western democracies, about 10 percent of transactions happen in the informal economy. But in Bolivia or Thailand, it's over 50 percent. That makes it much harder to raise capital or secure property ownership."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "And we're seeing these institutional differences play out in real time. The Draghi report found that Europe is falling behind the United States significantly. EU GDP per capita as a percentage of U.S. GDP per capita fell from 76.5% in 2008 to just 50% in 2023."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What's causing Europe to fall behind?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Draghi and others point to heavy-handed regulation as a factor holding Europe back. The U.S. and Asia are leading in innovation, particularly in computers and communications, while Europe lags."
+        }
+      ]
+    },
+    {
+      "id": "intangible-economy",
+      "subheading": "The Intangible Economy",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "low",
+      "learningObjective": "Recognize how economic value has shifted from tangible resources to intangible factors like skills, innovation, and institutional quality, and connect this to the three e's framework",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Now let's think about how the nature of economic activity has changed. What did people notice about the economy in the 19th century versus today?"
+        },
+        {
+          "speaker": "Casey",
+          "text": "In the 19th century, economic power was very visible. You could see the massive railroad networks, the giant steel mills in Pittsburgh, the huge meatpacking plants in Chicago. Physical infrastructure and manufacturing dominated."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But today's most powerful companies are very different. Google and Facebook have enormous impact on our lives, but their physical presence is tiny compared to their economic influence. Their value comes from algorithms, data, and network effects - things you can't see or touch."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's a good point. Google's headquarters doesn't look like much compared to a 19th-century steel mill, but Google probably affects more people's daily lives than U.S. Steel ever did."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. In the 19th century, economists described production as using tangible resources - land, unskilled labor, factories, and business equipment. But by the 21st century, it became evident that intangibles increasingly matter. Human skill level, business strategy, innovation, and the institutional environment determine how wealth gets created."
+        },
+        {
+          "speaker": "Drew",
+          "text": "So economic success today depends more on things like education, research and development, brand value, intellectual property?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "And network effects. Facebook is valuable because lots of people use it, which makes it more valuable to advertisers, which attracts more users. The value comes from the connections between people, not from physical assets."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This shift toward intangibles helps explain why some countries with abundant natural resources remain poor while others with few natural resources become wealthy. Japan and South Korea have very limited natural resources but developed strong institutions, high levels of education, and cultures that encourage innovation."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Whereas some oil-rich countries have struggled to translate their natural wealth into broad-based prosperity."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Which brings us back to institutions, doesn't it? The countries that have figured out how to develop and deploy intangible assets tend to be the ones with better institutions."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. This brings us back to a framework we discussed earlier - remember the three e's? Experimentation, evaluation, and evolution."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Cultural evolution requires trying new ideas, measuring how well they work, and keeping what works while discarding what doesn't. And that's especially important in an economy where competitive advantage comes from intangible factors."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Modern Western culture encourages experimentation in ways that some other cultures historically opposed. In the United States, relatively light regulation also encourages experimentation compared to more heavily regulated environments."
+        },
+        {
+          "speaker": "Casey",
+          "text": "But there's wisdom in being cautious about change. Many traditional societies developed their customs over centuries of trial and error. Rapid innovation can be disruptive and destabilizing."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Sure, but if you don't experiment, you stagnate. The countries falling behind are often the ones that are too risk-averse or have too many barriers to trying new approaches. And that's especially true when success depends on developing intangible assets."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The evaluation component is crucial too. Market processes provide more rigorous evaluation than innovators simply evaluating themselves. When consumers choose between products or investors choose between companies, that's a form of evaluation that's harder to game than internal assessments."
+        },
+        {
+          "speaker": "Avery",
+          "text": "And the evolution component is enforced by the profit and loss system. Companies that can't adapt go out of business, while successful innovations get scaled up and copied. In an intangible economy, this process happens even faster."
+        },
+        {
+          "speaker": "Drew",
+          "text": "But that brings us to the human cost of all this change, doesn't it?"
+        }
+      ]
+    },
+    {
+      "id": "creative-destruction-costs",
+      "subheading": "Creative Destruction and Its Costs",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand how creative destruction creates both benefits and costs, using historical and contemporary examples, and examine the challenge of helping people adapt to economic change",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's exactly right, Drew. This process of innovation and change is what economist Joseph Schumpeter called 'creative destruction.' New products and processes emerge, displacing older production methods. The net effect is progress that improves many people's lives, but other people lose their forms of livelihood in the process."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This isn't a new phenomenon. The Luddite movement in early 19th-century Britain was textile workers destroying machinery because they feared it would eliminate their jobs. They were concerned about the human cost of technological change."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And we're seeing similar concerns today with populist backlash in many countries. People whose industries have been disrupted by technology or globalization feel left behind by economic progress."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But look at what's happened in media. Newspapers have been devastated - they lost their classified advertising revenue to Craigslist and face competition from the internet. Many traditional journalism jobs disappeared."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Yet new jobs emerged. We have podcasters, influencers, social media marketers, YouTube content creators. The creative destruction process generated new forms of employment even as it eliminated old ones."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's true, but notice that the new jobs tend to be very different from the old ones. Traditional print journalism required different skills than being a successful YouTuber or social media manager."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And that's part of the problem, isn't it? A 50-year-old male manufacturing worker who loses his job isn't necessarily eager to retrain for home health care or social media marketing."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Exactly. The benefits of creative destruction aren't automatically distributed to the people who bear the costs. The coal miner whose job gets eliminated by natural gas doesn't necessarily become a wind turbine technician."
+        },
+        {
+          "speaker": "Casey",
+          "text": "There's also the question of whether all this change is actually progress. Some traditional ways of life had value that we might be losing in our rush to innovate."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But look at the data we started with. People live longer, healthier lives. They have more leisure time, better nutrition, access to information and entertainment that previous generations couldn't imagine. It's hard to argue that's not genuine progress."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The challenge is that creative destruction creates winners and losers in the short term, even when it benefits society overall in the long term. And the transition costs are real - both the economic costs of displacement and the social costs of community disruption."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So the question becomes how to capture the benefits of innovation while minimizing the human costs of change."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That's one of the central challenges facing modern societies. How do we maintain the institutional conditions that encourage the experimentation, evaluation, and evolution that drive progress, while also helping people adapt to the changes that progress requires?"
+        }
+      ]
+    }
+  ]
+}

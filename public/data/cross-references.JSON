@@ -491,7 +491,23 @@
       "shortDefinition": "Contrary to market-failure theory, this describes a typical combination of government interventions.",
       "elaboration": "Subsidizing demand is what you would do to encourage more of a good.  Restricting supply is what you would do if you wanted less of it. From a social perspective, these policies work at cross-purposes.  But they serve the concentrated interests of producers. ",
       "homeChapter": "political-realism"
+    },
+    {
+      "id": "Malthusian",
+      "name": "Malthusian trap",
+      "shortDefinition": "When innovations and productivity gains are absorbed by population increase, with little or no improvement in living standards",
+      "elaboration": "When innovation was slow, there was only gradual productivity increase.  When food was more plentiful, people would have more children, and average consumption did not increase.  Thomas Malthus described this trap.",
+      "homeChapter": "creative-destruction"
+    },
+    {
+      "id": "creative-destruct",
+      "name": "creative destruction",
+      "shortDefinition": "Progress that comes from innovative products and processes displacing older methods.",
+      "elaboration": "Joseph Schumpeter coined this memorable phrase.  It describes how progress involves new techniques replacing old ones.  Along the way, some existing jobs and ways of life are displaced.",
+      "homeChapter": "creative-destruction"
     }
+
+
 
   ],
   "chapters": [
@@ -508,7 +524,8 @@
     {"id": "organizations", "title": "How Organizations Actually Work"},
     {"id": "naive-economics", "title": "Naive Economics"}, 
     {"id": "political-realism", "title": "Political Realism"},
-    {"id": "three-languages", "title": "The Three Languages of Politics"}
+    {"id": "three-languages", "title": "The Three Languages of Politics"},
+    {"id": "creative-destruction", "title": "Creative Destruction"}
     
 
   ]

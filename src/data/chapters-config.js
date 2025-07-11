@@ -70,6 +70,11 @@ export const chaptersConfig = [
     title: 'Political Realism',
     filename: 'political-realism.JSON'
   },
+{
+    id: 'creative-destruction',
+    title: 'Creative Destruction',
+    filename: 'creative-destruction.JSON'
+  },
 
 {
   id: 'dummy',

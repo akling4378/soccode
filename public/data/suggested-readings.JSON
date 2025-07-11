@@ -70,6 +70,11 @@
       "chapter": "order",
       "trigger": "how democracies differ from other states",
       "recommendation": "Arnold Kling has written some book reviews on related topics. Arnold Kling The Pre-Modern Order looks at social organization before 1500, Arnold Kling Balaji-land looks at a futuristic vision from Balaji Srinivasan, Arnold Kling The Two Forms of Social Order summarizes North, Weingast and Wallis."
+    },
+    {
+      "chapter": "creative-destruction",
+      "trigger": "facts about economic differences across time or countries, also the role of intangibles",
+      "recommendation": "Arnold Kling and Nick Schulz assembled a lot of facts about differences in standard of living in their book Invisible Wealth.  It emphasizes intangible factors.  So does a book by Stian Westlake and Jonathan Haskel called Capitalism without Capital."
     }
   ]
 }
