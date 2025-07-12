@@ -1,86 +1,83 @@
 // src/utils/seminarHandlers.js
-import { chaptersConfig } from '../data/chapters-config';
-
 export function createHandlers(state, setState) {
-  const {
-    setShowSeminar,
-    setCurrentChapter,
-    setCurrentBreakpoint,
-    setShowCallOnMe,
-    setApiResponse,
-    setShowBanter,
-    setCurrentBanter,
-    setUserSubmittedText,
-    setShowOfficeHours, // New
-    chapterData
-  } = state;
-
-  const handleNameSubmit = () => setShowSeminar(true);
-
-  const handleChapterChange = (chapterId) => {
-    const chapterExists = chaptersConfig.some(ch => ch.id === chapterId);
-    if (!chapterExists) {
-      alert('Chapter coming soon!');
-      return;
-    }
+  const handleNameSubmit = () => {
+    setState.setShowSeminar(true);
+    setState.setCurrentBreakpoint(0); // Reset to first breakpoint
     
-    setCurrentChapter(chapterId);
-    setCurrentBreakpoint(0);
-    setShowCallOnMe(false);
-    setApiResponse('');
-    // Clear banter state when changing chapters
-    setShowBanter(false);
-    setCurrentBanter(null);
-    setUserSubmittedText('');
-    // Close office hours if open
-    setShowOfficeHours(false);
+    // Scroll to top of page when entering seminar
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
   };
 
-  const handleCallOnMe = () => setShowCallOnMe(true);
-
-  const handleCancelInput = () => setShowCallOnMe(false);
-
-  const nextBreakpoint = () => {
-    if (!chapterData || state.currentBreakpoint >= chapterData.breakpoints.length - 1) return;
-    setCurrentBreakpoint(state.currentBreakpoint + 1);
-    setShowCallOnMe(false);
-    setApiResponse('');
-    // Clear banter state when navigating
-    setShowBanter(false);
-    setCurrentBanter(null);
-    setUserSubmittedText('');
+  const handleChapterChange = (newChapter) => {
+    setState.setCurrentChapter(newChapter);
+    setState.setCurrentBreakpoint(0); // Reset to first breakpoint of new chapter
+    setState.setChapterData(null);
+    setState.setApiResponse('');
+    setState.setShowCallOnMe(false);
+    setState.setUserInput('');
     
-    // Fix: Scroll to top when navigating to next section
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll to top when changing chapters
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
+  const handleCallOnMe = () => {
+    setState.setShowCallOnMe(true);
+    setState.setApiResponse('');
+  };
+
+  const handleCancelInput = () => {
+    setState.setShowCallOnMe(false);
+    setState.setUserInput('');
   };
 
   const prevBreakpoint = () => {
-    if (!chapterData || state.currentBreakpoint <= 0) return;
-    setCurrentBreakpoint(state.currentBreakpoint - 1);
-    setShowCallOnMe(false);
-    setApiResponse('');
-    // Clear banter state when navigating
-    setShowBanter(false);
-    setCurrentBanter(null);
-    setUserSubmittedText('');
-    
-    // Fix: Scroll to top when navigating to previous section
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (state.currentBreakpoint > 0) {
+      setState.setCurrentBreakpoint(state.currentBreakpoint - 1);
+      setState.setApiResponse('');
+      setState.setShowCallOnMe(false);
+      setState.setUserInput('');
+      
+      // Scroll to top when navigating breakpoints
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    }
   };
 
-  // Office Hours handlers
-  const handleOpenOfficeHours = () => setShowOfficeHours(true);
+  const nextBreakpoint = () => {
+    if (state.chapterData && state.currentBreakpoint < state.chapterData.breakpoints.length - 1) {
+      setState.setCurrentBreakpoint(state.currentBreakpoint + 1);
+      setState.setApiResponse('');
+      setState.setShowCallOnMe(false);
+      setState.setUserInput('');
+      
+      // Scroll to top when navigating breakpoints
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    }
+  };
 
-  const handleCloseOfficeHours = () => setShowOfficeHours(false);
+  const handleOpenOfficeHours = () => {
+    setState.setShowOfficeHours(true);
+  };
+
+  const handleCloseOfficeHours = () => {
+    setState.setShowOfficeHours(false);
+  };
 
   return {
     handleNameSubmit,
     handleChapterChange,
     handleCallOnMe,
     handleCancelInput,
-    nextBreakpoint,
     prevBreakpoint,
-    handleOpenOfficeHours,   // New
-    handleCloseOfficeHours   // New
+    nextBreakpoint,
+    handleOpenOfficeHours,
+    handleCloseOfficeHours
   };
 }
