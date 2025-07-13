@@ -1,0 +1,431 @@
+{
+  "id": "financial-sector",
+  "title": "The Financial Sector",
+  "description": "Understanding how banks, government, and markets interact to enable modern finance, from moral attitudes toward usury to the promise and perils of cryptocurrency",
+  "promptInstructions": {
+    "focus": "You are discussing the financial sector, including traditional banking, government-bank relationships, financial instability cycles, and cryptocurrency alternatives.",
+    "academicEmphasis": "Keep discussions grounded in concepts of formal vs. underground economies, the moral dyad, Minsky's financial instability hypothesis, and the tension between innovation and stability.",
+    "commonMisconceptions": "Watch for students either dismissing all traditional finance as corrupt or believing cryptocurrency solves all problems without trade-offs.",
+    "keyTerms": ["formal economy", "underground economy", "moral dyad", "usury", "diversification", "law of large numbers", "Minsky moment", "hedge finance", "speculative finance", "Ponzi finance", "too big to fail", "contract enforcement", "crypto", "atoms vs bits"]
+  },
+  "breakpoints": [
+    {
+      "id": "usury-shylock-moral-dyad",
+      "subheading": "Usury, Shylock, and the Moral Dyad",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how the moral dyad shapes attitudes toward lending and how these attitudes have evolved from historical usury taboos to modern financial relationships",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let me pose a scenario. You're walking down the street and you encounter a beggar asking for money. You decide to give them money—but you charge interest. Would society approve?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's horrible. Taking advantage of someone desperate—"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew's reaction is exactly what we'd expect. Now, why do we feel this way?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's... it's the moral dyad, isn't it? We see the beggar as having feelings but no agency, and the lender as having agency but no feelings."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly right, Avery. Recall that in the moral dyad framework, we tend to see actors as either thinking agents or feeling patients, but rarely both. The beggar becomes a vulnerable feeler with no control over their circumstances. The lender becomes a cold calculator who chooses to exploit that vulnerability."
+        },
+        {
+          "speaker": "Casey",
+          "text": "This reminds me of The Merchant of Venice. Shylock demands his pound of flesh, and everyone sees him as a heartless—"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Casey, that's exactly the problem! Shakespeare made the Jewish moneylender the villain, reinforcing centuries of anti-Semitic stereotypes."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Drew raises an important point about how literature shapes moral intuitions. But let's think about the broader pattern here."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Well, Shylock had a point about contracts. Antonio agreed to the terms. Why should sentiment override legal agreements?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake's touching on something fundamental. Before modern times, financial transactions often took the form of someone with money lending to someone in desperate need. People disapproved of charging interest in these circumstances, leading to strong taboos against usury."
+        },
+        {
+          "speaker": "Casey",
+          "text": "The debtors' prison was a Victorian horror. Dickens wrote about families destroyed by debt—Little Dorrit's father imprisoned simply for owing money."
+        },
+        {
+          "speaker": "Drew",
+          "text": "It literally criminalized poverty. Made being poor against the law."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But notice how our moral intuitions have shifted. In modern times, people borrow even when they're not desperate. Entrepreneurs borrow to start businesses. Consumers buy on credit for convenience. The religious strictures against charging interest have largely disappeared."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So the context changed, but the moral dyad didn't?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely. We still use the moral dyad when looking at lending. During the 2008 housing crash, politicians blamed 'predatory lending'—despite the fact that many institutions doing the lending actually lost money. Some borrowers had put nothing down and lived, for a while at least, in houses they couldn't really afford. Tyler Cowen wondered whether we should think of this as 'predatory borrowing.'"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Right! The borrowers had agency too. They made choices."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Blake, mortgage brokers were lying about income, pushing people into loans designed to fail—"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Both perspectives have merit. But notice how the moral dyad makes it difficult to see both parties as having agency and feelings. We want clear victims and villains."
+        }
+      ]
+    },
+    {
+      "id": "what-banks-do",
+      "subheading": "What Banks Actually Do",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand how banks solve the fundamental mismatch between what people want to hold (safe, liquid assets) and what they want to issue (risky, long-term liabilities), and the distinction between formal and underground economies",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Here's what's remarkable about banks. They solve a fundamental mismatch in what people want. Those of us in the nonfinancial sector would like to hold riskless, liquid assets—we want to take money out of our accounts at any time, and we prefer that our accounts never lose value."
+        },
+        {
+          "speaker": "Avery",
+          "text": "That makes sense. People want security and flexibility."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But we also want to issue risky, long-term liabilities. We want thirty-year mortgages, car loans, business credit. We want to borrow for long periods and sometimes we might not be able to repay at all."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So there's a fundamental contradiction in what people want?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The financial sector resolves this contradiction. Banks give us checking accounts from which we can withdraw funds at any time. And they give us loans where repayment may take decades, and might not happen at all. But think about their balance sheets—banks hold risky, long-term assets and issue riskless, short-term liabilities. It's exactly the opposite of what we want as individuals."
+        },
+        {
+          "speaker": "Blake",
+          "text": "How is that even possible? It sounds like a recipe for disaster."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Banks use four methods to survive with these precarious balance sheets. First, they develop expertise in relationships—knowing which borrowers are likely to repay and how to monitor them effectively."
+        },
+        {
+          "speaker": "Drew",
+          "text": "What are the other three?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Second, the law of large numbers. With a large customer base of depositors, banks can predict that only a small fraction will want to withdraw funds on any given day. If I have a thousand depositors and each has a five percent chance of needing their money today, I can calculate pretty precisely how much cash I need on hand."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So it's like insurance companies predicting claims?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Similar principle. Third is diversification. If any one loan has a ten percent chance of defaulting, that's quite risky. But if I have two independent loans with ten percent default risk each, there's only a one percent chance that both will default. With a large, diversified portfolio of loans, I get a fairly predictable default rate that's much safer than any individual loan."
+        },
+        {
+          "speaker": "Blake",
+          "text": "And the fourth?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Appearing safe. Banks benefit from the perception that they're well-managed and secure. That encourages depositors to keep their funds until actually needed. But if depositors doubt the bank's safety, they engage in panic withdrawals, forcing the bank to sell assets at a loss."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "This connects to a crucial distinction: the difference between the formal economy and the underground economy. In the formal economy, government enforces contracts. In the underground economy, individuals must try to enforce contracts themselves."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's where I see the real problem. What about the millions without bank accounts? They're excluded from the formal financial system, stuck using check-cashing places that charge enormous fees."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Actually, Drew, that's where cryptocurrencies could make a real difference. Look at cross-border remittances. A worker sending money to family in another country faces huge fees and delays with traditional banks. Crypto can move money instantly at a fraction of the cost, getting around arbitrary regulations."
+        },
+        {
+          "speaker": "Drew",
+          "text": "If they can figure out how to use it without getting scammed."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Blake raises an important point. The larger the formal economy, the easier it becomes to establish property rights and undertake risky, long-term projects. But the formal system can also exclude people."
+        },
+        {
+          "speaker": "Avery",
+          "text": "So there's a trade-off between stability and inclusion?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Banks are adjacent to the formal economy. As of this writing, cryptocurrency is adjacent to the underground economy—contract enforcement in the crypto world is not well established."
+        }
+      ]
+    },
+    {
+      "id": "government-banks-symbiosis",
+      "subheading": "Government and Banks: The Symbiotic Relationship",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Understand the mutual dependence between government and banks, how they reinforce each other's durability, and the implications of 'too big to fail' policies",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Both banks and governments have something important in common: they must be perceived as durable to function effectively."
+        },
+        {
+          "speaker": "Casey",
+          "text": "You mean like institutional legitimacy?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "More concrete than that. If you thought your government might be overthrown next month, you'd lose willingness to pay taxes, obey laws, or work at a government job. The expectation of government downfall becomes a self-fulfilling prophecy."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And if people think a bank will fail, they rush to withdraw their money, which actually causes the failure."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Exactly. Which is why government and banks reinforce each other's durability. Government provides banks with deposit insurance, removing the incentive for depositors to participate in bank runs. Banks stand ready to purchase government debt, ensuring government can pay its officials and remain in power."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's like a mutual support system?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Government and banks support one another. They don't antagonize each other. This relationship is so important that we never observe a weak government with a well-developed financial sector. It's also rare to see a strong government without one."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That sounds awfully cozy."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Government officials have strong interests in credit allocation. Above all, they want ready markets for government securities. They may also want certain sectors—like housing—to get priority in credit markets. Much of financial regulation, whatever its stated purpose, serves to allocate credit to sectors favored by government officials."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, this goes back to war finance. Governments that could issue attractive debt instruments during wartime—"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Which brings us to 2008. When the system failed, taxpayers bailed out the banks that created the mess."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Exactly! The whole system is rigged. Banks collect profits during good times, taxpayers eat losses when things go bad."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Blake, I can't believe I'm agreeing with you, but 'too big to fail' is fundamentally unjust."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The 2008 bailouts were widely misunderstood. Officials sold the $800 billion TARP program as preventing a collapse of retail banking. But I believe most banks—and therefore most households—would have escaped unscathed without a bailout."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Then why the bailout?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Right. Ri-ri-ri-ri-right. But on the other hand, the government's real concern was with the primary dealers in Treasury securities. These are the large institutions that purchase government debt and through which the Federal Reserve conducts monetary policy. The government was protecting its own ability to borrow, not household savings accounts."
+        },
+        {
+          "speaker": "Casey",
+          "text": "So the entire financial rescue was really about government self-interest?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "That seems to be what the evidence suggests."
+        }
+      ]
+    },
+    {
+      "id": "minsky-moments-instability",
+      "subheading": "Minsky Moments and Financial Instability",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "medium",
+      "learningObjective": "Understand Hyman Minsky's theory that 'stability breeds instability' through the progression from hedge finance to speculative finance to Ponzi finance",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The financial sector is affected by confidence and perceptions. If it's perceived as sound, many long-term, risky projects can be financed. If it's perceived as fragile, households rush to pull out funds, the sector contracts, and fewer projects get funded."
+        },
+        {
+          "speaker": "Blake",
+          "text": "So it's all about confidence?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Economist Hyman Minsky observed this cycle and suggested that 'stability breeds instability.' When confidence in the financial sector is low, the few long-term risky projects that get funded tend to do well. Confidence starts to return, producing sustainable expansion in credit and economic activity."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But eventually confidence becomes overconfidence?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Precisely. The projects funded become riskier and less successful, leading to a crash. Confidence recedes to low levels, and the cycle starts again."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Like the tulip mania or the South Sea Bubble—"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Minsky described three stages. After a crisis, banks practice 'hedge finance'—they only lend to borrowers who can repay both principal and interest out of expected income. Once memories of crisis fade, the economy moves to 'speculative finance'—loans to borrowers who can repay interest but must roll over principal."
+        },
+        {
+          "speaker": "Drew",
+          "text": "And the third stage?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "'Ponzi finance'—loans to borrowers who can't even meet interest payments without taking out new loans. In the recent financial crisis, many mortgage borrowers could only meet obligations by borrowing against home appreciation, which required perpetual house price increases."
+        },
+        {
+          "speaker": "Blake",
+          "text": "That's fascinating. So the Fed's job is to prevent crashes, but preventing crashes makes crashes more likely?"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Minsky saw the central bank as lender of last resort—necessary to prevent financial implosion, but the better it performs this function, the longer the period of stability, and the greater the tendency toward reckless lending."
+        },
+        {
+          "speaker": "Drew",
+          "text": "While you're discussing cycles, real families lose their homes."
+        },
+        {
+          "speaker": "Avery",
+          "text": "It's like a system that becomes unstable precisely because it appears stable. Success creates the conditions for failure."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The 2008 breakdown was called a 'Minsky moment.' Financial engineers tried to manufacture low-risk, short-term liabilities from long-term, risky mortgages. When default rates exceeded expectations, institutional investors lost confidence, and the repo loan market collapsed."
+        },
+        {
+          "speaker": "Blake",
+          "text": "But here's what interests me—Minsky said 'anyone can create money, the problem lies in getting it accepted.'"
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Which brings us to Bitcoin. It's possible to interpret Bitcoin's rise as Ponzi finance. As long as new money flows into Bitcoin markets, its value rises. But if we reach a point where everyone who wants Bitcoin already has it, the price could decline and momentum could reverse."
+        }
+      ]
+    },
+    {
+      "id": "crypto-atoms-vs-bits",
+      "subheading": "Crypto: Atoms vs. Bits",
+      "characters": ["Professor Hartwell", "Blake", "Casey", "Drew", "Avery"],
+      "tensionLevel": "high",
+      "learningObjective": "Debate the potential and limitations of cryptocurrency as an alternative to traditional finance, focusing on the challenge of enforcing digital contracts in a physical world",
+      "hasCallOnMe": true,
+      "dialogue": [
+        {
+          "speaker": "Blake",
+          "text": "Professor, that's exactly backwards about Bitcoin. It's not Ponzi finance—it's the first real alternative to the government-bank cartel. Smart contracts, immutable ledgers, cryptographic proof—we can finally have contract enforcement without corrupt politicians and greedy bankers."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Let's think through this systematically. Cryptocurrency is adjacent to the underground economy. Contract enforcement in the crypto world is, as I noted, not well established."
+        },
+        {
+          "speaker": "Drew",
+          "text": "That's my concern, Blake. How does your blockchain repossess a car when someone defaults? How does it foreclose on a house? How does it garnish wages?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Those are legacy problems, Drew. We don't need physical collateral when we have cryptographic proof of ownership and automated enforcement through smart contracts."
+        },
+        {
+          "speaker": "Avery",
+          "text": "But Drew has a point, Blake. Most economic activity involves physical goods—atoms, not just bits. You can't tokenize everything."
+        },
+        {
+          "speaker": "Blake",
+          "text": "Actually, you can. Non-fungible tokens for real estate, supply chain verification on blockchain, decentralized autonomous organizations managing physical assets—"
+        },
+        {
+          "speaker": "Drew",
+          "text": "Blake, listen to yourself! You're talking about 'tokenizing' people's homes while families can't afford rent. When FTX collapsed, how many people lost life savings they couldn't afford to lose?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "FTX wasn't the technology's fault! That was Sam Bankman-Fried running a fraudulent centralized exchange. The whole point of crypto is decentralization—no single point of failure."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "But Drew raises a fundamental question. In the world of atoms—physical goods, real estate, human labor—how do you enforce contracts without institutions that can compel compliance?"
+        },
+        {
+          "speaker": "Avery",
+          "text": "It seems like crypto solves some problems but creates others. Maybe good for cross-border payments, terrible for consumer protection?"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Look at remittances, though. Traditional banks charge enormous fees and take days to transfer money internationally. Crypto does it instantly for pennies. It's especially valuable for people excluded from formal banking."
+        },
+        {
+          "speaker": "Drew",
+          "text": "Until the exchange gets hacked, or they send money to the wrong address, or the value crashes overnight."
+        },
+        {
+          "speaker": "Casey",
+          "text": "Historically, private money has been tried many times. Scottish banks in the eighteenth century—"
+        },
+        {
+          "speaker": "Blake",
+          "text": "Thank you, Casey! Exactly. The incumbents always resist financial innovation."
+        },
+        {
+          "speaker": "Drew",
+          "text": "This isn't about resistance to change, Blake. It's about whether your system actually helps real people or just creates new ways for tech speculators to get rich."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "Consider the cryptocurrency sector's lack of government protection. Many crypto enthusiasts prefer this—they don't want to be corrupted by or beholden to governments. But the chaos that hit crypto markets makes the prospects for complete separation of finance from state seem remote."
+        },
+        {
+          "speaker": "Blake",
+          "text": "The government-bank system has created boom-bust cycles, bailouts for the rich, exclusion of the poor. We need alternatives."
+        },
+        {
+          "speaker": "Avery",
+          "text": "Maybe it's not either-or? Maybe we need both systems—traditional banking for stability, crypto for innovation and inclusion?"
+        },
+        {
+          "speaker": "Drew",
+          "text": "As long as people understand the risks and don't mortgage their houses to buy digital coins."
+        },
+        {
+          "speaker": "Professor Hartwell",
+          "text": "The relationship between finance and government has evolved over centuries. Whether cryptocurrency represents the next evolution or a dangerous detour remains to be seen. But the fundamental tension between innovation and stability, between efficiency and protection, between the world of bits and the world of atoms—these challenges won't be easily resolved."
+        }
+      ]
+    }
+  ]
+}

@@ -61,7 +61,7 @@
       "recommendation": "There is a book called MIT and the Transformation of American Economics, edited by E. Roy Weintraub.  I especially like the chapter by Beatrice Cherry.  A representative book from the late 20th-century period is Equality and Efficiency, the big trade-off, published by Arthur Okun in 1975."
     },
     {
-      "chapter": political-realism",
+      "chapter": "political-realism",
       "trigger": "Public choice theory political realism",
       "recommendation": "Bruce Yandle has a book on Bootleggers and Baptists.  For a classic article on how government programs persist only because they serve private interests, see Jonathan Rauch on the mohair subsidy.  Arnold Kling in his book Specialization and Trade shows how the political interests to subsidize demand and restrict supply naturally arise in an economy where production is specialized."
     },
@@ -75,6 +75,12 @@
       "chapter": "creative-destruction",
       "trigger": "facts about economic differences across time or countries, also the role of intangibles",
       "recommendation": "Arnold Kling and Nick Schulz assembled a lot of facts about differences in standard of living in their book Invisible Wealth.  It emphasizes intangible factors.  So does a book by Stian Westlake and Jonathan Haskel called Capitalism without Capital."
+    },
+    {
+      "chapter": "financial-sector",
+      "trigger": "history of government and banks or the financial crisis of 2008",
+      "recommendation": "Niall Ferguson's book The Cash Nexus stresses the historical relationship between banks and government power.  On the Financial Crisis of 2008, Arnold Kling wrote a monograph called Not What They Had in Mind."
     }
+
   ]
 }

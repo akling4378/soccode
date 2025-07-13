@@ -75,6 +75,11 @@ export const chaptersConfig = [
     title: 'Creative Destruction',
     filename: 'creative-destruction.JSON'
   },
+{
+    id: 'financial-sector',
+    title: 'The Financial Sector',
+    filename: 'financial-sector.JSON'
+  },
 
 {
   id: 'dummy',

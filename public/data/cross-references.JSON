@@ -505,9 +505,21 @@
       "shortDefinition": "Progress that comes from innovative products and processes displacing older methods.",
       "elaboration": "Joseph Schumpeter coined this memorable phrase.  It describes how progress involves new techniques replacing old ones.  Along the way, some existing jobs and ways of life are displaced.",
       "homeChapter": "creative-destruction"
+    },
+    {
+      "id": "Minsky",
+      "name": "Minsky moment",
+      "shortDefinition": "When an overly risky financial system collapses",
+      "elaboration": "Hyman Minsky said that finance was subject to cycles.  When confidence is low, financing is conservative.  When confidence is high, financing is more liberal. When confidence gets too high, financing becomes too risky.  When problems appear, a crisis develops.  People call that a Minsky moment.",
+      "homeChapter": "financial-sector"
+    },
+    {
+      "id": "Ponzi",
+      "name": "Ponzi finance",
+      "shortDefinition": "In the Minsky model, when borrowers must borrow more just to pay interest",
+      "elaboration": "With what Minsky called hedge finance, borrowers repay principal as well as interest.  With speculative finance, they repay interest.  With Ponzi finance, they cannot even repay interest without new borrowing.",
+      "homeChapter": "financial-sector"
     }
-
-
 
   ],
   "chapters": [
