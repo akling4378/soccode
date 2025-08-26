@@ -1,4 +1,4 @@
-// src/utils/seminarHandlers.js
+// src/utils/seminarHandlers.js - FIXED: Clear banter state on navigation
 export function createHandlers(state, setState) {
   const handleNameSubmit = () => {
     setState.setShowSeminar(true);
@@ -41,6 +41,11 @@ export function createHandlers(state, setState) {
       setState.setShowCallOnMe(false);
       setState.setUserInput('');
       
+      // FIXED: Clear banter state when navigating
+      setState.setShowBanter(false);
+      setState.setCurrentBanter(null);
+      setState.setUserSubmittedText('');
+      
       // Scroll to top when navigating breakpoints
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -54,6 +59,11 @@ export function createHandlers(state, setState) {
       setState.setApiResponse('');
       setState.setShowCallOnMe(false);
       setState.setUserInput('');
+      
+      // FIXED: Clear banter state when navigating
+      setState.setShowBanter(false);
+      setState.setCurrentBanter(null);
+      setState.setUserSubmittedText('');
       
       // Scroll to top when navigating breakpoints
       setTimeout(() => {
