@@ -13,7 +13,7 @@ export async function POST(request) {
     const { message } = await request.json();
 
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-sonnet-4-20250514',
       max_tokens: 1000,
       messages: [
         {
@@ -23,8 +23,21 @@ export async function POST(request) {
       ],
     });
 
+    // Get the raw response text
+    let responseText = response.content[0].text;
+    
+    // Convert Claude 4's **Speaker:** format to Speaker: format (simple replacement)
+    responseText = responseText.replaceAll('**Professor Hartwell:**', 'Professor Hartwell:');
+    responseText = responseText.replaceAll('**Blake:**', 'Blake:');
+    responseText = responseText.replaceAll('**Drew:**', 'Drew:');
+    responseText = responseText.replaceAll('**Casey:**', 'Casey:');
+    responseText = responseText.replaceAll('**Avery:**', 'Avery:');
+    
+    // Remove quotes at the start of speaker text
+    responseText = responseText.replace(/(Professor Hartwell|Blake|Drew|Casey|Avery): "/gm, '$1: ');
+
     return Response.json({
-      response: response.content[0].text,
+      response: responseText,
     });
   } catch (error) {
     console.error('API Error:', error);
