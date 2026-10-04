@@ -13,8 +13,8 @@ export async function POST(request) {
     const { message } = await request.json();
 
     const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 1000,
+      model: 'claude-sonnet-5',
+      max_tokens: 4000,
       messages: [
         {
           role: 'user',
@@ -24,7 +24,7 @@ export async function POST(request) {
     });
 
     // Get the raw response text
-    let responseText = response.content[0].text;
+    let responseText = response.content.find(block => block.type === 'text')?.text || '';
     
     // Convert Claude 4's **Speaker:** format to Speaker: format (simple replacement)
     responseText = responseText.replaceAll('**Professor Hartwell:**', 'Professor Hartwell:');
